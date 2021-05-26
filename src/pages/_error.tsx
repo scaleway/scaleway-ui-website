@@ -4,7 +4,7 @@ import React from 'react'
 type ErrorPageProps = {
   statusCode?: number
 }
-const ErrorPage = ({ statusCode }: ErrorPageProps) => (
+const ErrorPage = ({ statusCode }: ErrorPageProps): JSX.Element => (
   <div>
     {statusCode
       ? `SCWUI: An error ${statusCode} occurred on server`

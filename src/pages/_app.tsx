@@ -1,11 +1,15 @@
+import Head from 'components/Head'
+import TopBar from 'components/TopBar'
 import { AppProps } from 'next/app'
-import Main from 'components/Main'
+import './index.css'
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
-    <Main>
+    <>
+      <Head />
+      <TopBar />
       <Component {...pageProps} />
-    </Main>
+    </>
   )
 }
 
