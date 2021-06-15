@@ -7,7 +7,7 @@ import Document, {
   DocumentContext,
   DocumentInitialProps,
 } from 'next/document'
-import { theme } from '@scaleway/ui'
+import { GlobalStyle, theme } from '@scaleway/ui'
 import Footer from 'components/Footer'
 
 class MyDocument extends Document {
@@ -25,6 +25,7 @@ class MyDocument extends Document {
         <body>
           <NextScript />
           <ThemeProvider theme={theme}>
+            <GlobalStyle />
             <main>
               <Main />
             </main>
