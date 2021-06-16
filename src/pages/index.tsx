@@ -1,11 +1,9 @@
-import { Box } from '@scaleway/ui'
+import { Button } from '@scaleway/ui'
 
 const Home = (): JSX.Element => {
   return (
     <div>
-      <Box>
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </Box>
+      <Button>Hello</Button>
 
       <p>
         Get started by editing <code>pages/index.js</code>
