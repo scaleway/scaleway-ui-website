@@ -5,7 +5,4 @@ const withTM = require('next-transpile-modules')([
 
 module.exports = withTM({
   poweredByHeader: false,
-  future: {
-    webpack5: false, // you want to keep using Webpack 4
-  },
 })
