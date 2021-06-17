@@ -1,10 +1,12 @@
-import { Button } from '@scaleway/ui'
+import { Grid, Row, Col } from '@scaleway/ui'
 
 const Home = (): JSX.Element => {
   return (
-    <div>
-      <Button>Hello there!</Button>
-    </div>
+    <Grid>
+      <Row>
+        <Col height={900}>I am the body</Col>
+      </Row>
+    </Grid>
   )
 }
 
