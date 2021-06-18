@@ -33,10 +33,21 @@ const TopBar = ({ isLightMode, setIsLightMode }: TopBarProps): JSX.Element => {
           </Col>
           <Col display="flex" justifyContent="flex-end">
             <Breakpoint up="medium">
-              <Button name="github" variant="secondary" icon="github" />
+              <Button
+                name="github"
+                variant="secondary"
+                icon="github"
+                iconSize={40}
+                size="medium"
+                p={0}
+                to="https://github.com/scaleway/scaleway-ui"
+                target="_blank"
+              />
               <Button
                 name="documentation"
                 to="https://react.ui.scaleway.com/"
+                target="_blank"
+                size="medium"
                 mx={2}
               >
                 Documentation
@@ -51,8 +62,8 @@ const TopBar = ({ isLightMode, setIsLightMode }: TopBarProps): JSX.Element => {
                 setIsLightMode(event.target.checked)
               }
               labeled
-              onLabel={<Icon size={15} name="moon" />}
-              offLabel={<Icon size={15} name="sun" />}
+              onLabel={<Icon size={20} name="sun" />}
+              offLabel={<Icon size={20} name="moon" />}
             />
           </Col>
         </Row>

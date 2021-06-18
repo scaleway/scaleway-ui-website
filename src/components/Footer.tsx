@@ -1,12 +1,26 @@
 import React from 'react'
 import { Grid, Row, Col, Typography, Button, up, down } from '@scaleway/ui'
 import Image from 'next/image'
-import { css, useTheme } from '@emotion/react'
+import { useTheme } from '@emotion/react'
 import styled from '@emotion/styled'
 import { x } from '@xstyled/emotion'
 
 const StyledFooter = styled(x.footer)`
   box-shadow: 0 0 8px 2px rgba(178, 182, 195, 0.37);
+`
+
+const StyledButtonsCol = styled(Col)`
+  ${up('medium', `order: 2`)} ${down('medium', `order: 1; margin-left: 0`)};
+  display: flex;
+`
+
+const StyledLogoCol = styled(Col)`
+  ${up('medium', `order: 1`)} ${down('medium', `order: 2; margin-top: 24px`)}
+  display: flex;
+`
+
+const StyledRow = styled(Row)`
+  ${up('medium', `margin-top: 40px`)} ${down('medium', `margin-top: 24px`)}
 `
 
 const Footer = (): JSX.Element => {
@@ -29,44 +43,30 @@ const Footer = (): JSX.Element => {
             </Typography>
           </Col>
         </Row>
-        <Row
-          css={css`
-            ${up('medium', `margin-top: 40px`)} ${down(
-              'medium',
-              `margin-top: 24px`,
-            )}
-          `}
-        >
-          <Col
-            xsmall={12}
-            medium="auto"
-            display="flex"
-            css={css`
-              ${up('medium', `order: 2`)} ${down(
-                'medium',
-                `order: 1; margin-left: 0`,
-              )}
-            `}
-          >
-            <Button variant="secondary" icon="github" />
-            <Button to="https://react.ui.scaleway.com/" mx={1}>
+        <StyledRow>
+          <StyledButtonsCol xsmall={12} medium="auto">
+            <Button
+              variant="secondary"
+              icon="github"
+              iconSize={40}
+              size="medium"
+              to="https://react.ui.scaleway.com/"
+              target="_blank"
+              p={0}
+            />
+            <Button
+              to="https://react.ui.scaleway.com/"
+              target="_blank"
+              mx={2}
+              size="medium"
+            >
               Documentation
             </Button>
-          </Col>
-          <Col
-            xsmall={12}
-            medium="auto"
-            display="flex"
-            css={css`
-              ${up('medium', `order: 1`)} ${down(
-                'medium',
-                `order: 2; margin-top: 24px`,
-              )}
-            `}
-          >
+          </StyledButtonsCol>
+          <StyledLogoCol xsmall={12} medium="auto">
             <Image src={theme.logo} alt="logo" width={124} height={24} />
-          </Col>
-        </Row>
+          </StyledLogoCol>
+        </StyledRow>
       </Grid>
     </StyledFooter>
   )
