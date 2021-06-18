@@ -1,6 +1,7 @@
 import React from 'react'
-import { Box, Col, Row, Typography } from '@scaleway/ui'
+import { Box, Col, Row, Typography, down } from '@scaleway/ui'
 import Image from 'next/image'
+import styled from '@emotion/styled'
 
 type CardProps = {
   title: string
@@ -8,9 +9,13 @@ type CardProps = {
   icon: StaticImageData
 }
 
+const StyledBox = styled(Box)`
+  ${down('large', `margin: 8px 16px`)};
+`
+
 const Card = ({ title, description, icon }: CardProps): JSX.Element => {
   return (
-    <Box bordered>
+    <StyledBox bordered>
       <Row>
         <Col xsmall="auto">
           <Image src={icon} alt="icon" width={64} height={64} />
@@ -22,7 +27,7 @@ const Card = ({ title, description, icon }: CardProps): JSX.Element => {
           <Typography variant="bodyD">{description}</Typography>
         </Col>
       </Row>
-    </Box>
+    </StyledBox>
   )
 }
 
