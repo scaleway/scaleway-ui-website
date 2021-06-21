@@ -1,8 +1,7 @@
 import React, { Dispatch, SetStateAction, useEffect } from 'react'
 import styled from '@emotion/styled'
-import Image from 'next/image'
 import { Button, Col, Grid, Row, Switch, Icon, Breakpoint } from '@scaleway/ui'
-import { useTheme } from '@emotion/react'
+import Logo from './Logo'
 
 const Header = styled.header`
   min-height: 60px;
@@ -22,8 +21,6 @@ type TopBarProps = {
 }
 
 const TopBar = ({ isLightMode, setIsLightMode }: TopBarProps): JSX.Element => {
-  const theme = useTheme()
-
   useEffect(() => {
     const settings = JSON.parse(localStorage.getItem('settings') as string)
     if (settings) {
@@ -40,8 +37,8 @@ const TopBar = ({ isLightMode, setIsLightMode }: TopBarProps): JSX.Element => {
     <Header>
       <Grid>
         <Row>
-          <Col display="flex" justifyContent="flex-start">
-            <Image src={theme.logo} alt="logo" width={124} height={24} />
+          <Col display="flex" justifyContent="flex-start" alignItems="center">
+            <Logo width={124} height={24} />
           </Col>
           <Col display="flex" justifyContent="flex-end">
             <Breakpoint up="medium">

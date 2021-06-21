@@ -1,8 +1,7 @@
 import React from 'react'
 import { Grid, Row, Col, Typography, Button, up, down } from '@scaleway/ui'
-import Image from 'next/image'
-import { useTheme } from '@emotion/react'
 import styled from '@emotion/styled'
+import Logo from './Logo'
 
 const StyledFooter = styled.footer`
   box-shadow: 0 0 8px 2px rgba(178, 182, 195, 0.37);
@@ -16,6 +15,7 @@ const StyledButtonsCol = styled(Col)`
 const StyledLogoCol = styled(Col)`
   ${up('medium', `order: 1`)} ${down('medium', `order: 2; margin-top: 24px`)}
   display: flex;
+  align-items: center;
 `
 
 const StyledRow = styled(Row)`
@@ -23,8 +23,6 @@ const StyledRow = styled(Row)`
 `
 
 const Footer = (): JSX.Element => {
-  const theme = useTheme()
-
   return (
     <StyledFooter>
       <Grid py={5} px={4}>
@@ -63,7 +61,7 @@ const Footer = (): JSX.Element => {
             </Button>
           </StyledButtonsCol>
           <StyledLogoCol xsmall={12} medium="auto">
-            <Image src={theme.logo} alt="logo" width={124} height={24} />
+            <Logo width={124} height={24} />
           </StyledLogoCol>
         </StyledRow>
       </Grid>
