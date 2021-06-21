@@ -3,9 +3,8 @@ import { Grid, Row, Col, Typography, Button, up, down } from '@scaleway/ui'
 import Image from 'next/image'
 import { useTheme } from '@emotion/react'
 import styled from '@emotion/styled'
-import { x } from '@xstyled/emotion'
 
-const StyledFooter = styled(x.footer)`
+const StyledFooter = styled.footer`
   box-shadow: 0 0 8px 2px rgba(178, 182, 195, 0.37);
 `
 

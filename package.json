@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint --cache --ext tsx,ts .",
     "prepare": "husky install",
-    "commit": "npx git-cz -a"
+    "commit": "npx git-cz -a",
+    "svg": "svgo --pretty --multipass"
   },
   "dependencies": {
     "@emotion/react": "^11.4.0",
@@ -38,12 +39,16 @@
     "lint-staged": "^11.0.0",
     "next-transpile-modules": "^8.0.0",
     "prettier": "^2.3.0",
+    "svgo": "^2.3.0",
     "typescript": "^4.3.2"
   },
   "lint-staged": {
     "*.ts?(x)": [
       "prettier --write",
       "eslint --fix --ext ts,tsx"
+    ],
+    "*.svg": [
+      "yarn run svg"
     ]
   },
   "config": {

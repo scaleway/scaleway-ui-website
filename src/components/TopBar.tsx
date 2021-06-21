@@ -3,9 +3,8 @@ import styled from '@emotion/styled'
 import Image from 'next/image'
 import { Button, Col, Grid, Row, Switch, Icon, Breakpoint } from '@scaleway/ui'
 import { useTheme } from '@emotion/react'
-import { x } from '@xstyled/emotion'
 
-const Header = styled(x.header)`
+const Header = styled.header`
   min-height: 60px;
   height: 60px;
   top: 0;
