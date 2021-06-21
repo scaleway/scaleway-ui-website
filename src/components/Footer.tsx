@@ -50,7 +50,7 @@ const Footer = (): JSX.Element => {
               icon="github"
               iconSize={40}
               size="medium"
-              to="https://react.ui.scaleway.com/"
+              to="https://github.com/scaleway/scaleway-ui"
               target="_blank"
               p={0}
             />
