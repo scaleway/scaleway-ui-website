@@ -4,7 +4,7 @@ import Footer from 'components/Footer'
 import TopBar from 'components/TopBar'
 import { AppProps } from 'next/app'
 import { GlobalStyle } from '@scaleway/ui'
-import { useCallback, useLayoutEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { theme as localTheme } from 'theme'
 
 const customBody = css`
@@ -13,8 +13,9 @@ const customBody = css`
   }
 `
 
-const App = ({ Component, pageProps }: AppProps): JSX.Element => {
+const App = ({ Component, pageProps }: AppProps): JSX.Element | null => {
   const [isLightMode, setIsLightMode] = useState(true)
+  const [showChild, setShowChild] = useState(false)
 
   const setLightModeCallBack = useCallback(
     isLightMode => {
@@ -27,17 +28,13 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
     [setIsLightMode],
   )
 
-  useLayoutEffect(() => {
-    const settings = JSON.parse(localStorage.getItem('settings') as string)
-    if (settings) {
-      setLightModeCallBack(settings.isLightMode)
-    } else {
-      const isNavigatorLightTheme = window.matchMedia(
-        '(prefers-color-scheme: light)',
-      ).matches
-      setLightModeCallBack(isNavigatorLightTheme)
-    }
-  })
+  useEffect(() => {
+    setShowChild(true)
+  }, [])
+
+  if (!showChild) {
+    return null
+  }
 
   return (
     <ThemeProvider theme={isLightMode ? localTheme.light : localTheme.dark}>
