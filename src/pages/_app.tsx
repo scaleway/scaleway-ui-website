@@ -4,7 +4,7 @@ import Footer from 'components/Footer'
 import TopBar from 'components/TopBar'
 import { AppProps } from 'next/app'
 import { GlobalStyle } from '@scaleway/ui'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useState } from 'react'
 import { theme as localTheme } from 'theme'
 
 const customBody = css`
@@ -13,9 +13,14 @@ const customBody = css`
   }
 `
 
+const customTransitionAnimation = css`
+  * {
+    transition: background-color 500ms ease;
+  }
+`
+
 const App = ({ Component, pageProps }: AppProps): JSX.Element | null => {
   const [isLightMode, setIsLightMode] = useState(true)
-  const [showChild, setShowChild] = useState(false)
 
   const setLightModeCallBack = useCallback(
     isLightMode => {
@@ -28,17 +33,9 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element | null => {
     [setIsLightMode],
   )
 
-  useEffect(() => {
-    setShowChild(true)
-  }, [])
-
-  if (!showChild) {
-    return null
-  }
-
   return (
     <ThemeProvider theme={isLightMode ? localTheme.light : localTheme.dark}>
-      <GlobalStyle additionalStyles={[customBody]} />
+      <GlobalStyle additionalStyles={[customBody, customTransitionAnimation]} />
       <Head />
       <TopBar isLightMode={isLightMode} setIsLightMode={setLightModeCallBack} />
       <Component {...pageProps} />

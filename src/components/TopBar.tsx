@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useLayoutEffect } from 'react'
+import React, { Dispatch, SetStateAction, useEffect } from 'react'
 import styled from '@emotion/styled'
 import Image from 'next/image'
 import { Button, Col, Grid, Row, Switch, Icon, Breakpoint } from '@scaleway/ui'
@@ -24,7 +24,7 @@ type TopBarProps = {
 const TopBar = ({ isLightMode, setIsLightMode }: TopBarProps): JSX.Element => {
   const theme = useTheme()
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const settings = JSON.parse(localStorage.getItem('settings') as string)
     if (settings) {
       setIsLightMode(settings.isLightMode)
@@ -34,7 +34,7 @@ const TopBar = ({ isLightMode, setIsLightMode }: TopBarProps): JSX.Element => {
       ).matches
       setIsLightMode(isNavigatorLightTheme)
     }
-  })
+  }, [])
 
   return (
     <Header>
