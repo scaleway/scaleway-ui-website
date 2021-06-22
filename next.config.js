@@ -1,6 +1,7 @@
 const withTM = require('next-transpile-modules')([
   '@scaleway/ui',
   '@scaleway/random-name',
+  'react-syntax-highlighter',
 ])
 
 module.exports = withTM({

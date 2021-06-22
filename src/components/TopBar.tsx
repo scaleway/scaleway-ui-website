@@ -1,7 +1,8 @@
 import React, { Dispatch, SetStateAction, useEffect } from 'react'
 import styled from '@emotion/styled'
-import { Button, Col, Grid, Row, Switch, Icon, Breakpoint } from '@scaleway/ui'
+import { Col, Grid, Row, Switch, Icon, Breakpoint } from '@scaleway/ui'
 import Logo from './Logo'
+import GithubAndDocumentationButtons from './GithubAndDocumentationButtons'
 
 const Header = styled.header`
   min-height: 60px;
@@ -31,7 +32,7 @@ const TopBar = ({ isLightMode, setIsLightMode }: TopBarProps): JSX.Element => {
       ).matches
       setIsLightMode(isNavigatorLightTheme)
     }
-  }, [])
+  }, [setIsLightMode])
 
   return (
     <Header>
@@ -42,25 +43,7 @@ const TopBar = ({ isLightMode, setIsLightMode }: TopBarProps): JSX.Element => {
           </Col>
           <Col display="flex" justifyContent="flex-end">
             <Breakpoint up="medium">
-              <Button
-                name="github"
-                variant="secondary"
-                icon="github"
-                iconSize={40}
-                size="medium"
-                p={0}
-                to="https://github.com/scaleway/scaleway-ui"
-                target="_blank"
-              />
-              <Button
-                name="documentation"
-                to="https://react.ui.scaleway.com/"
-                target="_blank"
-                size="medium"
-                mx={2}
-              >
-                Documentation
-              </Button>
+              <GithubAndDocumentationButtons />
             </Breakpoint>
             <Switch
               name="darkMode"
