@@ -8,12 +8,12 @@ import {
   Button,
   Breakpoint,
 } from '@scaleway/ui'
-import Image from 'next/image'
 import introductionIllustration from '../../assets/illustrations/introduction.png'
 import Card from '../../components/Card'
 import icon from '../../assets/icons/icon-scaleway-ui.svg'
 import React from 'react'
 import styled from '@emotion/styled'
+import Image from 'components/Image'
 
 const StyledTitleCol = styled(Col)`
   ${up('xsmall', `order: 2`)} ${up('medium', `order: 1;`)};
@@ -69,11 +69,7 @@ const Introduction = (): JSX.Element => {
         </StyledTitleCol>
         <StyledIllustrationCol xmsall={12} medium={6}>
           <StyledImageBox>
-            <Image
-              src={introductionIllustration}
-              alt="logo"
-              layout="responsive"
-            />
+            <Image src={introductionIllustration} alt="logo" />
           </StyledImageBox>
         </StyledIllustrationCol>
       </Row>
