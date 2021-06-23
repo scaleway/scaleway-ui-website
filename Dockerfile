@@ -10,4 +10,13 @@ RUN yarn --pure-lockfile
 
 COPY . .
 
-RUN yarn run build && yarn start
+######################################################################
+# This stage download a simple http server and serve the application #
+######################################################################
+FROM node:16.1-alpine
+
+WORKDIR /workspace
+
+COPY --from=builder /usr/src/app/scaleway-ui-website-static .
+
+CMD yarn start
