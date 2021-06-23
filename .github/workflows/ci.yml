@@ -47,6 +47,5 @@ jobs:
         with:
           urls: |
             https://react.ui.scaleway.com/
-          uploadArtifacts: true
           serverBaseUrl: ${{ secrets.LHCI_SERVER_BASE_URL }}
           serverToken: ${{ secrets.LHCI_SERVER_TOKEN }}
