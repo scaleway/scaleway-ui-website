@@ -48,6 +48,5 @@ jobs:
           urls: |
             https://ui.scaleway.com
           uploadArtifacts: true
-          temporaryPublicStorage: true
           serverBaseUrl: ${{ secrets.LHCI_SERVER_BASE_URL }}
           serverToken: ${{ secrets.LHCI_SERVER_TOKEN }}
