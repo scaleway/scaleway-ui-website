@@ -17,6 +17,4 @@ FROM node:16.1-alpine
 
 WORKDIR /workspace
 
-COPY --from=builder /usr/src/app/scaleway-ui-website-static .
-
 CMD yarn start
