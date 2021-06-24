@@ -51,7 +51,7 @@ jobs:
       - name: S3 Enable Bucket Website
         uses: remyleone/scw-s3-action@v0.0.2
         with:
-          args: s3api put-bucket-website --bucket ${{ env.BRANCH_SLUG }} --website-configuration file://bucket-website.json
+          args: s3api put-bucket-website --bucket ${{ env.BRANCH_SLUG }} --website-configuration file://.bucket-website.json
         env:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
@@ -65,7 +65,7 @@ jobs:
       - name: S3 Set Bucket Policies
         uses: remyleone/scw-s3-action@v0.0.2
         with:
-          args: s3api put-bucket-policy --bucket ${{ env.BRANCH_SLUG }} --policy file://bucket-policy.json
+          args: s3api put-bucket-policy --bucket ${{ env.BRANCH_SLUG }} --policy file://.bucket-policy.json
         env:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
@@ -109,6 +109,6 @@ jobs:
             https://${{ env.BRANCH_SLUG }}.s3-website.fr-par.scw.cloud
           serverBaseUrl: ${{ secrets.LHCI_SERVER_BASE_URL }}
           serverToken: ${{ secrets.LHCI_SERVER_TOKEN }}
-          configPath: './lighthouserc.json'
+          configPath: './.lighthouserc.json'
 
 
