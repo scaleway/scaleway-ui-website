@@ -9,9 +9,6 @@ on:
 
 jobs:
   deploy:
-    strategy:
-      matrix:
-        node: [ '16' ]
     runs-on: self-hosted
     steps:
       - name: Checkout
