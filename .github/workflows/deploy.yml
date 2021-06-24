@@ -42,7 +42,7 @@ jobs:
           SCW_REGION: 'fr-par'
         continue-on-error: true
 
-      - name: Enable Bucket Website
+      - name: S3 Enable Bucket Website
         uses: remyleone/scw-s3-action@v0.0.2
         with:
           args: s3api put-bucket-website --bucket ${{ env.BRANCH_SLUG }} --website-configuration file://bucket-website.json
@@ -54,7 +54,7 @@ jobs:
       - name: Configure Bucket Policies
       - run: sed -e "s/BUCKET_NAME/${{ env.BRANCH_SLUG }}/g" ./bucket-policy.json.tpl > bucket-policy.json
 
-      - name: Set Bucket Policies
+      - name: S3 Set Bucket Policies
         uses: remyleone/scw-s3-action@v0.0.2
         with:
           args: s3api put-bucket-policy --bucket ${{ env.BRANCH_SLUG }} --policy file://bucket-policy.json
