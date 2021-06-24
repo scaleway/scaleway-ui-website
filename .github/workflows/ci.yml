@@ -35,15 +35,3 @@ jobs:
           node-version: 16
       - run: yarn --pure-lockfile
       - run: yarn run build
-  lighthouse:
-    runs-on: self-hosted
-    needs: [deploy]
-    steps:
-      - uses: actions/checkout@v2
-      - name: Audit URLs using Lighthouse
-        uses: treosh/lighthouse-ci-action@v7
-        with:
-          urls: |
-            https://${{ env.BRANCH_SLUG }}.s3-website.fr-par.scw.cloud
-          serverBaseUrl: ${{ secrets.LHCI_SERVER_BASE_URL }}
-          serverToken: ${{ secrets.LHCI_SERVER_TOKEN }}
