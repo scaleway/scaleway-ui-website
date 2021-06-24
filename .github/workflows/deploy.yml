@@ -24,7 +24,7 @@ jobs:
       - name: Build
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: ${{ matrix.node }}
+          node-version: 16
       - run: yarn --pure-lockfile
       - run: yarn run build
       - run: yarn run export
