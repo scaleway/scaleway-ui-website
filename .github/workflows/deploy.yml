@@ -39,6 +39,7 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: S3 Create Bucket
+        id: createBucket
         uses: remyleone/scw-s3-action@v0.0.2
         with:
           args: s3 mb s3://${{ env.BRANCH_SLUG }}
@@ -46,6 +47,7 @@ jobs:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
           SCW_REGION: 'fr-par'
+        continue-on-error: true
 
       - name: S3 Enable Bucket Website
         uses: remyleone/scw-s3-action@v0.0.2
@@ -55,11 +57,11 @@ jobs:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
           SCW_REGION: 'fr-par'
-        if: success()
+        if: steps.createBucket.outcome == 'success'
 
       - name: Configure Bucket Policies
         run: sed -e "s/BUCKET_NAME/${{ env.BRANCH_SLUG }}/g" ./bucket-policy.json.tpl > bucket-policy.json
-        if: success()
+        if: steps.createBucket.outcome == 'success'
 
       - name: S3 Set Bucket Policies
         uses: remyleone/scw-s3-action@v0.0.2
@@ -69,7 +71,7 @@ jobs:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
           SCW_REGION: 'fr-par'
-        if: success()
+        if: steps.createBucket.outcome == 'success'
 
       - name: S3 Deploy
         uses: remyleone/scw-s3-action@v0.0.2
@@ -79,7 +81,7 @@ jobs:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
           SCW_REGION: 'fr-par'
-        if: always()
+        if: succeeded() || failed()
 
       - name: Update deployment status
         uses: bobheadxi/deployments@v0.6.0
