@@ -38,15 +38,50 @@ jobs:
           env: ${{ env.BRANCH_SLUG }}
           ref: ${{ github.head_ref }}
 
-      - name: S3 Create Bucket & Deploy
-        uses: matthprost/scw-s3-bucket-website-action@v0.0.1
+      - name: S3 Create Bucket
+        id: createBucket
+        uses: remyleone/scw-s3-action@v0.0.2
+        with:
+          args: s3 mb s3://${{ env.BRANCH_SLUG }}
         env:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
           SCW_REGION: 'fr-par'
-          BUCKET_NAME: ${{ env.BRANCH_SLUG }}
-          WEBSITE_CONFIG_PATH: './.bucket-website.json'
-          BUCKET_POLICY_CONFIG_PATH: './.bucket-policy.json.tql'
+        continue-on-error: true
+
+      - name: S3 Enable Bucket Website
+        uses: remyleone/scw-s3-action@v0.0.2
+        with:
+          args: s3api put-bucket-website --bucket ${{ env.BRANCH_SLUG }} --website-configuration file://.bucket-website.json
+        env:
+          SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
+          SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
+          SCW_REGION: 'fr-par'
+        if: steps.createBucket.outcome == 'success'
+
+      - name: Configure Bucket Policies
+        run: sed -e "s/BUCKET_NAME/${{ env.BRANCH_SLUG }}/g" ./.bucket-policy.json.tpl > bucket-policy.json
+        if: steps.createBucket.outcome == 'success'
+
+      - name: S3 Set Bucket Policies
+        uses: remyleone/scw-s3-action@v0.0.2
+        with:
+          args: s3api put-bucket-policy --bucket ${{ env.BRANCH_SLUG }} --policy file://bucket-policy.json
+        env:
+          SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
+          SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
+          SCW_REGION: 'fr-par'
+        if: steps.createBucket.outcome == 'success'
+
+      - name: S3 Deploy
+        uses: remyleone/scw-s3-action@v0.0.2
+        with:
+          args: s3 sync ./out s3://${{ env.BRANCH_SLUG }} --delete
+        env:
+          SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
+          SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
+          SCW_REGION: 'fr-par'
+        if: success() || failure()
 
       - name: Update deployment status
         uses: bobheadxi/deployments@v0.6.0
