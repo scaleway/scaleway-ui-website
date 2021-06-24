@@ -81,7 +81,7 @@ jobs:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
           SCW_REGION: 'fr-par'
-        if: succeeded() || failed()
+        if: success() || failure()
 
       - name: Update deployment status
         uses: bobheadxi/deployments@v0.6.0
