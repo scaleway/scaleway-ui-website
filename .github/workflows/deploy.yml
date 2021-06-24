@@ -40,6 +40,7 @@ jobs:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
           SCW_REGION: 'fr-par'
+        continue-on-error: true
 
       - name: Set Bucket configuration
         uses: remyleone/scw-s3-action@v0.0.2
