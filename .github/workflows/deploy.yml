@@ -45,7 +45,7 @@ jobs:
       - name: Set Bucket configuration
         uses: remyleone/scw-s3-action@v0.0.2
         with:
-          args: s3api put-bucket-website --bucket ${{ env.BRANCH_SLUG }} --website-configuration ./bucket-website.json
+          args: s3api put-bucket-website --bucket ${{ env.BRANCH_SLUG }} --website-configuration file://bucket-website.json
         env:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
