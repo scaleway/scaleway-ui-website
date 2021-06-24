@@ -2,6 +2,7 @@
   "ci": {
     "collect": {
       "settings": {
+        "preset": "mobile",
         "chromeFlags": "--no-sandbox"
       }
     }
