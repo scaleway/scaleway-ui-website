@@ -9,16 +9,20 @@ on:
 
 jobs:
   deploy:
+    strategy:
+      matrix:
+        node: [ '14', '16' ]
     runs-on: self-hosted
     steps:
       - name: Checkout
         uses: actions/checkout@v1
 
-      - name: Build
-        run: yarn run build
-
-      - name: Build Static Website
-        run: yarn run export
+      - name: Use Node.js
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: ${{ matrix.node }}
+      - run: yarn run build
+      - run: yarn run export
 
       - name: Configure SCW Credentials
         uses: aws-actions/configure-aws-credentials@v1
