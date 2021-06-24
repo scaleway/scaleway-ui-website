@@ -40,4 +40,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SCW_SECRET_KEY }}
           AWS_REGION: 'fr-par'
           AWS_S3_ENDPOINT: 'https://s3.fr-par.scw.cloud'
-          SOURCE_DIR: 'opt'
+          SOURCE_DIR: 'out'
