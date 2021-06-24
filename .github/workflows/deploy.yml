@@ -17,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
-      - name: Use Node.js
+      - name: Build
         uses: actions/setup-node@v2.1.5
         with:
           node-version: ${{ matrix.node }}
