@@ -60,7 +60,7 @@ jobs:
         if: steps.createBucket.outcome == 'success'
 
       - name: Configure Bucket Policies
-        run: sed -e "s/BUCKET_NAME/${{ env.BRANCH_SLUG }}/g" ./bucket-policy.json.tpl > bucket-policy.json
+        run: sed -e "s/BUCKET_NAME/${{ env.BRANCH_SLUG }}/g" ./.bucket-policy.json.tpl > bucket-policy.json
         if: steps.createBucket.outcome == 'success'
 
       - name: S3 Set Bucket Policies
