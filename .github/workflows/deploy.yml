@@ -33,7 +33,7 @@ jobs:
       - name: S3 Deploy
         uses: remyleone/scw-s3-action@v0.0.2
         with:
-          args: s3 sync ./public s3://test --delete
+          args: s3 create-bucket test --acl public-read && s3 sync ./public s3://test --delete
         env:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
