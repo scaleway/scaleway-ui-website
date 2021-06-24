@@ -25,9 +25,6 @@ jobs:
       - run: yarn
       - run: yarn run lint
   build:
-    strategy:
-      matrix:
-        node: [ '14', '16' ]
     runs-on: self-hosted
     needs: [lint]
     steps:
@@ -35,17 +32,18 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: ${{ matrix.node }}
+          node-version: 16
       - run: yarn --pure-lockfile
       - run: yarn run build
   lighthouse:
     runs-on: self-hosted
+    needs: [deploy]
     steps:
       - uses: actions/checkout@v2
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v7
         with:
           urls: |
-            https://react.ui.scaleway.com/
+            https://${{ env.BRANCH_SLUG }}.s3-website.fr-par.scw.cloud
           serverBaseUrl: ${{ secrets.LHCI_SERVER_BASE_URL }}
           serverToken: ${{ secrets.LHCI_SERVER_TOKEN }}
