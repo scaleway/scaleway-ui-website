@@ -1,19 +1,11 @@
-import {
-  Col,
-  Box,
-  Grid,
-  Row,
-  Typography,
-  up,
-  Button,
-  Breakpoint,
-} from '@scaleway/ui'
+import { Col, Box, Grid, Row, Typography, up, Breakpoint } from '@scaleway/ui'
 import introductionIllustration from '../../assets/illustrations/introduction.png'
 import Card from '../../components/Card'
 import icon from '../../assets/icons/icon-scaleway-ui.svg'
 import React from 'react'
 import styled from '@emotion/styled'
 import Image from 'components/Image'
+import GithubAndDocumentationButtons from '../../components/GithubAndDocumentationButtons'
 
 const StyledTitleCol = styled(Col)`
   ${up('xsmall', `order: 2`)} ${up('medium', `order: 1;`)};
@@ -69,31 +61,13 @@ const Introduction = (): JSX.Element => {
         </StyledTitleCol>
         <StyledIllustrationCol xmsall={12} medium={6}>
           <StyledImageBox>
-            <Image src={introductionIllustration} alt="logo" />
+            <Image src={introductionIllustration} alt="logo" priority />
           </StyledImageBox>
         </StyledIllustrationCol>
       </Row>
       <Breakpoint down="medium">
         <Row justifyContent="center" mt={4}>
-          <Button
-            name="github"
-            variant="secondary"
-            icon="github"
-            iconSize={40}
-            size="medium"
-            p={0}
-            to="https://github.com/scaleway/scaleway-ui"
-            target="_blank"
-          />
-          <Button
-            name="documentation"
-            to="https://react.ui.scaleway.com/"
-            target="_blank"
-            size="medium"
-            mx={2}
-          >
-            Documentation
-          </Button>
+          <GithubAndDocumentationButtons />
         </Row>
       </Breakpoint>
 
