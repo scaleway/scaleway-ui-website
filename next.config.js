@@ -10,4 +10,5 @@ module.exports = withTM({
     loader: 'imgix',
     path: '',
   },
+  compress: true,
 })
