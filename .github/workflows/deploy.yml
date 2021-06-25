@@ -19,7 +19,7 @@ jobs:
       - name: Export custom variables
         run: |
           SAFE_GITHUB_HEAD_REF_SLUG_URL=$(echo $GITHUB_HEAD_REF_SLUG_URL | rev | cut -c-37 | rev)
-          ([[ $GITHUB_REF == 'refs/heads/main' ]] && echo "BRANCH_SLUG=main" || echo "BRANCH_SLUG=$SAFE_GITHUB_HEAD_REF_SLUG_URL") >> $GITHUB_ENV
+          ([[ $GITHUB_REF == 'refs/heads/main' ]] && echo "BRANCH_SLUG=ui.scaleway.com" || echo "BRANCH_SLUG=$SAFE_GITHUB_HEAD_REF_SLUG_URL") >> $GITHUB_ENV
 
       - name: Build
         uses: actions/setup-node@v2.1.5
@@ -39,7 +39,7 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: S3 Create Bucket & Deploy
-        uses: matthprost/s3-deploy-bucket-website-action@v0.0.9
+        uses: matthprost/s3-deploy-bucket-website-action@v0.0.10
         with:
           args: s3 mb s3://${{ env.BRANCH_SLUG }}
         env:
