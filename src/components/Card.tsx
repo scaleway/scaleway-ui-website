@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Col, Row, Typography, down } from '@scaleway/ui'
-import Image from 'next/image'
+import Image from 'components/Image'
 import styled from '@emotion/styled'
 
 type CardProps = {

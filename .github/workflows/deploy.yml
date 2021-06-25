@@ -1,0 +1,86 @@
+name: Deploy
+
+on:
+  pull_request:
+    types: ['opened', 'reopened', 'synchronize']
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Inject slug/short variables
+        uses: rlespinasse/github-slug-action@v3.x
+      - name: Export custom variables
+        run: |
+          SAFE_GITHUB_HEAD_REF_SLUG_URL=$(echo $GITHUB_HEAD_REF_SLUG_URL | rev | cut -c-37 | rev)
+          ([[ $GITHUB_REF == 'refs/heads/main' ]] && echo "BRANCH_SLUG=main" || echo "BRANCH_SLUG=$SAFE_GITHUB_HEAD_REF_SLUG_URL") >> $GITHUB_ENV
+
+      - name: Build
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 16
+      - run: yarn --pure-lockfile
+      - run: yarn run build
+      - run: yarn run export
+
+      - name: Start deployment
+        uses: bobheadxi/deployments@v0.6.0
+        id: deployment
+        with:
+          step: start
+          token: ${{ secrets.GITHUB_TOKEN }}
+          env: ${{ env.BRANCH_SLUG }}
+          ref: ${{ github.head_ref }}
+
+      - name: S3 Create Bucket & Deploy
+        uses: matthprost/s3-deploy-bucket-website-action@v0.0.9
+        with:
+          args: s3 mb s3://${{ env.BRANCH_SLUG }}
+        env:
+          S3_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
+          S3_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
+          S3_ENDPOINT: 's3.fr-par.scw.cloud'
+          S3_REGION: 'fr-par'
+          BUCKET_NAME: ${{ env.BRANCH_SLUG }}
+          WEBSITE_CONFIG_PATH: '.bucket-website.json'
+          BUCKET_POLICY_CONFIG_PATH: './.bucket-policy.json.tpl'
+          SYNC_ARGS: '--delete'
+          SOURCE_DIRECTORY: './out'
+
+      - name: Update deployment status
+        uses: bobheadxi/deployments@v0.6.0
+        with:
+          step: finish
+          token: ${{ secrets.GITHUB_TOKEN }}
+          status: ${{ job.status }}
+          deployment_id: ${{ steps.deployment.outputs.deployment_id }}
+          env_url: https://${{ env.BRANCH_SLUG }}.s3-website.fr-par.scw.cloud
+        if: always()
+
+  lighthouse:
+    runs-on: self-hosted
+    needs: [ deploy ]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Inject slug/short variables
+        uses: rlespinasse/github-slug-action@v3.x
+      - name: Export custom variables
+        run: |
+          SAFE_GITHUB_HEAD_REF_SLUG_URL=$(echo $GITHUB_HEAD_REF_SLUG_URL | rev | cut -c-37 | rev)
+          ([[ $GITHUB_REF == 'refs/heads/main' ]] && echo "BRANCH_SLUG=main" || echo "BRANCH_SLUG=$SAFE_GITHUB_HEAD_REF_SLUG_URL") >> $GITHUB_ENV
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v7
+        with:
+          urls: |
+            https://${{ env.BRANCH_SLUG }}.s3-website.fr-par.scw.cloud
+          serverBaseUrl: ${{ secrets.LHCI_SERVER_BASE_URL }}
+          serverToken: ${{ secrets.LHCI_SERVER_TOKEN }}
+          configPath: './.lighthouserc.json'
+
+

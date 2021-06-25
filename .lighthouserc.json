@@ -1,0 +1,10 @@
+{
+  "ci": {
+    "collect": {
+      "settings": {
+        "preset": "perf",
+        "chromeFlags": "--no-sandbox"
+      }
+    }
+  }
+}
