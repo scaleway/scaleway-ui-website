@@ -39,7 +39,7 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: S3 Create Bucket & Deploy
-        uses: matthprost/scw-s3-bucket-website-action@v0.0.4
+        uses: matthprost/scw-s3-bucket-website-action@v0.0.5
         with:
           args: s3 mb s3://${{ env.BRANCH_SLUG }}
         env:
