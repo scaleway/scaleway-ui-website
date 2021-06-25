@@ -76,7 +76,7 @@ jobs:
       - name: S3 Deploy
         uses: remyleone/scw-s3-action@v0.0.2
         with:
-          args: s3 sync ./out s3://${{ env.BRANCH_SLUG }} --delete
+          args: s3 sync ./out s3://${{ env.BRANCH_SLUG }} --delete --cache-control max-age=31536000
         env:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
