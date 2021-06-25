@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { ReactNode, useState } from 'react'
 import styled from '@emotion/styled'
 import CopyButton from './CopyButton'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
@@ -22,56 +22,60 @@ const StyledCopyButton = styled(CopyButton, {
   transition: opacity 200ms ease;
 `
 
-type CopyCommandBoxProps = {
-  commands: Array<{
-    title: string
-    command: string
-  }>
+type CopyBoxProps = {
+  children: ReactNode
 }
 
-const CopyCommandBox = ({
-  commands = [
-    {
-      title: '',
-      command: '',
-    },
-  ],
-}: CopyCommandBoxProps): JSX.Element => {
+const CopyBox = ({ children }: CopyBoxProps): JSX.Element => {
+  const flatChild = (
+    React.Children.map(children, child =>
+      React.isValidElement(child) ? child : undefined,
+    ) || []
+  ).filter(child => !!child)
   const [showCopyButton, setShowCopyButton] = useState(false)
-  const [tab, setTab] = useState(commands?.[0]?.title)
-
-  const currentCommand = commands.find(
-    command => tab === command.title,
-  )?.command
+  const [tab, setTab] = useState(0)
 
   return (
     <StyledDiv
       onMouseEnter={() => setShowCopyButton(true)}
       onMouseLeave={() => setShowCopyButton(false)}
     >
-      {commands?.length > 1 && (
+      {flatChild.length > 1 && (
         <TabGroup selected={tab} onChange={setTab} mb={3}>
-          {commands.map(({ title }) => (
-            <TabGroup.Tab key={title} name={title}>
-              {title}
-            </TabGroup.Tab>
+          {flatChild.map(({ props: { title } }) => (
+            <TabGroup.Tab key={`tab-${title}`}>{title}</TabGroup.Tab>
           ))}
         </TabGroup>
       )}
+      {React.cloneElement(flatChild[tab], {
+        showCopyButton,
+      })}
+    </StyledDiv>
+  )
+}
+
+type CommandProps = {
+  command: string
+  title: string
+  showCopyButton?: boolean
+}
+
+const Command = ({ command, showCopyButton }: CommandProps): JSX.Element => {
+  return (
+    <>
       <SyntaxHighlighter
         language="jsx"
         style={darcula}
         customStyle={{ background: 'none', fontSize: '14px', padding: 0 }}
         showLineNumbers
       >
-        {currentCommand}
+        {command}
       </SyntaxHighlighter>
-      <StyledCopyButton
-        text={currentCommand || ''}
-        showCopyButton={showCopyButton}
-      />
-    </StyledDiv>
+      <StyledCopyButton text={command || ''} showCopyButton={showCopyButton} />
+    </>
   )
 }
 
-export default CopyCommandBox
+CopyBox.Command = Command
+
+export default CopyBox

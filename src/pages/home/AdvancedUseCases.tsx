@@ -1,6 +1,6 @@
 import { Col, Grid, Row, Typography, Button } from '@scaleway/ui'
 import React from 'react'
-import CopyCommandBox from '../../components/CopyCommandBox'
+import CopyBox from '../../components/CopyBoxCommand'
 
 const useCase1 = `import { Button } from "@scaleway/ui";
 
@@ -33,12 +33,10 @@ const AdvancedUseCases = (): JSX.Element => {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </Typography>
-          <CopyCommandBox
-            commands={[
-              { title: 'Use Case 1', command: useCase1 },
-              { title: 'Use Case 2', command: useCase2 },
-            ]}
-          />
+          <CopyBox>
+            <CopyBox.Command title="Use Case 1" command={useCase1} />
+            <CopyBox.Command title="Use Case 2" command={useCase2} />
+          </CopyBox>
         </Col>
       </Row>
       <Row textAlign="center">

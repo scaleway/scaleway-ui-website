@@ -1,7 +1,7 @@
 import { Col, Grid, Row, Typography } from '@scaleway/ui'
 import React from 'react'
-import CopyCommandBox from '../../components/CopyCommandBox'
 import GithubAndDocumentationButtons from '../../components/GithubAndDocumentationButtons'
+import CopyBox from '../../components/CopyBoxCommand'
 
 const command = `import { GlobalStyle, theme, Button } from "@scaleway/ui";
 import { ThemeProvider } from "@emotion/react";
@@ -29,9 +29,9 @@ const GettingStarted = (): JSX.Element => {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </Typography>
-          <CopyCommandBox
-            commands={[{ title: 'gettingStarted', command: command }]}
-          />
+          <CopyBox>
+            <CopyBox.Command title="Use Case 1" command={command} />
+          </CopyBox>
         </Col>
       </Row>
       <Row textAlign="center" mt={4}>
