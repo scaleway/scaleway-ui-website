@@ -8,10 +8,49 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta charSet="UTF-8" />
+          <meta
+            name="description"
+            content="Scaleway Open Source Component Library"
+          />
+          <meta property="og:title" content="Scaleway UI" />
+          <meta
+            property="og:description"
+            content="Scaleway Open Source Component Library"
+          />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://ui.scaleway.com" />
+          <meta property="og:local" content="en_US" />
+          <meta
+            property="og:image"
+            content="https://ui.scaleway.com/social.png"
+          />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Scaleway UI" />
+          <meta
+            name="twitter:description"
+            content="Scaleway Open Source Component Library"
+          />
+          <meta
+            name="twitter:image"
+            content="https://ui.scaleway.com/social.png"
+          />
           <link
             href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap"
             rel="stylesheet"
           />
+          <link
+            rel="icon"
+            type="image/svg+xml"
+            href="/favicon/favicon-lightdark.svg"
+          />
+          <link rel="icon" href="/favicon/favicon.ico" />
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/favicon/apple-touch-icon-180x180.png"
+          />
+
           <script
             {...jsonLdScriptProps<CreativeWork>({
               '@context': 'https://schema.org',
