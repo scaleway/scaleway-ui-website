@@ -48,9 +48,6 @@ jobs:
           S3_ENDPOINT: 's3.fr-par.scw.cloud'
           S3_REGION: 'fr-par'
           BUCKET_NAME: ${{ env.BRANCH_SLUG }}
-          WEBSITE_CONFIG_PATH: '.bucket-website.json'
-          BUCKET_POLICY_CONFIG_PATH: './.bucket-policy.json.tpl'
-          SYNC_ARGS: '--delete'
           SOURCE_DIRECTORY: './out'
 
       - name: Update deployment status
