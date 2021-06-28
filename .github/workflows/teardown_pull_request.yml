@@ -7,8 +7,6 @@ on:
 jobs:
   teardown:
     runs-on: self-hosted
-    env:
-      SUFFIX: ui.scaleway
     steps:
       - uses: actions/checkout@v2.3.4
       - name: Inject slug/short variables
@@ -21,7 +19,7 @@ jobs:
       - name: S3 Delete Bucket
         uses: remyleone/scw-s3-action@v0.0.2
         with:
-          args: s3 rb s3://${{ env.BRANCH_SLUG }}.${{ env.SUFFIX }} --force
+          args: s3 rb s3://${{ env.BRANCH_SLUG }}.ui.scaleway --force
         env:
           SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
