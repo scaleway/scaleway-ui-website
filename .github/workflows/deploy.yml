@@ -9,6 +9,8 @@ on:
 
 jobs:
   deploy:
+    env:
+        SUFFIX: ui.scaleway
     runs-on: self-hosted
     steps:
       - name: Checkout
@@ -19,7 +21,7 @@ jobs:
       - name: Export custom variables
         run: |
           SAFE_GITHUB_HEAD_REF_SLUG_URL=$(echo $GITHUB_HEAD_REF_SLUG_URL | rev | cut -c-37 | rev)
-          ([[ $GITHUB_REF == 'refs/heads/master' ]] && echo "BRANCH_SLUG=main" || echo "BRANCH_SLUG=$SAFE_GITHUB_HEAD_REF_SLUG_URL") >> $GITHUB_ENV
+          ([[ $GITHUB_REF == 'refs/heads/main' ]] && echo "BRANCH_SLUG=main" || echo "BRANCH_SLUG=$SAFE_GITHUB_HEAD_REF_SLUG_URL") >> $GITHUB_ENV
 
       - name: Build
         uses: actions/setup-node@v2.1.5
@@ -46,7 +48,7 @@ jobs:
           S3_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
           S3_ENDPOINT: 's3.fr-par.scw.cloud'
           S3_REGION: 'fr-par'
-          BUCKET_NAME: ${{ env.BRANCH_SLUG }}.ui.scaleway
+          BUCKET_NAME: ${{ env.BRANCH_SLUG }}.${{ env.SUFFIX }}
           SOURCE_DIRECTORY: './out'
 
       - name: Update deployment status
@@ -56,11 +58,13 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           status: ${{ job.status }}
           deployment_id: ${{ steps.deployment.outputs.deployment_id }}
-          env_url: https://${{ env.BRANCH_SLUG }}.ui.scaleway.s3-website.fr-par.scw.cloud
+          env_url: https://${{ env.BRANCH_SLUG }}.${{ env.SUFFIX }}.s3-website.fr-par.scw.cloud
         if: always()
 
   lighthouse:
     runs-on: self-hosted
+    env:
+      SUFFIX: ui.scaleway
     needs: [ deploy ]
     steps:
       - uses: actions/checkout@v2
@@ -69,12 +73,12 @@ jobs:
       - name: Export custom variables
         run: |
           SAFE_GITHUB_HEAD_REF_SLUG_URL=$(echo $GITHUB_HEAD_REF_SLUG_URL | rev | cut -c-37 | rev)
-          ([[ $GITHUB_REF == 'refs/heads/master' ]] && echo "BRANCH_SLUG=main" || echo "BRANCH_SLUG=$SAFE_GITHUB_HEAD_REF_SLUG_URL") >> $GITHUB_ENV
+          ([[ $GITHUB_REF == 'refs/heads/main' ]] && echo "BRANCH_SLUG=main" || echo "BRANCH_SLUG=$SAFE_GITHUB_HEAD_REF_SLUG_URL") >> $GITHUB_ENV
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v7
         with:
           urls: |
-            https://${{ env.BRANCH_SLUG }}.ui.scaleway.s3-website.fr-par.scw.cloud
+            https://${{ env.BRANCH_SLUG }}.${{ env.SUFFIX }}.s3-website.fr-par.scw.cloud
           serverBaseUrl: ${{ secrets.LHCI_SERVER_BASE_URL }}
           serverToken: ${{ secrets.LHCI_SERVER_TOKEN }}
           configPath: './.lighthouserc.json'
