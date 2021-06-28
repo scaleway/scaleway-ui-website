@@ -39,10 +39,9 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: S3 Create Bucket & Deploy
-        uses: matthprost/s3-deploy-bucket-website-action@v0.0.11
+        uses: matthprost/s3-deploy-bucket-website-action@v0.0.13
         with:
           args: s3 mb s3://${{ env.BRANCH_SLUG }}
-        env:
           S3_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           S3_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
           S3_ENDPOINT: 's3.fr-par.scw.cloud'
