@@ -6,7 +6,7 @@ on:
 
 jobs:
   teardown:
-    runs-on: self-hosted
+    runs-on: ubuntu-20.04
     env:
       SUFFIX: ui-scaleway
     steps:
