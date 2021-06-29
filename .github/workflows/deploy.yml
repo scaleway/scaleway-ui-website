@@ -41,7 +41,7 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: S3 Create Bucket & Deploy
-        uses: matthprost/s3-deploy-bucket-website-action@v0.0.16
+        uses: matthprost/s3-deploy-bucket-website-action@v0.0.17
         with:
           args: s3 mb s3://${{ env.BRANCH_SLUG }}
           S3_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
@@ -50,6 +50,7 @@ jobs:
           S3_REGION: 'fr-par'
           BUCKET_NAME: ${{ env.BRANCH_SLUG }}-${{ env.SUFFIX }}
           SOURCE_DIRECTORY: './out'
+          SYNC_ARGS: '--delete --cache-control max-age=31536000'
 
       - name: Update deployment status
         uses: bobheadxi/deployments@v0.6.0
