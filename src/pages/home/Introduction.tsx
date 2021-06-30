@@ -46,56 +46,54 @@ const StyledImageBox = styled(Box)`
   )};
 `
 
-const Introduction = (): JSX.Element => {
-  return (
-    <Grid mt={4}>
-      <Row alignItems="center">
-        <StyledTitleCol xsmall={12} medium={6}>
-          <StyledTitle color="primary">
-            Scaleway <b>UI</b>
-          </StyledTitle>
-          <StyledSubTitle color="lightViolet" lineHeight={1.2}>
-            Open Source <br />
-            Component Library
-          </StyledSubTitle>
-        </StyledTitleCol>
-        <StyledIllustrationCol xmsall={12} medium={6}>
-          <StyledImageBox>
-            <Image src={introductionIllustration} alt="logo" priority />
-          </StyledImageBox>
-        </StyledIllustrationCol>
+const Introduction = (): JSX.Element => (
+  <Grid mt={4}>
+    <Row alignItems="center">
+      <StyledTitleCol xsmall={12} medium={6}>
+        <StyledTitle color="primary">
+          Scaleway <b>UI</b>
+        </StyledTitle>
+        <StyledSubTitle color="lightViolet" lineHeight={1.2}>
+          Open Source <br />
+          Component Library
+        </StyledSubTitle>
+      </StyledTitleCol>
+      <StyledIllustrationCol xmsall={12} medium={6}>
+        <StyledImageBox>
+          <Image src={introductionIllustration} alt="logo" priority />
+        </StyledImageBox>
+      </StyledIllustrationCol>
+    </Row>
+    <Breakpoint down="medium">
+      <Row justifyContent="center" mt={4}>
+        <GithubAndDocumentationButtons />
       </Row>
-      <Breakpoint down="medium">
-        <Row justifyContent="center" mt={4}>
-          <GithubAndDocumentationButtons />
-        </Row>
-      </Breakpoint>
+    </Breakpoint>
 
-      <Row mt={7}>
-        <Col xsmall={12} large={4}>
-          <Card
-            title="Accessibility"
-            description="Check out our tutorials to learn more about our products and the endless possibilities you can achieve with Scaleway."
-            icon={icon}
-          />
-        </Col>
-        <Col xsmall={12} large={4}>
-          <Card
-            title="Composable"
-            description="Check out our tutorials to learn more about our products and the endless possibilities you can achieve with Scaleway."
-            icon={icon}
-          />
-        </Col>
-        <Col xsmall={12} large={4}>
-          <Card
-            title="Customizable"
-            description="Check out our tutorials to learn more about our products and the endless possibilities you can achieve with Scaleway."
-            icon={icon}
-          />
-        </Col>
-      </Row>
-    </Grid>
-  )
-}
+    <Row mt={7}>
+      <Col xsmall={12} large={4}>
+        <Card
+          title="Accessibility"
+          description="Check out our tutorials to learn more about our products and the endless possibilities you can achieve with Scaleway."
+          icon={icon}
+        />
+      </Col>
+      <Col xsmall={12} large={4}>
+        <Card
+          title="Composable"
+          description="Check out our tutorials to learn more about our products and the endless possibilities you can achieve with Scaleway."
+          icon={icon}
+        />
+      </Col>
+      <Col xsmall={12} large={4}>
+        <Card
+          title="Customizable"
+          description="Check out our tutorials to learn more about our products and the endless possibilities you can achieve with Scaleway."
+          icon={icon}
+        />
+      </Col>
+    </Row>
+  </Grid>
+)
 
 export default Introduction
