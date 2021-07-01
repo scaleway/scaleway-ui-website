@@ -441,10 +441,10 @@
   dependencies:
     docker-names "^1.1.1"
 
-"@scaleway/ui@^0.88.0":
-  version "0.88.0"
-  resolved "https://registry.yarnpkg.com/@scaleway/ui/-/ui-0.88.0.tgz#2deb6de57552ef1a6f06c9d077033ea7792b01eb"
-  integrity sha512-Tle872Yj3jV1oxlIFEd+mUUfC2zA4NXoeKeCUp01tcYkvEBex1sV9BzJ4OcXksA6KRd9M1BLLYLH1Tie4K8Mrg==
+"@scaleway/ui@^0.90.0":
+  version "0.90.0"
+  resolved "https://registry.yarnpkg.com/@scaleway/ui/-/ui-0.90.0.tgz#244dfad268653c70b57b8313c2e2b26bbb79f2d8"
+  integrity sha512-fGES9ZWfkPEHDKZO02g3rCxHPTglefww0kibdtOkc8DXsDuNDnpVWn47IL+dOoF2GlqqqDwXbDfD7N5JhFQF+g==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@scaleway/random-name" "^1.2.0"
