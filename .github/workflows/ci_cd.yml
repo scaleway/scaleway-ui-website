@@ -76,6 +76,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: build
+          path: out
 
       - name: Start deployment
         uses: bobheadxi/deployments@v0.6.0
