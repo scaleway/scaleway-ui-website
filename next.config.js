@@ -6,7 +6,7 @@ const withTM = require('next-transpile-modules')([
 
 const { withSentryConfig } = require('@sentry/nextjs')
 
-const moduleExports = withTM({
+const nextConfig = withTM({
   poweredByHeader: false,
   // Next is kinda buggy and don't want to export into static if this is not set even if its empty and we don't use it
   images: {
@@ -27,4 +27,8 @@ const SentryWebpackPluginOptions = {
   url: process.env.SENTRY_URL,
 }
 
-module.exports = withSentryConfig(moduleExports, SentryWebpackPluginOptions)
+const moduleExports = process.env.SENTRY_AUTH_TOKEN
+  ? withSentryConfig(nextConfig, SentryWebpackPluginOptions)
+  : nextConfig
+
+module.exports = moduleExports

@@ -35,12 +35,3 @@ jobs:
           node-version: 16
       - run: yarn --pure-lockfile
       - run: yarn run build
-        env:
-          SENTRY_URL: ${{secrets.SENTRY_URL}}
-          SENTRY_ORG: ${{secrets.SENTRY_ORG}}
-          SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
-          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
-          SENTRY_DSN:  ${{ secrets.SENTRY_DSN }}
-          SENTRY_LOG_LEVEL: ${{ secrets.SENTRY_LOG_LEVEL }}
-          SENTRY_DRY_RUN: ${{ secrets.SENTRY_DRY_RUN }}
-
