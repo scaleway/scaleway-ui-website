@@ -25,7 +25,6 @@ jobs:
       - run: yarn
       - run: yarn run lint
   build:
-    needs: [ lint ]
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2.3.4
@@ -88,7 +87,7 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: S3 Create Bucket & Deploy
-        uses: matthprost/s3-deploy-bucket-website-action@v0.0.20
+        uses: matthprost/s3-deploy-bucket-website-action@v0.0.21
         with:
           args: s3 mb s3://${{ env.BRANCH_SLUG }}
           S3_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
