@@ -1,4 +1,4 @@
-name: Deploy
+name: CI - CD
 
 on:
   pull_request:
@@ -8,7 +8,55 @@ on:
       - main
 
 jobs:
+  lint:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - uses: actions/cache@v2.1.6
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-modules-
+      - name: Use Node.js
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 16
+      - run: yarn
+      - run: yarn run lint
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - uses: actions/cache@v2.1.6
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-modules-
+      - name: Use Node.js
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 16
+      - run: yarn --pure-lockfile
+      - run: yarn run build
+        env:
+          SENTRY_URL: ${{secrets.SENTRY_URL}}
+          SENTRY_ORG: ${{secrets.SENTRY_ORG}}
+          SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+          SENTRY_LOG_LEVEL: ${{ secrets.SENTRY_LOG_LEVEL }}
+          SENTRY_DRY_RUN: ${{ secrets.SENTRY_DRY_RUN }}
+      - run: yarn run export
+      - name: Upload build
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: out
+
   deploy:
+    needs: [ build ]
     env:
         SUFFIX: ui-scaleway
     runs-on: ubuntu-20.04
@@ -23,21 +71,11 @@ jobs:
           SAFE_GITHUB_HEAD_REF_SLUG_URL=$(echo $GITHUB_HEAD_REF_SLUG_URL | rev | cut -c-37 | rev)
           ([[ $GITHUB_REF == 'refs/heads/main' ]] && echo "BRANCH_SLUG=main" || echo "BRANCH_SLUG=$SAFE_GITHUB_HEAD_REF_SLUG_URL") >> $GITHUB_ENV
 
-      - name: Build
-        uses: actions/setup-node@v2.1.5
+      - name: Download build
+        uses: actions/download-artifact@v2
         with:
-          node-version: 16
-      - run: yarn --pure-lockfile
-      - run: yarn run build
-        env:
-          SENTRY_URL: ${{secrets.SENTRY_URL}}
-          SENTRY_ORG: ${{secrets.SENTRY_ORG}}
-          SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
-          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
-          SENTRY_DSN:  ${{ secrets.SENTRY_DSN }}
-          SENTRY_LOG_LEVEL: ${{ secrets.SENTRY_LOG_LEVEL }}
-          SENTRY_DRY_RUN: ${{ secrets.SENTRY_DRY_RUN }}
-      - run: yarn run export
+          name: build
+          path: out
 
       - name: Start deployment
         uses: bobheadxi/deployments@v0.6.0
@@ -49,7 +87,7 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: S3 Create Bucket & Deploy
-        uses: matthprost/s3-deploy-bucket-website-action@v0.0.18
+        uses: matthprost/s3-deploy-bucket-website-action@v0.0.30
         with:
           args: s3 mb s3://${{ env.BRANCH_SLUG }}
           S3_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
@@ -59,6 +97,7 @@ jobs:
           BUCKET_NAME: ${{ env.BRANCH_SLUG }}-${{ env.SUFFIX }}
           SOURCE_DIRECTORY: ./out
           SYNC_ARGS: --delete --cache-control max-age=31536000
+          COMPRESS_TOOL: gzip
 
       - name: Update deployment status
         uses: bobheadxi/deployments@v0.6.0
