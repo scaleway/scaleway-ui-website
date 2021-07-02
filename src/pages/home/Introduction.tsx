@@ -1,5 +1,5 @@
 import { Col, Box, Grid, Row, Typography, up, Breakpoint } from '@scaleway/ui'
-import introductionIllustration from '../../assets/illustrations/introduction.png'
+import introductionIllustration from '../../assets/illustrations/introduction.svg'
 import Card from '../../components/Card'
 import icon from '../../assets/icons/icon-scaleway-ui.svg'
 import React from 'react'
