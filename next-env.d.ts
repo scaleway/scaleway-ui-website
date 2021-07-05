@@ -1,3 +1,3 @@
 /// <reference types="next" />
 /// <reference types="next/types/global" />
-declare module '@scaleway/ui'
+/// <reference types="next/image-types/global" />
