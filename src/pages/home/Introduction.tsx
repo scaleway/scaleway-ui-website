@@ -1,10 +1,10 @@
-import { Col, Box, Grid, Row, Typography, up, Breakpoint } from '@scaleway/ui'
+import styled from '@emotion/styled'
+import { Box, Breakpoint, Col, Grid, Row, Typography, up } from '@scaleway/ui'
+import React from 'react'
+import Image from 'components/Image'
+import icon from '../../assets/icons/icon-scaleway-ui.svg'
 import introductionIllustration from '../../assets/illustrations/introduction.svg'
 import Card from '../../components/Card'
-import icon from '../../assets/icons/icon-scaleway-ui.svg'
-import React from 'react'
-import styled from '@emotion/styled'
-import Image from 'components/Image'
 import GithubAndDocumentationButtons from '../../components/GithubAndDocumentationButtons'
 
 const StyledTitleCol = styled(Col)`

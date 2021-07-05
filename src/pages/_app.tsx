@@ -1,11 +1,11 @@
-import { css, ThemeProvider } from '@emotion/react'
-import Head from 'components/Head'
-import Footer from 'components/Footer'
-import TopBar from 'components/TopBar'
-import { AppProps } from 'next/app'
+import { ThemeProvider, css } from '@emotion/react'
 import { GlobalStyle } from '@scaleway/ui'
-import { useCallback, useState } from 'react'
-import { theme as localTheme } from 'theme'
+import { AppProps } from 'next/app'
+import React, { useCallback, useState } from 'react'
+import Footer from 'components/Footer'
+import Head from 'components/Head'
+import TopBar from 'components/TopBar'
+import { dark, light } from 'theme'
 
 const customBody = css`
   body {
@@ -20,25 +20,25 @@ const customTransitionAnimation = css`
 `
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element | null => {
-  const [isLightMode, setIsLightMode] = useState(true)
+  const [isLightMode, setIsLightMode] = useState<boolean>(true)
 
   const setLightModeCallBack = useCallback(
-    isLightMode => {
-      setIsLightMode(isLightMode)
-      localStorage.setItem(
-        'settings',
-        JSON.stringify({ isLightMode: isLightMode }),
-      )
+    (isLight: boolean) => {
+      setIsLightMode(isLight)
+      localStorage.setItem('settings', JSON.stringify({ isLightMode: isLight }))
     },
     [setIsLightMode],
   )
 
   return (
-    <ThemeProvider theme={isLightMode ? localTheme.light : localTheme.dark}>
+    <ThemeProvider theme={isLightMode ? light : dark}>
       <GlobalStyle additionalStyles={[customBody, customTransitionAnimation]} />
       <Head />
       <TopBar isLightMode={isLightMode} setIsLightMode={setLightModeCallBack} />
-      <Component {...pageProps} />
+      <Component
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        {...pageProps}
+      />
       <Footer />
     </ThemeProvider>
   )

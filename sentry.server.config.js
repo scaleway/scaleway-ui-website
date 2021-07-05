@@ -1,1 +1,1 @@
-require('./sentry.config')
+import './sentry.config';

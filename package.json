@@ -7,7 +7,7 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "lint": "eslint --cache --ext tsx,ts .",
+    "lint": "eslint --cache --ext tsx,ts,.d.ts .",
     "prepare": "husky install",
     "commit": "npx git-cz -a",
     "svg": "svgo --pretty --multipass",
@@ -16,6 +16,7 @@
   "dependencies": {
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
+    "@scaleway/eslint-config-react": "^2.0.0",
     "@scaleway/ui": "^0.92.0",
     "@sentry/nextjs": "^6.8.0",
     "next": "11.0.1",
@@ -32,17 +33,16 @@
     "@emotion/eslint-plugin": "^11.2.0",
     "@types/node": "^16.0.1",
     "@types/react": "^17.0.13",
+<<<<<<< HEAD
     "@types/react-syntax-highlighter": "^13.5.2",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
+=======
+    "@types/react-syntax-highlighter": "^13.5.1",
+>>>>>>> f658e04 (style: use scaleway eslint config)
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.30.0",
     "eslint-config-next": "^11.0.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.23.2",
-    "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^7.0.1",
     "lint-staged": "^11.0.0",
     "next-transpile-modules": "^8.0.0",

@@ -1,19 +1,21 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { withSentryConfig } = require('@sentry/nextjs')
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const withTM = require('next-transpile-modules')([
   '@scaleway/ui',
   '@scaleway/random-name',
   'react-syntax-highlighter',
 ])
 
-const { withSentryConfig } = require('@sentry/nextjs')
-
 const nextConfig = withTM({
-  poweredByHeader: false,
+  compress: true,
   // Next is kinda buggy and don't want to export into static if this is not set even if its empty and we don't use it
   images: {
     loader: 'imgix',
     path: '',
   },
-  compress: true,
+  poweredByHeader: false,
+  reactStrictMode: true,
 })
 
 const SentryWebpackPluginOptions = {

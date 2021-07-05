@@ -1,7 +1,7 @@
 import { Col, Grid, Row, Typography } from '@scaleway/ui'
 import React from 'react'
-import GithubAndDocumentationButtons from '../../components/GithubAndDocumentationButtons'
 import CopyBox from '../../components/CopyBoxCommand'
+import GithubAndDocumentationButtons from '../../components/GithubAndDocumentationButtons'
 
 const command = `import { GlobalStyle, theme, Button } from "@scaleway/ui";
 import { ThemeProvider } from "@emotion/react";

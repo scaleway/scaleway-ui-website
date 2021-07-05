@@ -1,7 +1,7 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Head, Html, Main, NextScript } from 'next/document'
 import React from 'react'
-import { CreativeWork } from 'schema-dts'
 import { jsonLdScriptProps } from 'react-schemaorg'
+import { CreativeWork } from 'schema-dts'
 
 class MyDocument extends Document {
   render(): JSX.Element {
@@ -52,19 +52,20 @@ class MyDocument extends Document {
           />
 
           <script
+            // eslint-disable-next-line react/jsx-props-no-spreading
             {...jsonLdScriptProps<CreativeWork>({
               '@context': 'https://schema.org',
               '@type': 'CreativeWork',
-              name: 'Scaleway UI',
               author: {
                 '@type': 'Organization',
                 name: 'Scaleway',
               },
-              url: 'https://ui.scaleway.com',
               dateCreated: '2020-12-10',
               description: 'A beautiful React UI library created by Scaleway.',
               keywords:
                 'react, ui, styled-components, ui-components, scaleway, ui-library, reakit, xstyled',
+              name: 'Scaleway UI',
+              url: 'https://ui.scaleway.com',
             })}
           />
         </Head>

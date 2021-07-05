@@ -1,20 +1,20 @@
-import React, { ReactNode, useState } from 'react'
 import styled from '@emotion/styled'
-import CopyButton from './CopyButton'
+import { TabGroup } from '@scaleway/ui'
+import React, { ReactElement, useState } from 'react'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { darcula } from 'react-syntax-highlighter/dist/esm/styles/prism'
-import { TabGroup } from '@scaleway/ui'
+import CopyButton from './CopyButton'
 
 const StyledDiv = styled.div`
   box-shadow: 0 0 8px 2px rgba(178, 182, 195, 0.37);
-  background-color: ${({ theme }) => theme.colors.pureDark};
+  background-color: ${({ theme }): string => theme.colors.pureDark};
   padding: 16px 24px;
   border-radius: 4px;
 `
 
 const StyledCopyButton = styled(CopyButton, {
   shouldForwardProp: prop => !['showCopyButton'].includes(prop as string),
-})`
+})<{ showCopyButton: boolean }>`
   position: absolute;
   right: 16px;
   bottom: 8px;
@@ -22,8 +22,8 @@ const StyledCopyButton = styled(CopyButton, {
   transition: opacity 200ms ease;
 `
 
-type CopyBoxProps = {
-  children: ReactNode
+interface CopyBoxProps {
+  children: ReactElement<CommandProps & { title: string }>[]
 }
 
 const CopyBox = ({ children }: CopyBoxProps): JSX.Element => {
@@ -54,26 +54,30 @@ const CopyBox = ({ children }: CopyBoxProps): JSX.Element => {
   )
 }
 
-type CommandProps = {
+interface CommandProps {
   command: string
-  title: string
   showCopyButton?: boolean
 }
 
-const Command = ({ command, showCopyButton }: CommandProps): JSX.Element => {
-  return (
-    <>
-      <SyntaxHighlighter
-        language="jsx"
-        style={darcula}
-        customStyle={{ background: 'none', fontSize: '14px', padding: 0 }}
-        showLineNumbers
-      >
-        {command}
-      </SyntaxHighlighter>
-      <StyledCopyButton text={command || ''} showCopyButton={showCopyButton} />
-    </>
-  )
+const Command = ({
+  command,
+  showCopyButton = false,
+}: CommandProps): JSX.Element => (
+  <>
+    <SyntaxHighlighter
+      language="jsx"
+      style={darcula as unknown}
+      customStyle={{ background: 'none', fontSize: '14px', padding: 0 }}
+      showLineNumbers
+    >
+      {command}
+    </SyntaxHighlighter>
+    <StyledCopyButton text={command || ''} showCopyButton={showCopyButton} />
+  </>
+)
+
+Command.defaultProps = {
+  showCopyButton: false,
 }
 
 CopyBox.Command = Command
