@@ -31,15 +31,10 @@
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "@emotion/eslint-plugin": "^11.2.0",
+    "@next/bundle-analyzer": "^11.0.1",
     "@types/node": "^16.0.1",
     "@types/react": "^17.0.13",
-<<<<<<< HEAD
     "@types/react-syntax-highlighter": "^13.5.2",
-    "@typescript-eslint/eslint-plugin": "^4.28.1",
-    "@typescript-eslint/parser": "^4.28.1",
-=======
-    "@types/react-syntax-highlighter": "^13.5.1",
->>>>>>> f658e04 (style: use scaleway eslint config)
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.30.0",
     "eslint-config-next": "^11.0.1",

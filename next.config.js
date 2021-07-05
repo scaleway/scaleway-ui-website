@@ -16,6 +16,9 @@ const nextConfig = withTM({
   },
   poweredByHeader: false,
   reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 })
 
 const SentryWebpackPluginOptions = {
@@ -33,4 +36,6 @@ const moduleExports = process.env.SENTRY_AUTH_TOKEN
   ? withSentryConfig(nextConfig, SentryWebpackPluginOptions)
   : nextConfig
 
-module.exports = moduleExports
+module.exports = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})(moduleExports)

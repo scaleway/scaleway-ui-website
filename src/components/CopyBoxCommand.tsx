@@ -23,7 +23,7 @@ const StyledCopyButton = styled(CopyButton, {
 `
 
 interface CopyBoxProps {
-  children: ReactElement<CommandProps & { title: string }>[]
+  children: ReactElement<CommandProps> | ReactElement<CommandProps>[]
 }
 
 const CopyBox = ({ children }: CopyBoxProps): JSX.Element => {
@@ -56,6 +56,8 @@ const CopyBox = ({ children }: CopyBoxProps): JSX.Element => {
 
 interface CommandProps {
   command: string
+  // eslint-disable-next-line react/no-unused-prop-types
+  title: string
   showCopyButton?: boolean
 }
 
