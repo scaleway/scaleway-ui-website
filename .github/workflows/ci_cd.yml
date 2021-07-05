@@ -48,7 +48,8 @@ jobs:
   deploy:
     needs: [ build ]
     env:
-        SUFFIX: ui-scaleway
+        SUFFIX: .ui.scaleway
+        REGION: fr-par
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
@@ -82,9 +83,9 @@ jobs:
           args: s3 mb s3://${{ env.BRANCH_SLUG }}
           S3_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
           S3_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
-          S3_ENDPOINT: s3.fr-par.scw.cloud
-          S3_REGION: fr-par
-          BUCKET_NAME: ${{ env.BRANCH_SLUG }}-${{ env.SUFFIX }}
+          S3_ENDPOINT: s3.${{ env.REGION }}.scw.cloud
+          S3_REGION: ${{ env.REGION }}
+          BUCKET_NAME: ${{ env.BRANCH_SLUG }}${{ env.SUFFIX }}
           SOURCE_DIRECTORY: ./out
           SYNC_ARGS: --delete --cache-control max-age=31536000
           COMPRESS_TOOL: gzip
@@ -96,13 +97,13 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           status: ${{ job.status }}
           deployment_id: ${{ steps.deployment.outputs.deployment_id }}
-          env_url: https://${{ env.BRANCH_SLUG }}-${{ env.SUFFIX }}.s3-website.fr-par.scw.cloud
+          env_url: https://${{ env.BRANCH_SLUG }}${{ env.SUFFIX }}.s3-website.fr-par.scw.cloud
         if: always()
 
   lighthouse:
     runs-on: ubuntu-20.04
     env:
-      SUFFIX: ui-scaleway
+      SUFFIX: ui.scaleway
     needs: [ deploy ]
     steps:
       - uses: actions/checkout@v2
@@ -116,7 +117,7 @@ jobs:
         uses: treosh/lighthouse-ci-action@v7
         with:
           urls: |
-            https://${{ env.BRANCH_SLUG }}-${{ env.SUFFIX }}.s3-website.fr-par.scw.cloud
+            https://${{ env.BRANCH_SLUG }}${{ env.SUFFIX }}.s3-website.fr-par.scw.cloud
           serverBaseUrl: ${{ secrets.LHCI_SERVER_BASE_URL }}
           serverToken: ${{ secrets.LHCI_SERVER_TOKEN }}
           configPath: './.lighthouserc.json'
