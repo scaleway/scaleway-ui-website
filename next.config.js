@@ -8,13 +8,12 @@ const SentryWebpackPluginOptions = {
   include: '.',
   org: process.env.SENTRY_ORG,
   project: process.env.SENTRY_PROJECT,
-  silent: true,
   url: process.env.SENTRY_URL,
 }
 
-// const withSentry = (nextConfig) => process.env.SENTRY_AUTH_TOKEN ? withSentryConfig(nextConfig, SentryWebpackPluginOptions) : nextConfig
+const withSentry = (nextConfig) => process.env.SENTRY_AUTH_TOKEN ? withSentryConfig(nextConfig, SentryWebpackPluginOptions) : nextConfig
 
-module.exports = () => {
+module.exports = withSentry(() => {
   const plugins = [
     require('next-transpile-modules')([
       '@scaleway/ui',
@@ -39,4 +38,4 @@ module.exports = () => {
       ignoreDuringBuilds: true,
     },
   });
-}
+});
