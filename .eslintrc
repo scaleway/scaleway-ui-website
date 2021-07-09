@@ -1,0 +1,18 @@
+{
+  "extends": ["@scaleway/react/typescript", "next"],
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json"
+  },
+  "plugins": ["@emotion"],
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "next.config.js"
+        ]
+      }
+    ]
+  },
+  "root": true
+}

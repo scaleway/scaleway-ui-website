@@ -1,9 +1,9 @@
-import { Separator, down, up, Typography, Col, Row, Box } from '@scaleway/ui'
-import React from 'react'
-import Introduction from './Introduction'
-import GettingStarted from './GettingStarted'
 import styled from '@emotion/styled'
+import { Box, Col, Row, Separator, Typography, down, up } from '@scaleway/ui'
+import React from 'react'
 import AdvancedUseCases from './AdvancedUseCases'
+import GettingStarted from './GettingStarted'
+import Introduction from './Introduction'
 
 const StyledSeparator = styled(Separator)`
   ${up('small', `margin: 80px 0`)};
@@ -11,7 +11,7 @@ const StyledSeparator = styled(Separator)`
 `
 
 const StyledGroup = styled.g`
-  fill: ${({ theme }) => theme.colors.warning};
+  fill: ${({ theme }): string => theme.colors.warning};
 
   svg {
     width: 100%;

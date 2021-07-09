@@ -1,4 +1,4 @@
-import { Col, Grid, Row, Typography, Button } from '@scaleway/ui'
+import { Button, Col, Grid, Row, Typography } from '@scaleway/ui'
 import React from 'react'
 import CopyBox from '../../components/CopyBoxCommand'
 

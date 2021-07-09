@@ -2,8 +2,9 @@ import { NextPageContext } from 'next'
 import React from 'react'
 
 type ErrorPageProps = {
-  statusCode?: number
+  statusCode: number
 }
+
 const ErrorPage = ({ statusCode }: ErrorPageProps): JSX.Element => (
   <div>
     {statusCode

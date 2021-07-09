@@ -16,12 +16,15 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "incremental": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": "./src"
   },
   "include": [
+    "global.d.ts",
     "next-env.d.ts",
+    "scaleway-ui.d.ts",
     "**/*.ts",
     "**/*.tsx",
   ],

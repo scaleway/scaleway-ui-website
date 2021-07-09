@@ -4,10 +4,9 @@ import useClipboard from 'react-use-clipboard'
 
 type CopyButtonProps = {
   text: string
-  showCopyButton?: boolean
 }
 
-const CopyButton = ({ text, ...props }: CopyButtonProps): JSX.Element => {
+const CopyButton = ({ text }: CopyButtonProps): JSX.Element => {
   const [isCopied, setCopied] = useClipboard(text, {
     successDuration: 2000,
   })
@@ -20,7 +19,6 @@ const CopyButton = ({ text, ...props }: CopyButtonProps): JSX.Element => {
         ml={2}
         onClick={setCopied}
         size="xsmall"
-        {...props}
       />
     </Tooltip>
   )

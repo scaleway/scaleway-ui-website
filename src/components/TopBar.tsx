@@ -1,14 +1,14 @@
-import React, { Dispatch, SetStateAction, useEffect } from 'react'
 import styled from '@emotion/styled'
-import { Col, Grid, Row, Switch, Icon, Breakpoint } from '@scaleway/ui'
-import Logo from './Logo'
+import { Breakpoint, Col, Grid, Icon, Row, Switch } from '@scaleway/ui'
+import React, { useEffect } from 'react'
 import GithubAndDocumentationButtons from './GithubAndDocumentationButtons'
+import Logo from './Logo'
 
 const Header = styled.header`
   min-height: 60px;
   height: 60px;
   top: 0;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }): string => theme.colors.white};
   box-shadow: 0 0 8px 2px rgba(178, 182, 195, 0.37);
   display: flex;
   align-items: center;
@@ -18,12 +18,13 @@ const Header = styled.header`
 
 type TopBarProps = {
   isLightMode: boolean
-  setIsLightMode: Dispatch<SetStateAction<boolean>>
+  setIsLightMode: (isLight: boolean) => void
 }
 
 const TopBar = ({ isLightMode, setIsLightMode }: TopBarProps): JSX.Element => {
   useEffect(() => {
-    const settings = JSON.parse(localStorage.getItem('settings') as string)
+    const localStorageSettings = localStorage.getItem('settings') ?? '{}'
+    const settings = JSON.parse(localStorageSettings) as ApplicationSettings
     if (settings) {
       setIsLightMode(settings.isLightMode)
     } else {
