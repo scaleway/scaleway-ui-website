@@ -34,6 +34,9 @@ const nextConfig = () => {
     },
     poweredByHeader: false,
     reactStrictMode: true,
+    sentry: {
+      disableServerWebpackPlugin: true,
+    }
   });
 }
 
