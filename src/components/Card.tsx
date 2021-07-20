@@ -17,7 +17,13 @@ const Card = ({ title, description, icon }: CardProps): JSX.Element => (
   <StyledBox bordered>
     <Row>
       <Col xsmall="auto">
-        <Image src={icon} alt="icon" width={64} height={64} />
+        <Image
+          src={icon}
+          alt="icon"
+          width={64}
+          height={64}
+          placeholder="blur"
+        />
       </Col>
       <Col>
         <Typography variant="lead" mb={1} color="primary">
