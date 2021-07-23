@@ -1,27 +1,33 @@
-import { Button, Icon, Tooltip } from '@scaleway/ui'
+import { Button, FlexBox, Icon } from '@scaleway/ui'
 import React from 'react'
 import useClipboard from 'react-use-clipboard'
 
 type CopyButtonProps = {
   text: string
+  className?: string
 }
 
-const CopyButton = ({ text }: CopyButtonProps): JSX.Element => {
+const CopyButton = ({ text, className }: CopyButtonProps): JSX.Element => {
   const [isCopied, setCopied] = useClipboard(text, {
     successDuration: 2000,
   })
 
   return (
-    <Tooltip text={isCopied ? 'Copied!' : 'Copy'}>
+    <FlexBox className={className}>
       <Button
         icon={<Icon name={isCopied ? 'check' : 'copy-content'} size={20} />}
         variant="secondary"
-        ml={2}
         onClick={setCopied}
         size="xsmall"
+        tooltip={isCopied ? 'Copied!' : 'Copy'}
+        display="flex"
       />
-    </Tooltip>
+    </FlexBox>
   )
+}
+
+CopyButton.defaultProps = {
+  className: undefined,
 }
 
 export default CopyButton
