@@ -475,26 +475,24 @@
     eslint-plugin-react "^7.22.0"
     eslint-plugin-react-hooks "^4.2.0"
 
-"@scaleway/random-name@^1.2.0":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@scaleway/random-name/-/random-name-1.3.2.tgz#6945485b7d6a5da1689a4063399c4e625c8de8f7"
-  integrity sha512-qt5KOFTGmdrsYfAXEqsgy6UEu17iviZV7D+XtbLpz7qLtYhivrQPUW6HduseavX0zRn4eYMeuR4Dqu/6Q57zoA==
-  dependencies:
-    docker-names "^1.1.1"
+"@scaleway/random-name@^2.0.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@scaleway/random-name/-/random-name-2.1.0.tgz#01342af3984bf42a206a9ed97c19c2dca8f25d09"
+  integrity sha512-BaAIKNT80iHr2WiOblz5wyNOKpARqBNNjd6q384Il8WDLLJTlHGLOL1BLKhbOTIqK+S2OsZbWa9hFdJ1D8I9Uw==
 
-"@scaleway/ui@^0.94.2":
-  version "0.94.2"
-  resolved "https://registry.yarnpkg.com/@scaleway/ui/-/ui-0.94.2.tgz#17209cbf9b3afe9b4beaab3c0cbae8e8b8b404d7"
-  integrity sha512-kRCVUM/zQWg2tZk9U7dvt4gOFdSpaZZCJCiy6Lw4BAGAs5odduNofx26tNm9Zq56D2vjDMQFUtmOv84974bl1w==
+"@scaleway/ui@^0.94.3":
+  version "0.94.3"
+  resolved "https://registry.yarnpkg.com/@scaleway/ui/-/ui-0.94.3.tgz#f49369f40ba50d94d535b4461d1cc3ecbe173123"
+  integrity sha512-zFRrGOdmStleCCLvQJsNoyJvDYBc7SFU+xBw1ednIlC6apZel9smNHRpI0ZFN0FKzvpfxOp6DYEQTVlXFaxHtQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
-    "@scaleway/random-name" "^1.2.0"
+    "@scaleway/random-name" "^2.0.0"
     "@xstyled/emotion" "^2.2.2"
     intl-tel-input "^17.0.12"
     polished "^4.1.0"
     prop-types "^15.7.2"
     react-circular-progressbar "^2.0.4"
-    react-countup "^4.3.3"
+    react-countup "^5.1.0"
     react-datepicker "^4.1.0"
     react-flatten-children "^1.1.2"
     react-markdown "^5.0.3"
@@ -1618,10 +1616,10 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
-countup.js@^1.9.3:
-  version "1.9.3"
-  resolved "https://registry.yarnpkg.com/countup.js/-/countup.js-1.9.3.tgz#ce3e50cd7160441e478f07da31895edcc0f1c9dd"
-  integrity sha1-zj5QzXFgRB5HjwfaMYle3MDxyd0=
+countup.js@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/countup.js/-/countup.js-2.0.8.tgz#eca0c31c9db3f7769cba494d9315cd52dbaaf1b9"
+  integrity sha512-pW3xwwD+hB+xmtI16xFcuLS0D5hSQqPQWkZOdgpKQyzxCquDNo2VCFPkRw12vmvdpnicXVTcjmYiakG6biwINg==
 
 create-ecdh@^4.0.0:
   version "4.0.4"
@@ -1882,11 +1880,6 @@ dir-glob@^3.0.1:
   integrity sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==
   dependencies:
     path-type "^4.0.0"
-
-docker-names@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/docker-names/-/docker-names-1.1.1.tgz#19172629b51df77d682a77b297d786edf83f3329"
-  integrity sha512-YOEN1PvRKoUowilElZAvjtZTSq7KK03kR7RWqNzHigoPusa9q5/Hi3KJDQAHN94dpBdDIQ6ymM/h0Bzg4Ox73g==
 
 doctrine@^2.1.0:
   version "2.1.0"
@@ -4410,14 +4403,12 @@ react-circular-progressbar@^2.0.4:
   resolved "https://registry.yarnpkg.com/react-circular-progressbar/-/react-circular-progressbar-2.0.4.tgz#5b04a9cf6be8c522c180e4e99ec6db63677335b0"
   integrity sha512-OfX0ThSxRYEVGaQSt0DlXfyl5w4DbXHsXetyeivmoQrh9xA9bzVPHNf8aAhOIiwiaxX2WYWpLDB3gcpsDJ9oww==
 
-react-countup@^4.3.3:
-  version "4.3.3"
-  resolved "https://registry.yarnpkg.com/react-countup/-/react-countup-4.3.3.tgz#143a8d854d47290b73d6915eac20a12d839153c2"
-  integrity sha512-pWnxpwdPNRyJFha/YKKbyc4RLAw8PzmULdgCziGIgw6vxhT1VdccrvQgj38HBSoM2qF/MoLmn4M2klvDWVIdaw==
+react-countup@^5.1.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/react-countup/-/react-countup-5.2.0.tgz#58be5d97acebf767d5c61df5c3a3417b95c45a16"
+  integrity sha512-R6+FIrW8ypwoAe0Q0CZ16OhrgAntnnnch7HrnRAy9miXFKk8jQzVADjNtGSoNUuJeq/ZFiiXCGJCJIAmRJ5fLg==
   dependencies:
-    countup.js "^1.9.3"
-    prop-types "^15.7.2"
-    warning "^4.0.3"
+    countup.js "^2.0.8"
 
 react-datepicker@^4.1.0:
   version "4.1.1"
@@ -5647,7 +5638,7 @@ vm-browserify@1.1.2, vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
-warning@^4.0.2, warning@^4.0.3:
+warning@^4.0.2:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
   integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
