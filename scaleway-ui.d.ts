@@ -12,6 +12,7 @@ declare module '@scaleway/ui' {
   const Switch: any
   const GlobalStyle: any
   const Separator: any
+  const FlexBox: any
 
   const theme: UITheme
 
