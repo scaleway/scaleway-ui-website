@@ -480,12 +480,13 @@
   resolved "https://registry.yarnpkg.com/@scaleway/random-name/-/random-name-2.1.0.tgz#01342af3984bf42a206a9ed97c19c2dca8f25d09"
   integrity sha512-BaAIKNT80iHr2WiOblz5wyNOKpARqBNNjd6q384Il8WDLLJTlHGLOL1BLKhbOTIqK+S2OsZbWa9hFdJ1D8I9Uw==
 
-"@scaleway/ui@^0.94.3":
-  version "0.94.3"
-  resolved "https://registry.yarnpkg.com/@scaleway/ui/-/ui-0.94.3.tgz#f49369f40ba50d94d535b4461d1cc3ecbe173123"
-  integrity sha512-zFRrGOdmStleCCLvQJsNoyJvDYBc7SFU+xBw1ednIlC6apZel9smNHRpI0ZFN0FKzvpfxOp6DYEQTVlXFaxHtQ==
+"@scaleway/ui@^0.95.0":
+  version "0.95.0"
+  resolved "https://registry.yarnpkg.com/@scaleway/ui/-/ui-0.95.0.tgz#fec555437d3e96e7f9737e104d9263d6082063f2"
+  integrity sha512-YeEiYK0Q+X2pR94V2z4dnhuVuYxbKTBSQLwvZsZCE9BTdy/052C821fbK3Xlnfa3TLGtu2rHCfKYjzZzkO+eYw==
   dependencies:
     "@babel/runtime" "^7.12.5"
+    "@emotion/serialize" "^1.0.2"
     "@scaleway/random-name" "^2.0.0"
     "@xstyled/emotion" "^2.2.2"
     intl-tel-input "^17.0.12"
