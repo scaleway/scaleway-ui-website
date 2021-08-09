@@ -14,7 +14,7 @@
     "svg:all": "yarn run svg -r -f src"
   },
   "dependencies": {
-    "@emotion/react": "^11.4.0",
+    "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@scaleway/eslint-config-react": "^2.0.0",
     "@scaleway/ui": "^0.96.0",
