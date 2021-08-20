@@ -498,10 +498,10 @@
   resolved "https://registry.yarnpkg.com/@scaleway/random-name/-/random-name-2.1.0.tgz#01342af3984bf42a206a9ed97c19c2dca8f25d09"
   integrity sha512-BaAIKNT80iHr2WiOblz5wyNOKpARqBNNjd6q384Il8WDLLJTlHGLOL1BLKhbOTIqK+S2OsZbWa9hFdJ1D8I9Uw==
 
-"@scaleway/ui@^0.97.0":
-  version "0.97.0"
-  resolved "https://registry.yarnpkg.com/@scaleway/ui/-/ui-0.97.0.tgz#213f6903192dc0e20090a5f3c51cf26ec24fb77f"
-  integrity sha512-Sj7kg2lzm6dVE8r1IsvzvjpUPfB+oFB9lEjvGF0srYBCzMSRfFxXyPQCUZPPbFSR7UbIs843s4Te30U7izelRA==
+"@scaleway/ui@^0.101.0":
+  version "0.101.0"
+  resolved "https://registry.yarnpkg.com/@scaleway/ui/-/ui-0.101.0.tgz#79dc0087d556d9fe32c643866d8de25eb00ef855"
+  integrity sha512-S8kwTomOr8uPjn/OKF8ws169c2PsiXRTp01bhxPUIP3l0SormiI01ro4Ps93ds73dm00sXZtAx9gGc1n/R3DnA==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@emotion/serialize" "^1.0.2"
