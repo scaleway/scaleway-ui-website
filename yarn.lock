@@ -479,14 +479,15 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.0.6.tgz#023d72a5c4531b4ce204528971700a78a85a0c50"
   integrity sha512-Myxw//kzromB9yWgS8qYGuGVf91oBUUJpNvy5eM50sqvmKLbKjwLxohJnkWGTeeI9v9IBMtPLxz5Gc60FIfvCA==
 
-"@scaleway/eslint-config-react@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@scaleway/eslint-config-react/-/eslint-config-react-2.1.0.tgz#687001d9a17e6afd32f827283ff6d70ca8ff1b73"
-  integrity sha512-yCjy9QU/WxYz7vWylgA5V83c9epPRCQnJ650gNDlPEVJJMyce5fFTwpN26t4DtX2QKubBdvAzqv9IbeIhpzcbg==
+"@scaleway/eslint-config-react@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@scaleway/eslint-config-react/-/eslint-config-react-2.1.1.tgz#128902cd1db784cb01d18e0383d5897a96b71cb9"
+  integrity sha512-k+CycHDdqTLcv5hyHh2DJWqZ/86cDd5RvsPDyDjxJG/d1W2nF3wlWZ6uh2ndIseGpMqguVtJdsxd+LkYOLqvCg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.28.1"
+    "@typescript-eslint/parser" "^4.29.2"
     eslint-config-airbnb "^18.2.1"
-    eslint-config-airbnb-typescript "^12.3.1"
+    eslint-config-airbnb-typescript "^13.0.0"
     eslint-config-prettier "^8.1.0"
     eslint-plugin-import "^2.22.1"
     eslint-plugin-jsx-a11y "^6.4.1"
@@ -758,14 +759,14 @@
     eslint-scope "^5.1.1"
     eslint-utils "^3.0.0"
 
-"@typescript-eslint/parser@^4.20.0", "@typescript-eslint/parser@^4.4.1":
-  version "4.28.1"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-4.28.1.tgz#5181b81658414f47291452c15bf6cd44a32f85bd"
-  integrity sha512-UjrMsgnhQIIK82hXGaD+MCN8IfORS1CbMdu7VlZbYa8LCZtbZjJA26De4IPQB7XYZbL8gJ99KWNj0l6WD0guJg==
+"@typescript-eslint/parser@^4.20.0", "@typescript-eslint/parser@^4.29.2":
+  version "4.29.3"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-4.29.3.tgz#2ac25535f34c0e98f50c0e6b28c679c2357d45f2"
+  integrity sha512-jrHOV5g2u8ROghmspKoW7pN8T/qUzk0+DITun0MELptvngtMrwUJ1tv5zMI04CYVEUsSrN4jV7AKSv+I0y0EfQ==
   dependencies:
-    "@typescript-eslint/scope-manager" "4.28.1"
-    "@typescript-eslint/types" "4.28.1"
-    "@typescript-eslint/typescript-estree" "4.28.1"
+    "@typescript-eslint/scope-manager" "4.29.3"
+    "@typescript-eslint/types" "4.29.3"
+    "@typescript-eslint/typescript-estree" "4.29.3"
     debug "^4.3.1"
 
 "@typescript-eslint/scope-manager@4.28.1":
@@ -776,10 +777,23 @@
     "@typescript-eslint/types" "4.28.1"
     "@typescript-eslint/visitor-keys" "4.28.1"
 
+"@typescript-eslint/scope-manager@4.29.3":
+  version "4.29.3"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/scope-manager/-/scope-manager-4.29.3.tgz#497dec66f3a22e459f6e306cf14021e40ec86e19"
+  integrity sha512-x+w8BLXO7iWPkG5mEy9bA1iFRnk36p/goVlYobVWHyDw69YmaH9q6eA+Fgl7kYHmFvWlebUTUfhtIg4zbbl8PA==
+  dependencies:
+    "@typescript-eslint/types" "4.29.3"
+    "@typescript-eslint/visitor-keys" "4.29.3"
+
 "@typescript-eslint/types@4.28.1":
   version "4.28.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-4.28.1.tgz#d0f2ecbef3684634db357b9bbfc97b94b828f83f"
   integrity sha512-4z+knEihcyX7blAGi7O3Fm3O6YRCP+r56NJFMNGsmtdw+NCdpG5SgNz427LS9nQkRVTswZLhz484hakQwB8RRg==
+
+"@typescript-eslint/types@4.29.3":
+  version "4.29.3"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-4.29.3.tgz#d7980c49aef643d0af8954c9f14f656b7fd16017"
+  integrity sha512-s1eV1lKNgoIYLAl1JUba8NhULmf+jOmmeFO1G5MN/RBCyyzg4TIOfIOICVNC06lor+Xmy4FypIIhFiJXOknhIg==
 
 "@typescript-eslint/typescript-estree@4.28.1":
   version "4.28.1"
@@ -794,12 +808,33 @@
     semver "^7.3.5"
     tsutils "^3.21.0"
 
+"@typescript-eslint/typescript-estree@4.29.3":
+  version "4.29.3"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-4.29.3.tgz#1bafad610015c4ded35c85a70b6222faad598b40"
+  integrity sha512-45oQJA0bxna4O5TMwz55/TpgjX1YrAPOI/rb6kPgmdnemRZx/dB0rsx+Ku8jpDvqTxcE1C/qEbVHbS3h0hflag==
+  dependencies:
+    "@typescript-eslint/types" "4.29.3"
+    "@typescript-eslint/visitor-keys" "4.29.3"
+    debug "^4.3.1"
+    globby "^11.0.3"
+    is-glob "^4.0.1"
+    semver "^7.3.5"
+    tsutils "^3.21.0"
+
 "@typescript-eslint/visitor-keys@4.28.1":
   version "4.28.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/visitor-keys/-/visitor-keys-4.28.1.tgz#162a515ee255f18a6068edc26df793cdc1ec9157"
   integrity sha512-K4HMrdFqr9PFquPu178SaSb92CaWe2yErXyPumc8cYWxFmhgJsNY9eSePmO05j0JhBvf2Cdhptd6E6Yv9HVHcg==
   dependencies:
     "@typescript-eslint/types" "4.28.1"
+    eslint-visitor-keys "^2.0.0"
+
+"@typescript-eslint/visitor-keys@4.29.3":
+  version "4.29.3"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/visitor-keys/-/visitor-keys-4.29.3.tgz#c691760a00bd86bf8320d2a90a93d86d322f1abf"
+  integrity sha512-MGGfJvXT4asUTeVs0Q2m+sY63UsfnA+C/FDgBKV3itLBmM9H0u+URcneePtkd0at1YELmZK6HSolCqM4Fzs6yA==
+  dependencies:
+    "@typescript-eslint/types" "4.29.3"
     eslint-visitor-keys "^2.0.0"
 
 "@xstyled/core@^2.5.0":
@@ -2094,7 +2129,7 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-eslint-config-airbnb-base@^14.2.0, eslint-config-airbnb-base@^14.2.1:
+eslint-config-airbnb-base@^14.2.1:
   version "14.2.1"
   resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-14.2.1.tgz#8a2eb38455dc5a312550193b319cdaeef042cd1e"
   integrity sha512-GOrQyDtVEc1Xy20U7vsB2yAoB4nBlfH5HZJeatRXHleO+OS5Ot+MWij4Dpltw4/DyIkqUfqz1epfhVR5XWWQPA==
@@ -2103,16 +2138,12 @@ eslint-config-airbnb-base@^14.2.0, eslint-config-airbnb-base@^14.2.1:
     object.assign "^4.1.2"
     object.entries "^1.1.2"
 
-eslint-config-airbnb-typescript@^12.3.1:
-  version "12.3.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-typescript/-/eslint-config-airbnb-typescript-12.3.1.tgz#83ab40d76402c208eb08516260d1d6fac8f8acbc"
-  integrity sha512-ql/Pe6/hppYuRp4m3iPaHJqkBB7dgeEmGPQ6X0UNmrQOfTF+dXw29/ZjU2kQ6RDoLxaxOA+Xqv07Vbef6oVTWw==
-  dependencies:
-    "@typescript-eslint/parser" "^4.4.1"
-    eslint-config-airbnb "^18.2.0"
-    eslint-config-airbnb-base "^14.2.0"
+eslint-config-airbnb-typescript@^13.0.0:
+  version "13.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-typescript/-/eslint-config-airbnb-typescript-13.0.1.tgz#007e841efaf72aefae812afd68ac377c644a4cf2"
+  integrity sha512-n7fGBDNV3xSKbWDUES2FfsNAJhuqADcwzshX6ci6qoszUnH6p4dzrLnSFqYkw5Sn7M+aarp2BTf7JDOK88M+bg==
 
-eslint-config-airbnb@^18.2.0, eslint-config-airbnb@^18.2.1:
+eslint-config-airbnb@^18.2.1:
   version "18.2.1"
   resolved "https://registry.yarnpkg.com/eslint-config-airbnb/-/eslint-config-airbnb-18.2.1.tgz#b7fe2b42f9f8173e825b73c8014b592e449c98d9"
   integrity sha512-glZNDEZ36VdlZWoxn/bUR1r/sdFKPd1mHPbqUtkctgNG4yT2DLLtJ3D+yCV+jzZCc2V1nBVkmdknOJBZ5Hc0fg==
