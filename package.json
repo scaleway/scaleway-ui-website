@@ -19,7 +19,7 @@
     "@scaleway/eslint-config-react": "^2.1.2",
     "@scaleway/ui": "^0.103.0",
     "@sentry/nextjs": "^6.11.0",
-    "next": "11.1.0",
+    "next": "11.1.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-schemaorg": "^2.0.0",
