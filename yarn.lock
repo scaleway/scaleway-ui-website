@@ -512,10 +512,10 @@
   resolved "https://registry.yarnpkg.com/@scaleway/random-name/-/random-name-2.1.0.tgz#01342af3984bf42a206a9ed97c19c2dca8f25d09"
   integrity sha512-BaAIKNT80iHr2WiOblz5wyNOKpARqBNNjd6q384Il8WDLLJTlHGLOL1BLKhbOTIqK+S2OsZbWa9hFdJ1D8I9Uw==
 
-"@scaleway/ui@^0.104.0":
-  version "0.104.0"
-  resolved "https://registry.yarnpkg.com/@scaleway/ui/-/ui-0.104.0.tgz#3548fb971b5ce12ce39765abccb5c6e1ada2001a"
-  integrity sha512-9vCs+jobHiBMLqXr5zr4nmCvHNNTBYImHViiAlhYeiQesqr7jB/72wQRCA6PeJ6uascGvog4rI4uGWedBePENA==
+"@scaleway/ui@^0.106.0":
+  version "0.106.0"
+  resolved "https://registry.yarnpkg.com/@scaleway/ui/-/ui-0.106.0.tgz#13b454db1937831bc45c6923a1eefed19b48de43"
+  integrity sha512-5yEdW0Ax64M1oTX7YsNOHdr5BEKokoCYG/BJMV4ktJvmfLkoyBRcIPxEXdR24fABG6CdQRT/EPOuxWisXR5IQw==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@emotion/serialize" "^1.0.2"
@@ -533,6 +533,7 @@
     react-toastify "^7.0.3"
     react-use-clipboard "^1.0.7"
     reakit "^1.3.5"
+    use-media "^1.4.0"
 
 "@sentry/browser@6.12.0":
   version "6.12.0"
@@ -5596,6 +5597,11 @@ url@^0.11.0:
   dependencies:
     punycode "1.3.2"
     querystring "0.2.0"
+
+use-media@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/use-media/-/use-media-1.4.0.tgz#e777bf1f382a7aacabbd1f9ce3da2b62e58b2a98"
+  integrity sha512-XsgyUAf3nhzZmEfhc5MqLHwyaPjs78bgytpVJ/xDl0TF4Bptf3vEpBNBBT/EIKOmsOc8UbuECq3mrP3mt1QANA==
 
 use-subscription@1.5.1:
   version "1.5.1"
