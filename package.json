@@ -17,7 +17,7 @@
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@scaleway/eslint-config-react": "^2.1.2",
-    "@scaleway/ui": "^0.104.0",
+    "@scaleway/ui": "^0.106.0",
     "@sentry/nextjs": "^6.12.0",
     "next": "11.1.2",
     "react": "17.0.2",
