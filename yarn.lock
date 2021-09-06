@@ -512,14 +512,16 @@
   resolved "https://registry.yarnpkg.com/@scaleway/random-name/-/random-name-2.1.0.tgz#01342af3984bf42a206a9ed97c19c2dca8f25d09"
   integrity sha512-BaAIKNT80iHr2WiOblz5wyNOKpARqBNNjd6q384Il8WDLLJTlHGLOL1BLKhbOTIqK+S2OsZbWa9hFdJ1D8I9Uw==
 
-"@scaleway/ui@^0.106.0":
-  version "0.106.0"
-  resolved "https://registry.yarnpkg.com/@scaleway/ui/-/ui-0.106.0.tgz#13b454db1937831bc45c6923a1eefed19b48de43"
-  integrity sha512-5yEdW0Ax64M1oTX7YsNOHdr5BEKokoCYG/BJMV4ktJvmfLkoyBRcIPxEXdR24fABG6CdQRT/EPOuxWisXR5IQw==
+"@scaleway/ui@^0.107.0":
+  version "0.107.0"
+  resolved "https://registry.yarnpkg.com/@scaleway/ui/-/ui-0.107.0.tgz#99dc8101203c218eb6dd272acc8a7a039fc13b28"
+  integrity sha512-1HW8nQD6e5WiAzYucFu7x/MM2ZqJ8yJSCEtLKYaZrBYenc5E5c2Ctd5Jt5nPVlnYgUgOvvZfG178ElkZch020Q==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@emotion/serialize" "^1.0.2"
     "@scaleway/random-name" "^2.0.0"
+    "@types/intl-tel-input" "^17.0.3"
+    "@types/react-datepicker" "^4.1.4"
     "@xstyled/emotion" "^2.2.2"
     intl-tel-input "^17.0.12"
     polished "^4.1.0"
@@ -680,6 +682,20 @@
   dependencies:
     "@types/unist" "*"
 
+"@types/intl-tel-input@^17.0.3":
+  version "17.0.4"
+  resolved "https://registry.yarnpkg.com/@types/intl-tel-input/-/intl-tel-input-17.0.4.tgz#a7be083bd1989830e7e02f6d552a40428fd5ed7c"
+  integrity sha512-AIX0Azxs7fAkeI2wjAsMNE4Lfoa+/NqazWDPM4k4Vm8lhcId0BNMjzC/BACEGE0nAScc71+pznlKnTxBfW5HHA==
+  dependencies:
+    "@types/jquery" "*"
+
+"@types/jquery@*":
+  version "3.5.6"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.5.6.tgz#97ac8e36dccd8ad8ed3f3f3b48933614d9fd8cf0"
+  integrity sha512-SmgCQRzGPId4MZQKDj9Hqc6kSXFNWZFHpELkyK8AQhf8Zr6HKfCzFv9ZC1Fv3FyQttJZOlap3qYb12h61iZAIg==
+  dependencies:
+    "@types/sizzle" "*"
+
 "@types/json-schema@^7.0.7":
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.7.tgz#98a993516c859eb0d5c4c8f098317a9ea68db9ad"
@@ -722,6 +738,16 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
 
+"@types/react-datepicker@^4.1.4":
+  version "4.1.5"
+  resolved "https://registry.yarnpkg.com/@types/react-datepicker/-/react-datepicker-4.1.5.tgz#f735a27e4d1cb61a12d8f1b84bb89ff0d21f813b"
+  integrity sha512-KGejyyCiFhBXjHp4AmuzO4W4pfWV9PYFZrBTA56tsuy+jpqQ2Jdx7j44onYomeUSv2B2uqT3OCkOh+dOI8Fy3g==
+  dependencies:
+    "@popperjs/core" "^2.9.2"
+    "@types/react" "*"
+    date-fns "^2.0.1"
+    react-popper "^2.2.5"
+
 "@types/react-syntax-highlighter@^13.5.2":
   version "13.5.2"
   resolved "https://registry.yarnpkg.com/@types/react-syntax-highlighter/-/react-syntax-highlighter-13.5.2.tgz#357cc03581dc434c57c3b31f70e0eecdbf7b3ab0"
@@ -742,6 +768,11 @@
   version "0.16.1"
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.1.tgz#18845205e86ff0038517aab7a18a62a6b9f71275"
   integrity sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA==
+
+"@types/sizzle@*":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.3.tgz#ff5e2f1902969d305225a047c8a0fd5c915cebef"
+  integrity sha512-JYM8x9EGF163bEyhdJBpR2QX1R5naCJHC8ucJylJ3w9/CVBaskdQ8WqBf8MmQrd1kRvp/a4TS8HJ+bxzR7ZJYQ==
 
 "@types/unist@*", "@types/unist@^2.0.0", "@types/unist@^2.0.2", "@types/unist@^2.0.3":
   version "2.0.3"
