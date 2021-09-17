@@ -492,10 +492,10 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.0.6.tgz#023d72a5c4531b4ce204528971700a78a85a0c50"
   integrity sha512-Myxw//kzromB9yWgS8qYGuGVf91oBUUJpNvy5eM50sqvmKLbKjwLxohJnkWGTeeI9v9IBMtPLxz5Gc60FIfvCA==
 
-"@scaleway/eslint-config-react@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@scaleway/eslint-config-react/-/eslint-config-react-2.2.0.tgz#1d0160943861f6d32d6f43837c8c88db6903dd12"
-  integrity sha512-+91Rm8NiyLT7NziXfJU6Yj7ynAlBnVZEYyxOrkvFOFXEPMCx29vsXPIzSRtM+VCjm11PRcxb1iqOJbCItFOJGg==
+"@scaleway/eslint-config-react@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@scaleway/eslint-config-react/-/eslint-config-react-2.2.1.tgz#6664677bbc6c8258d82912bd46e73f26005c13b9"
+  integrity sha512-Yr3WDNZ5TPZCutOmhwb7wUjnAAH1fjIwJ1bEjqBU1dQt4P7qySLfpS9E/1VOvgbB+gZBUl1dIO4SSiR+oAhJbg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.29.3"
     "@typescript-eslint/parser" "^4.29.3"
