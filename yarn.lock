@@ -512,10 +512,10 @@
   resolved "https://registry.yarnpkg.com/@scaleway/random-name/-/random-name-2.1.0.tgz#01342af3984bf42a206a9ed97c19c2dca8f25d09"
   integrity sha512-BaAIKNT80iHr2WiOblz5wyNOKpARqBNNjd6q384Il8WDLLJTlHGLOL1BLKhbOTIqK+S2OsZbWa9hFdJ1D8I9Uw==
 
-"@scaleway/ui@^0.112.0":
-  version "0.112.0"
-  resolved "https://registry.yarnpkg.com/@scaleway/ui/-/ui-0.112.0.tgz#4f384ecbb2f2aa104b97bb559f1efd8a94ecb6d6"
-  integrity sha512-cI4tycNoH43QsW0XSDUHcKX+8Gtq45lPIDxM2BDP8VZwGuVfk3SrclwgPXSMBibXAkhZXceaMH8Y5gWlTGc0NQ==
+"@scaleway/ui@^0.112.1":
+  version "0.112.1"
+  resolved "https://registry.yarnpkg.com/@scaleway/ui/-/ui-0.112.1.tgz#92d457f8215b5682614bc884eafecc1ac8e9fe82"
+  integrity sha512-JW63+r6t8uCiu32X8mhKf4qZ2MG4DPFI0rHZ3UPjgZ6kBRNxus99haJFiHehczeSZDiL9K6u33gZop6sgtY1rA==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@emotion/serialize" "^1.0.2"
@@ -527,7 +527,7 @@
     polished "^4.1.0"
     prop-types "^15.7.2"
     react-circular-progressbar "^2.0.4"
-    react-countup "^5.1.0"
+    react-countup "^6.0.0"
     react-datepicker "^4.1.0"
     react-flatten-children "^1.1.2"
     react-markdown "^5.0.3"
@@ -718,10 +718,10 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.1.tgz#283f669ff76d7b8260df8ab7a4262cc83d988256"
   integrity sha512-fZQQafSREFyuZcdWFAExYjBiCL7AUCdgsk80iO0q4yihYYdcIiH28CcuPTGFgLOCC8RlW49GSQxdHwZP+I7CNg==
 
-"@types/node@*", "@types/node@^16.9.6":
-  version "16.9.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.9.6.tgz#040a64d7faf9e5d9e940357125f0963012e66f04"
-  integrity sha512-YHUZhBOMTM3mjFkXVcK+WwAcYmyhe1wL4lfqNtzI0b3qAy7yuSetnM7QJazgE5PFmgVTNGiLOgRFfJMqW7XpSQ==
+"@types/node@*", "@types/node@^16.10.1":
+  version "16.10.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.10.1.tgz#f3647623199ca920960006b3dccf633ea905f243"
+  integrity sha512-4/Z9DMPKFexZj/Gn3LylFgamNKHm4K3QDi0gz9B26Uk0c8izYf97B5fxfpspMNkWlFupblKM/nV8+NA9Ffvr+w==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -4470,10 +4470,10 @@ react-circular-progressbar@^2.0.4:
   resolved "https://registry.yarnpkg.com/react-circular-progressbar/-/react-circular-progressbar-2.0.4.tgz#5b04a9cf6be8c522c180e4e99ec6db63677335b0"
   integrity sha512-OfX0ThSxRYEVGaQSt0DlXfyl5w4DbXHsXetyeivmoQrh9xA9bzVPHNf8aAhOIiwiaxX2WYWpLDB3gcpsDJ9oww==
 
-react-countup@^5.1.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/react-countup/-/react-countup-5.2.0.tgz#58be5d97acebf767d5c61df5c3a3417b95c45a16"
-  integrity sha512-R6+FIrW8ypwoAe0Q0CZ16OhrgAntnnnch7HrnRAy9miXFKk8jQzVADjNtGSoNUuJeq/ZFiiXCGJCJIAmRJ5fLg==
+react-countup@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/react-countup/-/react-countup-6.0.0.tgz#463f174781db4bec25de8853335c18ff0a305131"
+  integrity sha512-Q5M8TbtdeSrnK6UaMgZBaV13GZHKsWh5FedzFM9HSWcI48x1SzJ33fCJcX23juLzguwRU3ZtumqlLdCUJdRPfA==
   dependencies:
     countup.js "^2.0.8"
 
