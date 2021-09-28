@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
+    "@commitlint/config-conventional": "^13.2.0",
     "@emotion/eslint-plugin": "^11.2.0",
     "@next/bundle-analyzer": "^11.1.2",
     "@types/node": "^16.10.1",
