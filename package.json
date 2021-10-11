@@ -59,7 +59,11 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "commitlint": { "extends": ["@commitlint/config-conventional"] },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "contributors": [
     {
       "name": "Alexandre Philibeaux",
@@ -86,5 +90,6 @@
       "email": "dmaliszewski@scaleway.com",
       "url": "https://github.com/DorianMaliszewski"
     }
-  ]
+  ],
+  "packageManager": "yarn@3.0.2"
 }
