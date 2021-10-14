@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 16
           cache: 'yarn'
-      - run: yarn --pure-lockfile
+      - run: yarn install
       - run: yarn run build
         env:
           SENTRY_URL: ${{secrets.SENTRY_URL}}
