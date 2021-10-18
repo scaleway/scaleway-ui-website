@@ -11,7 +11,7 @@ jobs:
   lint:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v2.3.5
       - name: Use Node.js
         uses: actions/setup-node@v2.4.1
         with:
@@ -22,7 +22,7 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v2.3.5
       - name: Use Node.js
         uses: actions/setup-node@v2.4.1
         with:
@@ -52,7 +52,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2.3.5
 
       - name: Inject slug/short variables
         uses: rlespinasse/github-slug-action@v3.x
@@ -105,7 +105,7 @@ jobs:
       SUFFIX: ui-scaleway
     needs: [ deploy ]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.5
       - name: Inject slug/short variables
         uses: rlespinasse/github-slug-action@v3.x
       - name: Export custom variables
