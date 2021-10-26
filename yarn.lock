@@ -116,7 +116,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:^13.2.0":
+"@commitlint/config-conventional@npm:13.2.0":
   version: 13.2.0
   resolution: "@commitlint/config-conventional@npm:13.2.0"
   dependencies:
@@ -306,7 +306,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/eslint-plugin@npm:^11.2.0":
+"@emotion/eslint-plugin@npm:11.2.0":
   version: 11.2.0
   resolution: "@emotion/eslint-plugin@npm:11.2.0"
   peerDependencies:
@@ -338,7 +338,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/react@npm:^11.1.1, @emotion/react@npm:^11.4.1":
+"@emotion/react@npm:11.4.1, @emotion/react@npm:^11.1.1":
   version: 11.4.1
   resolution: "@emotion/react@npm:11.4.1"
   dependencies:
@@ -381,7 +381,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/styled@npm:^11.3.0":
+"@emotion/styled@npm:11.3.0":
   version: 11.3.0
   resolution: "@emotion/styled@npm:11.3.0"
   dependencies:
@@ -513,7 +513,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/bundle-analyzer@npm:^11.1.2":
+"@next/bundle-analyzer@npm:11.1.2":
   version: 11.1.2
   resolution: "@next/bundle-analyzer@npm:11.1.2"
   dependencies:
@@ -685,7 +685,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@scaleway/eslint-config-react@npm:^2.2.1":
+"@scaleway/eslint-config-react@npm:2.2.1":
   version: 2.2.1
   resolution: "@scaleway/eslint-config-react@npm:2.2.1"
   dependencies:
@@ -713,7 +713,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@scaleway/ui@npm:^0.113.1":
+"@scaleway/ui@npm:0.113.1":
   version: 0.113.1
   resolution: "@scaleway/ui@npm:0.113.1"
   dependencies:
@@ -820,7 +820,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/nextjs@npm:^6.13.2":
+"@sentry/nextjs@npm:6.13.2":
   version: 6.13.2
   resolution: "@sentry/nextjs@npm:6.13.2"
   dependencies:
@@ -982,7 +982,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^16.10.3":
+"@types/node@npm:*, @types/node@npm:16.10.3":
   version: 16.10.3
   resolution: "@types/node@npm:16.10.3"
   checksum: 3fd429bce8a4acb497dcc62b536782a5e87ccf7cd91d64a78b263ae5d66cb72bf84be9eeeff6f84ae0567b065a40b267caa66d311f9e094990a5847bbd168a29
@@ -1022,7 +1022,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-syntax-highlighter@npm:^13.5.2":
+"@types/react-syntax-highlighter@npm:13.5.2":
   version: 13.5.2
   resolution: "@types/react-syntax-highlighter@npm:13.5.2"
   dependencies:
@@ -1031,7 +1031,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^17.0.25":
+"@types/react@npm:*, @types/react@npm:17.0.25":
   version: 17.0.25
   resolution: "@types/react@npm:17.0.25"
   dependencies:
@@ -2508,7 +2508,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cz-conventional-changelog@npm:^3.3.0":
+"cz-conventional-changelog@npm:3.3.0":
   version: 3.3.0
   resolution: "cz-conventional-changelog@npm:3.3.0"
   dependencies:
@@ -3006,7 +3006,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:^11.1.2":
+"eslint-config-next@npm:11.1.2":
   version: 11.1.2
   resolution: "eslint-config-next@npm:11.1.2"
   dependencies:
@@ -3198,7 +3198,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.32.0":
+"eslint@npm:7.32.0":
   version: 7.32.0
   resolution: "eslint@npm:7.32.0"
   dependencies:
@@ -5365,7 +5365,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"next-transpile-modules@npm:^8.0.0":
+"next-transpile-modules@npm:8.0.0":
   version: 8.0.0
   resolution: "next-transpile-modules@npm:8.0.0"
   dependencies:
@@ -6075,7 +6075,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.4.1":
+"prettier@npm:2.4.1":
   version: 2.4.1
   resolution: "prettier@npm:2.4.1"
   bin:
@@ -6425,7 +6425,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"react-schemaorg@npm:^2.0.0":
+"react-schemaorg@npm:2.0.0":
   version: 2.0.0
   resolution: "react-schemaorg@npm:2.0.0"
   peerDependencies:
@@ -6454,7 +6454,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"react-syntax-highlighter@npm:^15.4.4":
+"react-syntax-highlighter@npm:15.4.4":
   version: 15.4.4
   resolution: "react-syntax-highlighter@npm:15.4.4"
   dependencies:
@@ -6496,7 +6496,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"react-use-clipboard@npm:^1.0.7":
+"react-use-clipboard@npm:1.0.7, react-use-clipboard@npm:^1.0.7":
   version: 1.0.7
   resolution: "react-use-clipboard@npm:1.0.7"
   dependencies:
@@ -6893,33 +6893,33 @@ resolve@^2.0.0-next.3:
   resolution: "scaleway-ui-website@workspace:."
   dependencies:
     "@commitlint/cli": 13.2.1
-    "@commitlint/config-conventional": ^13.2.0
-    "@emotion/eslint-plugin": ^11.2.0
-    "@emotion/react": ^11.4.1
-    "@emotion/styled": ^11.3.0
-    "@next/bundle-analyzer": ^11.1.2
-    "@scaleway/eslint-config-react": ^2.2.1
-    "@scaleway/ui": ^0.113.1
-    "@sentry/nextjs": ^6.13.2
-    "@types/node": ^16.10.3
-    "@types/react": ^17.0.25
-    "@types/react-syntax-highlighter": ^13.5.2
-    cz-conventional-changelog: ^3.3.0
-    eslint: ^7.32.0
-    eslint-config-next: ^11.1.2
+    "@commitlint/config-conventional": 13.2.0
+    "@emotion/eslint-plugin": 11.2.0
+    "@emotion/react": 11.4.1
+    "@emotion/styled": 11.3.0
+    "@next/bundle-analyzer": 11.1.2
+    "@scaleway/eslint-config-react": 2.2.1
+    "@scaleway/ui": 0.113.1
+    "@sentry/nextjs": 6.13.2
+    "@types/node": 16.10.3
+    "@types/react": 17.0.25
+    "@types/react-syntax-highlighter": 13.5.2
+    cz-conventional-changelog: 3.3.0
+    eslint: 7.32.0
+    eslint-config-next: 11.1.2
     husky: 7.0.4
     lint-staged: 11.2.4
     next: 11.1.2
-    next-transpile-modules: ^8.0.0
-    prettier: ^2.4.1
+    next-transpile-modules: 8.0.0
+    prettier: 2.4.1
     react: 17.0.2
     react-dom: 17.0.2
-    react-schemaorg: ^2.0.0
-    react-syntax-highlighter: ^15.4.4
-    react-use-clipboard: ^1.0.7
-    schema-dts: ^1.0.0
-    svgo: ^2.7.0
-    typescript: ^4.4.3
+    react-schemaorg: 2.0.0
+    react-syntax-highlighter: 15.4.4
+    react-use-clipboard: 1.0.7
+    schema-dts: 1.0.0
+    svgo: 2.7.0
+    typescript: 4.4.3
   languageName: unknown
   linkType: soft
 
@@ -6933,7 +6933,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"schema-dts@npm:^1.0.0":
+"schema-dts@npm:1.0.0":
   version: 1.0.0
   resolution: "schema-dts@npm:1.0.0"
   peerDependencies:
@@ -7572,7 +7572,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"svgo@npm:^2.7.0":
+"svgo@npm:2.7.0":
   version: 2.7.0
   resolution: "svgo@npm:2.7.0"
   dependencies:
@@ -7879,7 +7879,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-typescript@^4.4.3:
+"typescript@4.4.3, typescript@^4.4.3":
   version: 4.4.3
   resolution: "typescript@npm:4.4.3"
   bin:
@@ -7889,7 +7889,7 @@ typescript@^4.4.3:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>":
+"typescript@patch:typescript@4.4.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>":
   version: 4.4.3
   resolution: "typescript@patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"
   bin:
