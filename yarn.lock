@@ -2661,9 +2661,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@scaleway/ui@npm:0.117.7":
-  version: 0.117.7
-  resolution: "@scaleway/ui@npm:0.117.7"
+"@scaleway/ui@npm:0.118.0":
+  version: 0.118.0
+  resolution: "@scaleway/ui@npm:0.118.0"
   dependencies:
     "@babel/runtime": 7.15.4
     "@emotion/serialize": 1.0.2
@@ -2694,7 +2694,7 @@ __metadata:
     "@emotion/styled": 11.3.0
     react: 17.0.2
     react-dom: 17.0.2
-  checksum: 3fbd762c9e9b11fc05a6b34a563b87b3b621eec15ffc80136ee7a6ecc705cea2e6a196f7227078d7adb902a3278ffc95a11b3b2f9c7d739d17c60a3622362f72
+  checksum: 5e0180f114cbe94a8dc76511327e38f56bfa99b9c28c1339e337e5578ba13b92f3cc4a4097c2309670435d1afb9152cf3379dca72071c20fec8cbcf6bea71be0
   languageName: node
   linkType: hard
 
@@ -14169,7 +14169,7 @@ resolve@^2.0.0-next.3:
     "@emotion/styled": 11.3.0
     "@next/bundle-analyzer": 11.1.2
     "@scaleway/eslint-config-react": 2.3.0
-    "@scaleway/ui": 0.117.7
+    "@scaleway/ui": 0.118.0
     "@sentry/nextjs": 6.13.3
     "@types/node": 16.10.3
     "@types/react": 17.0.33
