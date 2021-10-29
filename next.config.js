@@ -25,19 +25,23 @@ const nextConfig = () => {
     }),
   ].filter(Boolean);
 
-  return plugins.reduce((acc, next) => next(acc), {
+  /** @type {import('next/dist/server/config').NextConfig} */
+  const config = {
     compress: true,
-    // Next is kinda buggy and don't want to export into static if this is not set even if its empty and we don't use it
     images: {
       loader: 'imgix',
-      path: '',
+      path:  'https://ui.scaleway.com',
+      formats: ['image/avif', 'image/webp']
     },
+    swcMinify: true,
     poweredByHeader: false,
     reactStrictMode: true,
     sentry: {
       disableServerWebpackPlugin: true,
-    }
-  });
+    },
+  }
+
+  return plugins.reduce((acc, next) => next(acc), config);
 }
 
 module.exports = withSentry(nextConfig())
