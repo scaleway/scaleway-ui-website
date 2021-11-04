@@ -51,7 +51,7 @@ const TopBar = ({ isLightMode, setIsLightMode }: TopBarProps): JSX.Element => {
               size="small"
               width={54}
               checked={isLightMode}
-              onChange={(event: { target: { checked: boolean } }) =>
+              onChange={(event) =>
                 setIsLightMode(event.target.checked)
               }
               labeled

@@ -41,7 +41,7 @@ const CopyBox = ({ children }: CopyBoxProps): JSX.Element => {
       onMouseLeave={() => setShowCopyButton(false)}
     >
       {flatChild.length > 1 && (
-        <TabGroup selected={tab} onChange={setTab} mb={3}>
+        <TabGroup selected={tab} onChange={(value) => { if (typeof value === 'number') setTab(value) }} mb={3}>
           {flatChild.map(({ props: { title } }) => (
             <TabGroup.Tab key={`tab-${title}`}>{title}</TabGroup.Tab>
           ))}

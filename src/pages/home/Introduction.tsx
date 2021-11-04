@@ -58,7 +58,7 @@ const Introduction = (): JSX.Element => (
           Component Library
         </StyledSubTitle>
       </StyledTitleCol>
-      <StyledIllustrationCol xmsall={12} medium={6}>
+      <StyledIllustrationCol xsmall={12} medium={6}>
         <StyledImageBox>
           <Image src={introductionIllustration} alt="logo" priority />
         </StyledImageBox>
