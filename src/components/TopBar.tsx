@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import { Breakpoint, Col, Grid, Icon, Row, Switch } from '@scaleway/ui'
-import React, { useEffect } from 'react'
+import React, { ChangeEventHandler, useEffect } from 'react'
 import GithubAndDocumentationButtons from './GithubAndDocumentationButtons'
 import Logo from './Logo'
 
@@ -35,6 +35,10 @@ const TopBar = ({ isLightMode, setIsLightMode }: TopBarProps): JSX.Element => {
     }
   }, [setIsLightMode])
 
+  const onChange: ChangeEventHandler<HTMLInputElement> = (event) => {
+    setIsLightMode(event.target.checked)
+  }
+
   return (
     <Header>
       <Grid>
@@ -51,9 +55,7 @@ const TopBar = ({ isLightMode, setIsLightMode }: TopBarProps): JSX.Element => {
               size="small"
               width={54}
               checked={isLightMode}
-              onChange={(event: { target: { checked: boolean } }) =>
-                setIsLightMode(event.target.checked)
-              }
+              onChange={onChange}
               labeled
               onLabel={<Icon size={20} name="sun" />}
               offLabel={<Icon size={20} name="moon" />}
