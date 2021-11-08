@@ -3,6 +3,8 @@ import React from 'react'
 import CopyBox from '../../components/CopyBoxCommand'
 import GithubAndDocumentationButtons from '../../components/GithubAndDocumentationButtons'
 
+const install = `$ yarn add @scaleway/ui @emotion/react`
+
 const command = `import { theme, Button } from "@scaleway/ui";
 import { ThemeProvider } from "@emotion/react";
 
@@ -22,10 +24,14 @@ const GettingStarted = (): JSX.Element => (
           Getting Started
         </Typography>
         <Typography textAlign="justify" mb={5}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Inside your react project start using Scaleway UI by running:
+        </Typography>
+        <CopyBox>
+          <CopyBox.Command title="Install" command={install} />
+        </CopyBox>
+        <Typography textAlign="justify" mt={5} mb={5}>
+          You can then simply integrate theme into your project and start using
+          components:
         </Typography>
         <CopyBox>
           <CopyBox.Command title="Use Case 1" command={command} />

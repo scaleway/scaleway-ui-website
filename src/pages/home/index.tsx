@@ -4,6 +4,7 @@ import React from 'react'
 import AdvancedUseCases from './AdvancedUseCases'
 import GettingStarted from './GettingStarted'
 import Introduction from './Introduction'
+import OpenSource from './OpenSource'
 
 const StyledSeparator = styled(Separator)`
   ${up('small', `margin: 80px 0`)};
@@ -24,6 +25,8 @@ const Home = (): JSX.Element => (
     <StyledSeparator />
     <GettingStarted />
     <AdvancedUseCases />
+    <StyledSeparator />
+    <OpenSource />
     <StyledSeparator />
     <Row textAlign="center">
       <Col>
