@@ -2703,9 +2703,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@scaleway/ui@npm:0.118.3":
-  version: 0.118.3
-  resolution: "@scaleway/ui@npm:0.118.3"
+"@scaleway/ui@npm:0.118.4":
+  version: 0.118.4
+  resolution: "@scaleway/ui@npm:0.118.4"
   dependencies:
     "@babel/runtime": 7.16.0
     "@emotion/serialize": 1.0.2
@@ -2722,7 +2722,7 @@ __metadata:
     polished: 4.1.3
     prop-types: 15.7.2
     react-circular-progressbar: 2.0.4
-    react-countup: 6.0.0
+    react-countup: 6.1.0
     react-datepicker: 4.3.0
     react-flatten-children: 1.1.2
     react-markdown: 5.0.3
@@ -2736,6 +2736,9 @@ __metadata:
     "@emotion/styled": 11.3.0
     react: 17.0.2
     react-dom: 17.0.2
+  dependenciesMeta:
+    "@react-spring/core":
+      built: false
   conditions: (os=darwin | os=linux)
   languageName: node
   linkType: hard
@@ -13218,14 +13221,14 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-countup@npm:6.0.0":
-  version: 6.0.0
-  resolution: "react-countup@npm:6.0.0"
+"react-countup@npm:6.1.0":
+  version: 6.1.0
+  resolution: "react-countup@npm:6.1.0"
   dependencies:
     countup.js: ^2.0.8
   peerDependencies:
     react: ">= 16.3.0"
-  checksum: 45a2f4af5e95d12395580cebf363103179e88828e38b6ff74de2d8377dbd0a232498873b8abce17871ef048c56760a98b7544656f5f9ce04097ded3602608a07
+  checksum: ec24ac7f8b6867a7961e569d44189b9e6ceb5614be0771baa45ed3348468ccf0ad2a1388d39c9c8a537817256ebc730829294844ed7b919bbeaae8c3439dcd55
   languageName: node
   linkType: hard
 
@@ -14219,7 +14222,7 @@ resolve@^2.0.0-next.3:
     "@emotion/styled": 11.3.0
     "@next/bundle-analyzer": 12.0.3
     "@scaleway/eslint-config-react": 2.3.0
-    "@scaleway/ui": 0.118.3
+    "@scaleway/ui": 0.118.4
     "@sentry/nextjs": 6.14.1
     "@types/node": 16.11.6
     "@types/react": 17.0.34
