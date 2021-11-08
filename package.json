@@ -13,6 +13,11 @@
     "svg": "svgo --pretty --multipass",
     "svg:all": "yarn run svg -r -f src"
   },
+  "dependenciesMeta": {
+    "@react-spring/core": {
+      "built": false
+    }
+  },
   "dependencies": {
     "@emotion/react": "11.5.0",
     "@emotion/styled": "11.3.0",
@@ -91,5 +96,5 @@
       "url": "https://github.com/DorianMaliszewski"
     }
   ],
-  "packageManager": "yarn@3.0.2"
+  "packageManager": "yarn@3.1.0"
 }
