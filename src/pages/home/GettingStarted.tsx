@@ -3,7 +3,7 @@ import React from 'react'
 import CopyBox from '../../components/CopyBoxCommand'
 import GithubAndDocumentationButtons from '../../components/GithubAndDocumentationButtons'
 
-const install = `$ yarn add @scaleway/ui @emotion/react`
+const install = `$ yarn add @scaleway/ui @emotion/react @emotion/styled`
 
 const command = `import { theme, Button } from "@scaleway/ui";
 import { ThemeProvider } from "@emotion/react";

@@ -8,7 +8,8 @@ import Card from '../../components/Card'
 import GithubAndDocumentationButtons from '../../components/GithubAndDocumentationButtons'
 
 const StyledTitleCol = styled(Col)`
-  ${up('xsmall', `order: 2`)} ${up('medium', `order: 1;`)};
+  ${up('xsmall', `order: 2`)};
+  ${up('medium', `order: 1;`)};
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

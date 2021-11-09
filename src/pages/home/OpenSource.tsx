@@ -1,7 +1,12 @@
-import { Col, Grid, Row, Typography } from '@scaleway/ui'
+import styled from '@emotion/styled'
+import { Col, Grid, Icon, Link, Row, Typography } from '@scaleway/ui'
 import React from 'react'
 import icon from '../../assets/icons/icon-scaleway-ui.svg'
 import Card from '../../components/Card'
+
+const StyledDescription = styled.div`
+  margin-bottom: 12px;
+`
 
 const OpenSource = (): JSX.Element => (
   <Grid mt={4}>
@@ -18,10 +23,48 @@ const OpenSource = (): JSX.Element => (
 
     <Row mt={5}>
       <Col xsmall={12} large={6}>
-        <Card title="Scaleway Lib" description="Lorem Ipsum..." icon={icon} />
+        <Card
+          title="Scaleway Form"
+          description={
+            <>
+              <StyledDescription>
+                Build amazing forms with Scaleway UI and React Final Form 🚀
+              </StyledDescription>
+              <div>
+                <Icon name="github" mr={1} size={20} />
+                <Link
+                  to="https://github.com/scaleway/scaleway-form"
+                  target="_blank"
+                >
+                  Visit on GitHub
+                </Link>
+              </div>
+            </>
+          }
+          icon={icon}
+        />
       </Col>
       <Col xsmall={12} large={6}>
-        <Card title="Scaleway Form" description="Lorem Ipsum..." icon={icon} />
+        <Card
+          title="Scaleway Lib"
+          description={
+            <>
+              <StyledDescription>
+                Scaleway Lib is a set of NPM packages used at Scaleway
+              </StyledDescription>
+              <div>
+                <Icon name="github" mr={1} size={20} />
+                <Link
+                  to="https://github.com/scaleway/scaleway-lib"
+                  target="_blank"
+                >
+                  Visit on GitHub
+                </Link>
+              </div>
+            </>
+          }
+          icon={icon}
+        />
       </Col>
     </Row>
   </Grid>

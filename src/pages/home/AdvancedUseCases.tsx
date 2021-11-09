@@ -2,7 +2,7 @@ import { Col, Grid, Row, Typography } from '@scaleway/ui'
 import React, { useState } from 'react'
 import CopyBox from '../../components/CopyBoxCommand'
 
-const useCase1 = `import { ThemeProvider, css } from '@emotion/react'
+const useCase1 = `import { ThemeProvider } from '@emotion/react'
 import { theme as scwTheme, Button } from '@scaleway/ui'
 import React, { useCallback, useState } from 'react'
 
@@ -56,7 +56,56 @@ const App = () => {
 export default App
 `
 
-const useCase2 = `// TODO`
+const useCase2 = `import styled from "@emotion/styled";
+import { ThemeProvider } from "@emotion/react";
+import {
+  theme,
+  Button,
+  Checkbox,
+  Container,
+  RichSelect,
+  TextBox,
+  Typography,
+} from "@scaleway/ui"
+import React from "react"
+
+const StyledFieldContainer = styled.div\`
+  margin-bottom: 16px;
+\`
+
+const App = () => (
+  <ThemeProvider theme={theme}>
+    <Container m={4}>
+      <Typography variant="title">Welcome to this form example</Typography>
+      <StyledFieldContainer>
+        <TextBox
+          name="name"
+          label="Your name"
+          placeholder="John Doe"
+          notice="Same as your official ID"
+        />
+      </StyledFieldContainer>
+      <StyledFieldContainer>
+        <RichSelect name="language" placeholder="Your favourite language">
+          <RichSelect.Option value="javascript1">Javascript</RichSelect.Option>
+          <RichSelect.Option value="javascript2">Javascript</RichSelect.Option>
+          <RichSelect.Option value="javascript3">Javascript</RichSelect.Option>
+        </RichSelect>
+      </StyledFieldContainer>
+      <StyledFieldContainer>
+        <Checkbox name="terms">I agree with this form</Checkbox>
+      </StyledFieldContainer>
+      <StyledFieldContainer>
+        <Button name="submit" type="submit">
+          Submit
+        </Button>
+      </StyledFieldContainer>
+    </Container>
+  </ThemeProvider>
+)
+
+export default App
+`
 
 const AdvancedUseCases = (): JSX.Element => {
   const [selectedTab, setSelectedTab] = useState<number>(0)

@@ -5,7 +5,7 @@ import Image from 'components/Image'
 
 type CardProps = {
   title: string
-  description: string
+  description: string | JSX.Element
   icon: StaticImageData
 }
 
