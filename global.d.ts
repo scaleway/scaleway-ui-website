@@ -21,6 +21,9 @@ declare global {
       pureWhite: string
       white: string
     }
+    fonts: {
+      sansSerif: string
+    }
   }
 
   interface ApplicationSettings {
