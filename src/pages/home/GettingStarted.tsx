@@ -1,12 +1,13 @@
+import styled from '@emotion/styled'
 import { Col, Grid, Row, Typography } from '@scaleway/ui'
 import React from 'react'
 import CopyBox from '../../components/CopyBoxCommand'
 import GithubAndDocumentationButtons from '../../components/GithubAndDocumentationButtons'
 
-const install = `$ yarn add @scaleway/ui @emotion/react @emotion/styled`
+const install = `yarn add @scaleway/ui @emotion/react @emotion/styled`
 
-const command = `import { theme, Button } from "@scaleway/ui";
-import { ThemeProvider } from "@emotion/react";
+const command = `import { theme, Button } from "@scaleway/ui"
+import { ThemeProvider } from "@emotion/react"
 
 const App = () => (
     <ThemeProvider theme={theme}>
@@ -14,7 +15,11 @@ const App = () => (
           Click Me
         </Button>
     </ThemeProvider>
-);`
+)`
+
+const RelativeDiv = styled.div`
+  position: relative;
+`
 
 const GettingStarted = (): JSX.Element => (
   <Grid mb={9}>
@@ -26,9 +31,11 @@ const GettingStarted = (): JSX.Element => (
         <Typography textAlign="justify" mb={5}>
           Inside your react project start using Scaleway UI by running:
         </Typography>
-        <CopyBox>
-          <CopyBox.Command title="Install" command={install} />
-        </CopyBox>
+        <RelativeDiv>
+          <CopyBox>
+            <CopyBox.Command title="Install" command={install} />
+          </CopyBox>
+        </RelativeDiv>
         <Typography textAlign="justify" mt={5} mb={5}>
           You can then simply integrate theme into your project and start using
           components:
