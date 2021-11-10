@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { Box, Col, Row, Typography, down } from '@scaleway/ui'
+import { Box, Col, Row, Typography, down, up } from '@scaleway/ui'
 import React from 'react'
 import Image from 'components/Image'
 
@@ -11,6 +11,7 @@ type CardProps = {
 
 const StyledBox = styled(Box)`
   ${down('large', `margin: 8px 16px`)}
+  ${up('large', `height: 100%;`)}
 `
 
 const Card = ({ title, description, icon }: CardProps): JSX.Element => (

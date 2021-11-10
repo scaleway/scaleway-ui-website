@@ -71,7 +71,7 @@ const Introduction = (): JSX.Element => (
       </Row>
     </Breakpoint>
 
-    <Row mt={7}>
+    <Row mt={7} alignItems="stretch">
       <Col xsmall={12} large={4}>
         <Card
           title="Accessibility"
@@ -88,7 +88,7 @@ const Introduction = (): JSX.Element => (
       </Col>
       <Col xsmall={12} large={4}>
         <Card
-          title="Developer experience"
+          title="Developer XP"
           description="Open source and continually maintained, Scaleway UI is our main library in Scaleway environment."
           icon={icon}
         />
