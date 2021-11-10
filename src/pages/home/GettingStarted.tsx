@@ -5,6 +5,7 @@ import CopyBox from '../../components/CopyBoxCommand'
 import GithubAndDocumentationButtons from '../../components/GithubAndDocumentationButtons'
 
 const install = `yarn add @scaleway/ui @emotion/react @emotion/styled`
+const installNpm = `npm i @scaleway/ui @emotion/react @emotion/styled`
 
 const command = `import { theme, Button } from "@scaleway/ui"
 import { ThemeProvider } from "@emotion/react"
@@ -19,6 +20,7 @@ const App = () => (
 
 const RelativeDiv = styled.div`
   position: relative;
+  margin-bottom: 32px;
 `
 
 const GettingStarted = (): JSX.Element => (
@@ -29,11 +31,17 @@ const GettingStarted = (): JSX.Element => (
           Getting Started
         </Typography>
         <Typography textAlign="justify" mb={5}>
-          Inside your react project start using Scaleway UI by running:
+          Inside your React project, start using Scaleway UI by running either
+          of the following:
         </Typography>
         <RelativeDiv>
           <CopyBox>
             <CopyBox.Command title="Install" command={install} />
+          </CopyBox>
+        </RelativeDiv>
+        <RelativeDiv>
+          <CopyBox>
+            <CopyBox.Command title="Install" command={installNpm} />
           </CopyBox>
         </RelativeDiv>
         <Typography textAlign="justify" mt={5} mb={5}>
