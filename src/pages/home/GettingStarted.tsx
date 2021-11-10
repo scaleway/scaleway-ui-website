@@ -3,12 +3,11 @@ import React from 'react'
 import CopyBox from '../../components/CopyBoxCommand'
 import GithubAndDocumentationButtons from '../../components/GithubAndDocumentationButtons'
 
-const command = `import { GlobalStyle, theme, Button } from "@scaleway/ui";
+const command = `import { theme, Button } from "@scaleway/ui";
 import { ThemeProvider } from "@emotion/react";
 
 const App = () => (
     <ThemeProvider theme={theme}>
-        <GlobalStyle />
         <Button variant="primary" onClick={() => console.log("clicked")}>
           Click Me
         </Button>

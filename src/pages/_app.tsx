@@ -1,23 +1,11 @@
-import { ThemeProvider, css } from '@emotion/react'
-import { GlobalStyle } from '@scaleway/ui'
+import { ThemeProvider } from '@emotion/react'
 import { AppProps } from 'next/app'
 import React, { useCallback, useState } from 'react'
 import Footer from 'components/Footer'
+import GlobalStyle from 'components/GlobalStyle'
 import Head from 'components/Head'
 import TopBar from 'components/TopBar'
 import { dark, light } from 'theme'
-
-const customBody = css`
-  body {
-    overflow-y: auto;
-  }
-`
-
-const customTransitionAnimation = css`
-  * {
-    transition: background-color 500ms ease;
-  }
-`
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element | null => {
   const [isLightMode, setIsLightMode] = useState<boolean>(true)
@@ -32,7 +20,7 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element | null => {
 
   return (
     <ThemeProvider theme={isLightMode ? light : dark}>
-      <GlobalStyle additionalStyles={[customBody, customTransitionAnimation]} />
+      <GlobalStyle />
       <Head />
       <TopBar isLightMode={isLightMode} setIsLightMode={setLightModeCallBack} />
       <Component
