@@ -76,18 +76,20 @@ interface CommandProps {
   // eslint-disable-next-line react/no-unused-prop-types
   title: string
   showCopyButton?: boolean
+  showLineNumbers?: boolean
 }
 
 const Command = ({
   command,
   showCopyButton = false,
+  showLineNumbers = true,
 }: CommandProps): JSX.Element => (
   <>
     <SyntaxHighlighter
       language="jsx"
       style={darcula as unknown}
       customStyle={{ background: 'none', fontSize: '14px', padding: 0 }}
-      showLineNumbers
+      showLineNumbers={showLineNumbers}
     >
       {command}
     </SyntaxHighlighter>
@@ -97,6 +99,7 @@ const Command = ({
 
 Command.defaultProps = {
   showCopyButton: false,
+  showLineNumbers: true,
 }
 
 CopyBox.Command = Command

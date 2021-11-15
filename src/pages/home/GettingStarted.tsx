@@ -36,12 +36,20 @@ const GettingStarted = (): JSX.Element => (
         </Typography>
         <RelativeDiv>
           <CopyBox>
-            <CopyBox.Command title="Install" command={install} />
+            <CopyBox.Command
+              title="Install"
+              command={install}
+              showLineNumbers={false}
+            />
           </CopyBox>
         </RelativeDiv>
         <RelativeDiv>
           <CopyBox>
-            <CopyBox.Command title="Install" command={installNpm} />
+            <CopyBox.Command
+              title="Install"
+              command={installNpm}
+              showLineNumbers={false}
+            />
           </CopyBox>
         </RelativeDiv>
         <Typography textAlign="justify" mt={5} mb={5}>

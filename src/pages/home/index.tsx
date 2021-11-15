@@ -36,7 +36,7 @@ const StyledCommunityContainer = styled.div`
   margin: 56px 0 72px;
   padding: 24px;
   background-color: ${({ theme: styledTheme }): string =>
-    styledTheme.colors.lightViolet };
+    styledTheme.colors.lightViolet};
 `
 
 const StyledTypographyContainer = styled.div`
@@ -66,7 +66,13 @@ const Home = (): JSX.Element => (
           </Typography>
         </StyledTypographyContainer>
       </StyledCommunityLeft>
-      <Button size="large">Join the Community Slack</Button>
+      <Button
+        title="Join the Community Slack"
+        to="https://scaleway-community.slack.com/archives/C02M4HDPGB0"
+        size="large"
+      >
+        Join the Community Slack
+      </Button>
     </StyledCommunityContainer>
     <Row textAlign="center">
       <Col>
