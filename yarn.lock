@@ -12871,7 +12871,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prismjs@npm:^1.21.0, prismjs@npm:^1.22.0, prismjs@npm:~1.25.0":
+"prismjs@npm:^1.21.0, prismjs@npm:^1.25.0, prismjs@npm:~1.25.0":
   version: 1.25.0
   resolution: "prismjs@npm:1.25.0"
   checksum: 04d8eae9d1b26b76c350bc65621584c8f8cab80ace7da3953f8aef2f9a8dd4b4f71c1d15bc5c67f126ddc90cd5af613919dc1340589a6c57355bed86fa3ac010
@@ -13534,18 +13534,18 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-syntax-highlighter@npm:15.4.4":
-  version: 15.4.4
-  resolution: "react-syntax-highlighter@npm:15.4.4"
+"react-syntax-highlighter@npm:15.4.5":
+  version: 15.4.5
+  resolution: "react-syntax-highlighter@npm:15.4.5"
   dependencies:
     "@babel/runtime": ^7.3.1
     highlight.js: ^10.4.1
     lowlight: ^1.17.0
-    prismjs: ^1.22.0
+    prismjs: ^1.25.0
     refractor: ^3.2.0
   peerDependencies:
     react: ">= 0.14.0"
-  checksum: 18de0b279c4698ef76101c524ff129eeed762d00732e1a67a9389900ae7987e8590a6c97222c2eaa97f01a7bdeebbb24666caf87720b153d07ffcd131b845c5f
+  checksum: 120bac5cfbd65eb47e513b8057e3cb71843ce15241bbf933c1818c294965b87d8e074c7929a8fc2ced66c3e3f38c4cc6bf04365a8345e3a382cd524d0093949f
   languageName: node
   linkType: hard
 
@@ -14269,7 +14269,7 @@ resolve@^2.0.0-next.3:
     react: 17.0.2
     react-dom: 17.0.2
     react-schemaorg: 2.0.0
-    react-syntax-highlighter: 15.4.4
+    react-syntax-highlighter: 15.4.5
     react-use-clipboard: 1.0.7
     schema-dts: 1.0.0
     svgo: 2.8.0
