@@ -20,6 +20,11 @@ declare global {
       pureDark: string
       pureWhite: string
       white: string
+      blue: string
+      darkBlue: string
+    }
+    fonts: {
+      sansSerif: string
     }
   }
 
