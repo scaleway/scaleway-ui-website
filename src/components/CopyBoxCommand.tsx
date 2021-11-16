@@ -67,10 +67,6 @@ const CopyBox = ({
   )
 }
 
-CopyBox.defaultProps = {
-  onChange: () => undefined,
-}
-
 interface CommandProps {
   command: string
   // eslint-disable-next-line react/no-unused-prop-types
@@ -96,11 +92,6 @@ const Command = ({
     <StyledCopyButton text={command || ''} showCopyButton={showCopyButton} />
   </>
 )
-
-Command.defaultProps = {
-  showCopyButton: false,
-  showLineNumbers: true,
-}
 
 CopyBox.Command = Command
 

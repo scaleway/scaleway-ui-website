@@ -26,8 +26,4 @@ const CopyButton = ({ text, className }: CopyButtonProps): JSX.Element => {
   )
 }
 
-CopyButton.defaultProps = {
-  className: undefined,
-}
-
 export default CopyButton
