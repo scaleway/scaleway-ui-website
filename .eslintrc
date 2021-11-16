@@ -8,11 +8,10 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": [
-          "next.config.js"
-        ]
+        "devDependencies": ["next.config.js"]
       }
-    ]
+    ],
+    "react/require-default-props": "off"
   },
   "root": true
 }

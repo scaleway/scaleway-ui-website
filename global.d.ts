@@ -22,6 +22,7 @@ declare global {
       white: string
       blue: string
       darkBlue: string
+      lightViolet: string
     }
     fonts: {
       sansSerif: string

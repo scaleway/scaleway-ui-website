@@ -1,10 +1,14 @@
+import styled from '@emotion/styled'
 import { Col, Grid, Row, Typography } from '@scaleway/ui'
 import React from 'react'
 import CopyBox from '../../components/CopyBoxCommand'
 import GithubAndDocumentationButtons from '../../components/GithubAndDocumentationButtons'
 
-const command = `import { theme, Button } from "@scaleway/ui";
-import { ThemeProvider } from "@emotion/react";
+const install = `yarn add @scaleway/ui @emotion/react @emotion/styled`
+const installNpm = `npm i @scaleway/ui @emotion/react @emotion/styled`
+
+const command = `import { theme, Button } from "@scaleway/ui"
+import { ThemeProvider } from "@emotion/react"
 
 const App = () => (
     <ThemeProvider theme={theme}>
@@ -12,7 +16,12 @@ const App = () => (
           Click Me
         </Button>
     </ThemeProvider>
-);`
+)`
+
+const RelativeDiv = styled.div`
+  position: relative;
+  margin-bottom: 32px;
+`
 
 const GettingStarted = (): JSX.Element => (
   <Grid mb={9}>
@@ -22,10 +31,30 @@ const GettingStarted = (): JSX.Element => (
           Getting Started
         </Typography>
         <Typography textAlign="justify" mb={5}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Inside your React project, start using Scaleway UI by running either
+          of the following:
+        </Typography>
+        <RelativeDiv>
+          <CopyBox>
+            <CopyBox.Command
+              title="Install"
+              command={install}
+              showLineNumbers={false}
+            />
+          </CopyBox>
+        </RelativeDiv>
+        <RelativeDiv>
+          <CopyBox>
+            <CopyBox.Command
+              title="Install"
+              command={installNpm}
+              showLineNumbers={false}
+            />
+          </CopyBox>
+        </RelativeDiv>
+        <Typography textAlign="justify" mt={5} mb={5}>
+          You can then simply integrate theme into your project and start using
+          components:
         </Typography>
         <CopyBox>
           <CopyBox.Command title="Use Case 1" command={command} />

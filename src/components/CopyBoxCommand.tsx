@@ -23,10 +23,14 @@ const StyledCopyButton = styled(CopyButton, {
 `
 
 interface CopyBoxProps {
+  onChange?: (data?: unknown) => void
   children: ReactElement<CommandProps> | ReactElement<CommandProps>[]
 }
 
-const CopyBox = ({ children }: CopyBoxProps): JSX.Element => {
+const CopyBox = ({
+  onChange = () => undefined,
+  children,
+}: CopyBoxProps): JSX.Element => {
   const flatChild = (
     React.Children.map(children, child =>
       React.isValidElement(child) ? child : undefined,
@@ -41,7 +45,16 @@ const CopyBox = ({ children }: CopyBoxProps): JSX.Element => {
       onMouseLeave={() => setShowCopyButton(false)}
     >
       {flatChild.length > 1 && (
-        <TabGroup selected={tab} onChange={(value) => { if (typeof value === 'number') setTab(value) }} mb={3}>
+        <TabGroup
+          selected={tab}
+          onChange={value => {
+            if (typeof value === 'number') {
+              setTab(value)
+            }
+            onChange(value)
+          }}
+          mb={3}
+        >
           {flatChild.map(({ props: { title } }) => (
             <TabGroup.Tab key={`tab-${title}`}>{title}</TabGroup.Tab>
           ))}
@@ -59,28 +72,26 @@ interface CommandProps {
   // eslint-disable-next-line react/no-unused-prop-types
   title: string
   showCopyButton?: boolean
+  showLineNumbers?: boolean
 }
 
 const Command = ({
   command,
   showCopyButton = false,
+  showLineNumbers = true,
 }: CommandProps): JSX.Element => (
   <>
     <SyntaxHighlighter
       language="jsx"
       style={darcula as unknown}
       customStyle={{ background: 'none', fontSize: '14px', padding: 0 }}
-      showLineNumbers
+      showLineNumbers={showLineNumbers}
     >
       {command}
     </SyntaxHighlighter>
     <StyledCopyButton text={command || ''} showCopyButton={showCopyButton} />
   </>
 )
-
-Command.defaultProps = {
-  showCopyButton: false,
-}
 
 CopyBox.Command = Command
 
