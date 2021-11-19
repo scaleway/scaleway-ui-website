@@ -1479,12 +1479,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.16.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.0, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.14.0, @babel/runtime@npm:^7.14.8, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.5.0, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7":
-  version: 7.16.0
-  resolution: "@babel/runtime@npm:7.16.0"
+"@babel/runtime@npm:7.16.3, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.0, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.14.0, @babel/runtime@npm:^7.14.8, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.5.0, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7":
+  version: 7.16.3
+  resolution: "@babel/runtime@npm:7.16.3"
   dependencies:
     regenerator-runtime: ^0.13.4
-  checksum: bfbca3ec52c94de262a3932473bceeead1a088b50194108fa1ff6eda447333f0f7d43fa4e9c5937c6e5d45bf838da8480905d0a227589b257c51f954ea060bac
+  checksum: ab8ac887096d76185ddbf291d28fb976cd32473696dc497ad4905b784acbd5aa462533ad83a5c5104e10ead28c2e0e119840ee28ed8eff90dcdde9d57f916eda
   languageName: node
   linkType: hard
 
@@ -2694,29 +2694,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@scaleway/random-name@npm:2.1.1":
-  version: 2.1.1
-  resolution: "@scaleway/random-name@npm:2.1.1"
-  peerDependencies:
-    react: ">=16.8"
-  checksum: ce7c081385a0ab789b3c4ab51bbd25059b565d52d62e3b309f7fb14051d0272a462021e7961cd79d05f8253156e55c3a8fc08b21f4daaeddfa9d92eff100223b
+"@scaleway/random-name@npm:3.0.0":
+  version: 3.0.0
+  resolution: "@scaleway/random-name@npm:3.0.0"
+  checksum: 86c599af6701575eff8d453c57f475fd834acbaf0d08279a9fba9555674ca054828e6892717431fd3f14682736b2252a3e21dfd91e73dd8b46ac5a40c56660df
   languageName: node
   linkType: hard
 
-"@scaleway/ui@npm:0.119.0":
-  version: 0.119.0
-  resolution: "@scaleway/ui@npm:0.119.0"
+"@scaleway/ui@npm:0.122.1":
+  version: 0.122.1
+  resolution: "@scaleway/ui@npm:0.122.1"
   dependencies:
-    "@babel/runtime": 7.16.0
+    "@babel/runtime": 7.16.3
     "@emotion/serialize": 1.0.2
     "@nivo/bar": 0.74.0
     "@nivo/core": 0.74.0
     "@nivo/line": 0.74.0
     "@nivo/pie": 0.74.0
-    "@scaleway/random-name": 2.1.1
+    "@scaleway/random-name": 3.0.0
     "@storybook/react": 6.3.12
     "@types/intl-tel-input": 17.0.4
-    "@types/react-datepicker": 4.1.7
+    "@types/react-datepicker": 4.3.1
     "@xstyled/emotion": 2.5.0
     intl-tel-input: 17.0.13
     polished: 4.1.3
@@ -2726,14 +2724,14 @@ __metadata:
     react-datepicker: 4.3.0
     react-flatten-children: 1.1.2
     react-markdown: 5.0.3
-    react-select: 5.1.0
+    react-select: 5.2.1
     react-toastify: 7.0.4
     react-use-clipboard: 1.0.7
-    reakit: 1.3.10
+    reakit: 1.3.11
     use-media: 1.4.0
   peerDependencies:
-    "@emotion/react": 11.5.0
-    "@emotion/styled": 11.3.0
+    "@emotion/react": 11.6.0
+    "@emotion/styled": 11.6.0
     react: 17.0.2
     react-dom: 17.0.2
   dependenciesMeta:
@@ -3821,15 +3819,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-datepicker@npm:4.1.7":
-  version: 4.1.7
-  resolution: "@types/react-datepicker@npm:4.1.7"
+"@types/react-datepicker@npm:4.3.1":
+  version: 4.3.1
+  resolution: "@types/react-datepicker@npm:4.3.1"
   dependencies:
     "@popperjs/core": ^2.9.2
     "@types/react": "*"
     date-fns: ^2.0.1
     react-popper: ^2.2.5
-  checksum: e1c7beb78e31c49bc4cab0904a02e5d2fc3945e8314b248219b13bc5acf9604347ec0e0a3b511146ce0b8cdb86b11f9f93b5c0b089e43f6ea92caf3e2e11b600
+  checksum: b7bc70cf05df4defbc19ce2c4b0020133a355e64437e6987eaa3449927a3478006729cf441899a2c042dca8d6bc5777d25add718dcba0fdd80b7f08700ec1787
   languageName: node
   linkType: hard
 
@@ -13504,9 +13502,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-select@npm:5.1.0":
-  version: 5.1.0
-  resolution: "react-select@npm:5.1.0"
+"react-select@npm:5.2.1":
+  version: 5.2.1
+  resolution: "react-select@npm:5.2.1"
   dependencies:
     "@babel/runtime": ^7.12.0
     "@emotion/cache": ^11.4.0
@@ -13518,7 +13516,7 @@ fsevents@^1.2.7:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
-  checksum: b811ec246dc68b2615ed623170ed52c035e239a2c90fdf742c18bed1d1bb1cb4098af1fde0d18ac8d73abaf9126f4030cb0a0f3e96c1c6f998820af5e681b3b5
+  checksum: 014cde5d23ca466795bd7f02455769efda74522c41f11109ec2d6f0e3c77f401ea91ae23cdccce997efb653aa6ea88688a16f40e59bfdef2a2414d0cfd10f374
   languageName: node
   linkType: hard
 
@@ -13737,9 +13735,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"reakit@npm:1.3.10":
-  version: 1.3.10
-  resolution: "reakit@npm:1.3.10"
+"reakit@npm:1.3.11":
+  version: 1.3.11
+  resolution: "reakit@npm:1.3.11"
   dependencies:
     "@popperjs/core": ^2.5.4
     body-scroll-lock: ^3.1.5
@@ -13749,7 +13747,7 @@ fsevents@^1.2.7:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
-  checksum: bd4acdd48c69e248680cb3fdfeea5491ef497569b5da508d5df72e687859cf86eeb4e6446b6507af11e2c59311307e2a07b3f894bc1af588b094fffb11ae26ac
+  checksum: b9fecb0aad1ee7b06d573882cd856aa136e91acb20dd7c4fcccfd8fc8e4c20e31c23ff27e86c31f14312c3643692a539c37b6f92e70e7b21b65496b93942ca6a
   languageName: node
   linkType: hard
 
@@ -14252,7 +14250,7 @@ resolve@^2.0.0-next.3:
     "@emotion/styled": 11.6.0
     "@next/bundle-analyzer": 12.0.4
     "@scaleway/eslint-config-react": 2.3.2
-    "@scaleway/ui": 0.119.0
+    "@scaleway/ui": 0.122.1
     "@sentry/nextjs": 6.15.0
     "@types/node": 16.11.7
     "@types/react": 17.0.35
