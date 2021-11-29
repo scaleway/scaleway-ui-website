@@ -2701,9 +2701,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@scaleway/ui@npm:0.123.0":
-  version: 0.123.0
-  resolution: "@scaleway/ui@npm:0.123.0"
+"@scaleway/ui@npm:0.123.1":
+  version: 0.123.1
+  resolution: "@scaleway/ui@npm:0.123.1"
   dependencies:
     "@babel/runtime": 7.16.3
     "@emotion/serialize": 1.0.2
@@ -14202,7 +14202,7 @@ resolve@^2.0.0-next.3:
     "@emotion/styled": 11.6.0
     "@next/bundle-analyzer": 12.0.4
     "@scaleway/eslint-config-react": 3.0.0
-    "@scaleway/ui": 0.123.0
+    "@scaleway/ui": 0.123.1
     "@sentry/nextjs": 6.15.0
     "@types/node": 16.11.10
     "@types/react": 17.0.37
