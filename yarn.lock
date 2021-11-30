@@ -2701,9 +2701,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@scaleway/ui@npm:0.123.2":
-  version: 0.123.2
-  resolution: "@scaleway/ui@npm:0.123.2"
+"@scaleway/ui@npm:0.124.1":
+  version: 0.124.1
+  resolution: "@scaleway/ui@npm:0.124.1"
   dependencies:
     "@babel/runtime": 7.16.3
     "@emotion/serialize": 1.0.2
@@ -2716,7 +2716,7 @@ __metadata:
     "@types/intl-tel-input": 17.0.4
     "@types/react-datepicker": 4.3.1
     "@xstyled/emotion": 2.5.0
-    intl-tel-input: 17.0.14
+    intl-tel-input: 17.0.15
     polished: 4.1.3
     prop-types: 15.7.2
     react-circular-progressbar: 2.0.4
@@ -2730,7 +2730,7 @@ __metadata:
     reakit: 1.3.11
     use-media: 1.4.0
   peerDependencies:
-    "@emotion/react": 11.6.0
+    "@emotion/react": 11.7.0
     "@emotion/styled": 11.6.0
     react: 17.0.2
     react-dom: 17.0.2
@@ -9742,10 +9742,10 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"intl-tel-input@npm:17.0.14":
-  version: 17.0.14
-  resolution: "intl-tel-input@npm:17.0.14"
-  checksum: 771983deed406d341905b2e5a88b25acc0ef1be0e80e7986c1ff819f89065cba6f69cff14ffb764962709a4d3fa9711ba54b9095a62813ef1e8d4f42b8462c56
+"intl-tel-input@npm:17.0.15":
+  version: 17.0.15
+  resolution: "intl-tel-input@npm:17.0.15"
+  checksum: 9b7df7be01a04c720914dcf35281c85afe1354a29b0cbb6f599661bfb03970ad3c7da5c1b9bbc854858ed4473ed7721e87633dbd008a1f6cb2e0198d35dce02f
   languageName: node
   linkType: hard
 
@@ -14202,7 +14202,7 @@ resolve@^2.0.0-next.3:
     "@emotion/styled": 11.6.0
     "@next/bundle-analyzer": 12.0.4
     "@scaleway/eslint-config-react": 3.0.0
-    "@scaleway/ui": 0.123.2
+    "@scaleway/ui": 0.124.1
     "@sentry/nextjs": 6.15.0
     "@types/node": 16.11.10
     "@types/react": 17.0.37
