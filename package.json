@@ -11,7 +11,10 @@
     "prepare": "husky install",
     "commit": "npx git-cz -a",
     "svg": "svgo --pretty --multipass",
-    "svg:all": "yarn run svg -r -f src"
+    "svg:all": "yarn run svg -r -f src",
+    "test:e2e": "playwright test -c e2e/.playwright",
+    "test:e2e:headed": "yarn run test:e2e --headed",
+    "test:e2e:debug": "PWDEBUG=1 yarn run test:e2e"
   },
   "dependenciesMeta": {
     "@react-spring/core": {
@@ -38,6 +41,7 @@
     "@commitlint/config-conventional": "15.0.0",
     "@emotion/eslint-plugin": "11.7.0",
     "@next/bundle-analyzer": "12.0.7",
+    "@playwright/test": "^1.17.1",
     "@types/node": "16.11.12",
     "@types/react": "17.0.37",
     "@types/react-syntax-highlighter": "13.5.2",
@@ -47,6 +51,7 @@
     "husky": "7.0.4",
     "lint-staged": "12.1.2",
     "next-transpile-modules": "9.0.0",
+    "playwright": "^1.17.1",
     "prettier": "2.5.1",
     "svgo": "2.8.0",
     "typescript": "4.5.3"

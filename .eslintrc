@@ -8,7 +8,7 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": ["next.config.js"]
+        "devDependencies": ["next.config.js","e2e/**/*.ts"]
       }
     ],
     "react/require-default-props": "off"
