@@ -8,7 +8,7 @@ const Header = styled.header`
   min-height: 60px;
   height: 60px;
   top: 0;
-  background-color: ${({ theme }): string => theme.colors.white};
+  background-color: ${({ theme }): string => theme.colorsDeprecated.white};
   box-shadow: 0 0 8px 2px rgba(178, 182, 195, 0.37);
   display: flex;
   align-items: center;
@@ -35,7 +35,7 @@ const TopBar = ({ isLightMode, setIsLightMode }: TopBarProps): JSX.Element => {
     }
   }, [setIsLightMode])
 
-  const onChange: ChangeEventHandler<HTMLInputElement> = (event) => {
+  const onChange: ChangeEventHandler<HTMLInputElement> = event => {
     setIsLightMode(event.target.checked)
   }
 

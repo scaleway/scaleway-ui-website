@@ -47,8 +47,8 @@ const baseStyles = (theme: Theme) => css`
   }
 
   body {
-    background-color: ${theme.colors.white};
-    color: ${theme.colors.gray700};
+    background-color: ${theme.colorsDeprecated.white};
+    color: ${theme.colorsDeprecated.gray700};
     font-family: ${theme.fonts.sansSerif};
     overflow-y: auto;
     height: 100%;
@@ -83,14 +83,14 @@ const baseStyles = (theme: Theme) => css`
   }
 
   a {
-    color: ${theme.colors.blue};
+    color: ${theme.colorsDeprecated.blue};
     text-decoration: none;
   }
 
   a:hover,
   a:focus,
   a:active {
-    color: ${theme.colors.darkBlue};
+    color: ${theme.colorsDeprecated.darkBlue};
     text-decoration: underline;
   }
 
@@ -106,10 +106,7 @@ const customTransitionAnimation = css`
 `
 
 const GlobalStyle: FunctionComponent = () => (
-  <Global styles={[
-    baseStyles,
-    customTransitionAnimation,
-  ]} />
+  <Global styles={[baseStyles, customTransitionAnimation]} />
 )
 
 export default GlobalStyle

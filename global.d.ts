@@ -7,9 +7,8 @@ declare global {
   }
 
   interface UITheme {
-    colors: {
+    colorsDeprecated: {
       warning: string
-      primary: string
       black: string
       gray100: string
       gray200: string
