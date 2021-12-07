@@ -23,7 +23,8 @@ const StyledSeparator = styled(Separator)`
 `
 
 const StyledGroup = styled.g`
-  fill: ${({ theme: styledTheme }): string => styledTheme.colors.warning};
+  fill: ${({ theme: styledTheme }): string =>
+    styledTheme.colorsDeprecated.warning};
 
   svg {
     width: 100%;
@@ -36,7 +37,7 @@ const StyledCommunityContainer = styled.div`
   margin: 56px 0 72px;
   padding: 24px;
   background-color: ${({ theme: styledTheme }): string =>
-    styledTheme.colors.lightViolet};
+    styledTheme.colorsDeprecated.lightViolet};
 `
 
 const StyledTypographyContainer = styled.div`

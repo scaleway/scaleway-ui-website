@@ -2,8 +2,8 @@ import { theme as scwTheme } from '@scaleway/ui'
 
 const dark: UITheme = {
   ...scwTheme,
-  colors: {
-    ...scwTheme.colors,
+  colorsDeprecated: {
+    ...scwTheme.colorsDeprecated,
     black: '#FFFFFF',
     gray100: '#494F64',
     gray200: '#494F64',
@@ -19,7 +19,11 @@ const dark: UITheme = {
 
 const light: UITheme = {
   ...scwTheme,
-  colors: { ...scwTheme.colors, pureDark: '#0E1120', pureWhite: '#FFFFFF' },
+  colorsDeprecated: {
+    ...scwTheme.colorsDeprecated,
+    pureDark: '#0E1120',
+    pureWhite: '#FFFFFF',
+  },
 }
 
 export { light, dark }

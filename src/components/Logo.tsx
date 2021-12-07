@@ -3,7 +3,7 @@ import { Box } from '@scaleway/ui'
 import React from 'react'
 
 const StyledGroup = styled.g`
-  fill: ${({ theme }): string => theme.colors.primary};
+  fill: ${({ theme }): string => theme.colorsDeprecated.primary};
 `
 
 type LogoProps = {
