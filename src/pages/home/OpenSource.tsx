@@ -1,7 +1,8 @@
 import styled from '@emotion/styled'
 import { Col, Grid, Icon, Link, Row, Typography } from '@scaleway/ui'
 import React from 'react'
-import icon from '../../assets/icons/icon-scaleway-ui.svg'
+import swForm from '../../assets/icons/icon-scaleway-form.svg'
+import swLib from '../../assets/icons/icon-scaleway-lib.svg'
 import Card from '../../components/Card'
 
 const StyledDescription = styled.div`
@@ -41,7 +42,7 @@ const OpenSource = (): JSX.Element => (
               </div>
             </>
           }
-          icon={icon}
+          icon={swForm}
         />
       </Col>
       <Col xsmall={12} large={6}>
@@ -63,7 +64,7 @@ const OpenSource = (): JSX.Element => (
               </div>
             </>
           }
-          icon={icon}
+          icon={swLib}
         />
       </Col>
     </Row>
