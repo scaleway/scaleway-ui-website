@@ -65,7 +65,13 @@ const Introduction = (): JSX.Element => (
       </StyledTitleCol>
       <StyledIllustrationCol xsmall={12} medium={6}>
         <StyledImageBox>
-          <Image src={introductionIllustration} alt="logo" priority />
+          <Image
+            src={introductionIllustration}
+            alt="A woman and a man designing a digital user interface"
+            width={470}
+            height={373}
+            priority
+          />
         </StyledImageBox>
       </StyledIllustrationCol>
     </Row>
