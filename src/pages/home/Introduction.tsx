@@ -54,7 +54,7 @@ const Introduction = (): JSX.Element => (
   <Grid mt={4}>
     <Row alignItems="center">
       <StyledTitleCol xsmall={12} medium={6}>
-        <Image src={swUI} alt="icon" width={128} height={128} />
+        <Image src={swUI} alt="An open book icon" width={128} height={128} />
         <StyledTitle color="primary">
           Scaleway <b>UI</b>
         </StyledTitle>

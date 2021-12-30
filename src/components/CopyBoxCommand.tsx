@@ -10,6 +10,10 @@ const StyledDiv = styled.div`
   background-color: ${({ theme }): string => theme.colorsDeprecated.pureDark};
   padding: 16px 24px;
   border-radius: 4px;
+  [role='tab'][aria-selected='true'],
+  [role='tab']:hover {
+    color: ${({ theme }) => theme.colorsDeprecated.lightViolet};
+  }
 `
 
 const StyledCopyButton = styled(CopyButton, {
@@ -89,7 +93,7 @@ const Command = ({
     >
       {command}
     </SyntaxHighlighter>
-    <StyledCopyButton text={command || ''} showCopyButton={showCopyButton} />
+    <StyledCopyButton text={command} showCopyButton={showCopyButton} />
   </>
 )
 
