@@ -2,7 +2,10 @@ import styled from '@emotion/styled'
 import { Box, Breakpoint, Col, Grid, Row, Typography, up } from '@scaleway/ui'
 import React from 'react'
 import Image from 'components/Image'
-import icon from '../../assets/icons/icon-scaleway-ui.svg'
+import swA11y from '../../assets/icons/icon-scaleway-a11y.svg'
+import swCustom from '../../assets/icons/icon-scaleway-custom.svg'
+import swDx from '../../assets/icons/icon-scaleway-dx.svg'
+import swUI from '../../assets/icons/icon-scaleway-ui.svg'
 import introductionIllustration from '../../assets/illustrations/introduction.svg'
 import Card from '../../components/Card'
 import GithubAndDocumentationButtons from '../../components/GithubAndDocumentationButtons'
@@ -51,6 +54,7 @@ const Introduction = (): JSX.Element => (
   <Grid mt={4}>
     <Row alignItems="center">
       <StyledTitleCol xsmall={12} medium={6}>
+        <Image src={swUI} alt="An open book icon" width={128} height={128} />
         <StyledTitle color="primary">
           Scaleway <b>UI</b>
         </StyledTitle>
@@ -61,7 +65,13 @@ const Introduction = (): JSX.Element => (
       </StyledTitleCol>
       <StyledIllustrationCol xsmall={12} medium={6}>
         <StyledImageBox>
-          <Image src={introductionIllustration} alt="logo" priority />
+          <Image
+            src={introductionIllustration}
+            alt="A woman and a man designing a digital user interface"
+            width={470}
+            height={373}
+            priority
+          />
         </StyledImageBox>
       </StyledIllustrationCol>
     </Row>
@@ -76,21 +86,21 @@ const Introduction = (): JSX.Element => (
         <Card
           title="Accessibility"
           description="We tend to follow WAI-ARIA standards for each components."
-          icon={icon}
+          icon={swA11y}
         />
       </Col>
       <Col xsmall={12} large={4}>
         <Card
           title="Customizable"
           description="Easily define dark and light theme along with many different colors."
-          icon={icon}
+          icon={swCustom}
         />
       </Col>
       <Col xsmall={12} large={4}>
         <Card
           title="Developer XP"
           description="Open source and continually maintained, Scaleway UI is our main library in Scaleway environment."
-          icon={icon}
+          icon={swDx}
         />
       </Col>
     </Row>

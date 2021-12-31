@@ -37,7 +37,7 @@ const GettingStarted = (): JSX.Element => (
         <RelativeDiv>
           <CopyBox>
             <CopyBox.Command
-              title="Install"
+              title="Yarn install"
               command={install}
               showLineNumbers={false}
             />
@@ -46,7 +46,7 @@ const GettingStarted = (): JSX.Element => (
         <RelativeDiv>
           <CopyBox>
             <CopyBox.Command
-              title="Install"
+              title="Npm install"
               command={installNpm}
               showLineNumbers={false}
             />
@@ -57,7 +57,7 @@ const GettingStarted = (): JSX.Element => (
           components:
         </Typography>
         <CopyBox>
-          <CopyBox.Command title="Use Case 1" command={command} />
+          <CopyBox.Command title="Provide theme" command={command} />
         </CopyBox>
       </Col>
     </Row>
