@@ -47,8 +47,8 @@ const baseStyles = (theme: Theme) => css`
   }
 
   body {
-    background-color: ${theme.colorsDeprecated.white};
-    color: ${theme.colorsDeprecated.gray700};
+    background-color: ${theme.colors.neutral.backgroundWeak};
+    color: ${theme.colors.neutral.text};
     font-family: ${theme.fonts.sansSerif};
     overflow-y: auto;
     height: 100%;
@@ -83,14 +83,14 @@ const baseStyles = (theme: Theme) => css`
   }
 
   a {
-    color: ${theme.colorsDeprecated.blue};
+    color: ${theme.colors.info.textWeak};
     text-decoration: none;
   }
 
   a:hover,
   a:focus,
   a:active {
-    color: ${theme.colorsDeprecated.darkBlue};
+    color: ${theme.colors.info.textWeak};
     text-decoration: underline;
   }
 

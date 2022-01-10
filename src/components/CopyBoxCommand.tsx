@@ -7,12 +7,12 @@ import CopyButton from './CopyButton'
 
 const StyledDiv = styled.div`
   box-shadow: 0 0 8px 2px rgba(178, 182, 195, 0.37);
-  background-color: ${({ theme }): string => theme.colorsDeprecated.pureDark};
+  background-color: #0e1120;
   padding: 16px 24px;
   border-radius: 4px;
   [role='tab'][aria-selected='true'],
   [role='tab']:hover {
-    color: ${({ theme }) => theme.colorsDeprecated.lightViolet};
+    color: ${({ theme }) => theme.colors.primary.textStrong};
   }
 `
 

@@ -8,7 +8,8 @@ const Header = styled.header`
   min-height: 60px;
   height: 60px;
   top: 0;
-  background-color: ${({ theme }): string => theme.colorsDeprecated.white};
+  background-color: ${({ theme }): string =>
+    theme.colors.neutral.backgroundWeak};
   box-shadow: 0 0 8px 2px rgba(178, 182, 195, 0.37);
   display: flex;
   align-items: center;
