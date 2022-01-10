@@ -1,6 +1,5 @@
 import '@emotion/react'
-import type { SCWUITheme } from '@scaleway/ui'
 
 declare module '@emotion/react' {
-  export interface Theme extends SCWUITheme {}
+  export interface Theme extends Record<string, any> {}
 }
