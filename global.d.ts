@@ -5,6 +5,10 @@ declare global {
     const content: StaticImageData
     export default content
   }
+
+  interface ApplicationSettings {
+    isLightMode: boolean
+  }
 }
 
 declare module '@emotion/react' {
