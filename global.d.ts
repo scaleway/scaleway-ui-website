@@ -1,3 +1,4 @@
+import type { SCWUITheme } from '@scaleway/ui'
 import '@emotion/react'
 
 declare global {
@@ -12,7 +13,5 @@ declare global {
 }
 
 declare module '@emotion/react' {
-  import type { SCWUITheme } from '@scaleway/ui'
-
   export interface Theme extends SCWUITheme {}
 }

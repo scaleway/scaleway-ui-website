@@ -24,7 +24,6 @@
   "include": [
     "global.d.ts",
     "next-env.d.ts",
-    "scaleway-ui.d.ts",
     "**/*.ts",
     "**/*.tsx",
   ],

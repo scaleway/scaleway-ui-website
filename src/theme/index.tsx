@@ -1,9 +1,8 @@
-import { Theme } from '@emotion/react'
 import { createTheme, theme as scwTheme } from '@scaleway/ui'
 
-const light: Theme = scwTheme
+const light = scwTheme
 
-const dark: Theme = createTheme({
+const dark = createTheme({
   contrasts: {
     neutral: {
       100: '#14192E',
