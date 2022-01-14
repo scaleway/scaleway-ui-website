@@ -44,6 +44,7 @@ jobs:
         with:
           name: build
           path: out
+          retention-days: 1
 
   deploy:
     needs: [ build ]
@@ -98,7 +99,6 @@ jobs:
           deployment_id: ${{ steps.deployment.outputs.deployment_id }}
           env_url: https://${{ env.BRANCH_SLUG }}-${{ env.SUFFIX }}.s3-website.fr-par.scw.cloud
         if: always()
-
   lighthouse:
     runs-on: ubuntu-20.04
     env:
@@ -120,5 +120,3 @@ jobs:
           serverBaseUrl: ${{ secrets.LHCI_SERVER_BASE_URL }}
           serverToken: ${{ secrets.LHCI_SERVER_TOKEN }}
           configPath: './.lighthouserc.json'
-
-
