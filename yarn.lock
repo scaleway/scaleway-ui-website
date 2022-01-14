@@ -945,9 +945,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@scaleway/ui@npm:0.134.5":
-  version: 0.134.5
-  resolution: "@scaleway/ui@npm:0.134.5"
+"@scaleway/ui@npm:0.134.6":
+  version: 0.134.6
+  resolution: "@scaleway/ui@npm:0.134.6"
   dependencies:
     "@babel/runtime": 7.16.7
     "@emotion/serialize": 1.0.2
@@ -966,7 +966,7 @@ __metadata:
     react-datepicker: 4.6.0
     react-flatten-children: 1.1.2
     react-markdown: 5.0.3
-    react-select: 5.2.1
+    react-select: 5.2.2
     react-toastify: 7.0.4
     react-use-clipboard: 1.0.7
     reakit: 1.3.11
@@ -5523,9 +5523,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-select@npm:5.2.1":
-  version: 5.2.1
-  resolution: "react-select@npm:5.2.1"
+"react-select@npm:5.2.2":
+  version: 5.2.2
+  resolution: "react-select@npm:5.2.2"
   dependencies:
     "@babel/runtime": ^7.12.0
     "@emotion/cache": ^11.4.0
@@ -5537,7 +5537,7 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
-  checksum: 014cde5d23ca466795bd7f02455769efda74522c41f11109ec2d6f0e3c77f401ea91ae23cdccce997efb653aa6ea88688a16f40e59bfdef2a2414d0cfd10f374
+  checksum: 02cf76a31df6d957b15e8664957ece85afb0e9538f0686f77e8dd7cdc47cb59b71e295cd373912f2dd641724f140a1f701c91e7e7f89bb7e845a04bf5d6c67ad
   languageName: node
   linkType: hard
 
@@ -5955,7 +5955,7 @@ resolve@^2.0.0-next.3:
     "@emotion/styled": 11.6.0
     "@next/bundle-analyzer": 12.0.8
     "@scaleway/eslint-config-react": 3.3.3
-    "@scaleway/ui": 0.134.5
+    "@scaleway/ui": 0.134.6
     "@sentry/nextjs": 6.16.1
     "@types/node": 16.11.19
     "@types/react": 17.0.38
