@@ -63,7 +63,8 @@ const Home = (): JSX.Element => (
         <StyledTypographyContainer>
           <Typography variant="title">Connect with the community</Typography>
           <Typography variant="description">
-            Feel free to ask questions, report issues, and meet new people.
+            Join us if you want to report an issue, if you have any questions or
+            if you just want to meet new people!
           </Typography>
         </StyledTypographyContainer>
       </StyledCommunityLeft>

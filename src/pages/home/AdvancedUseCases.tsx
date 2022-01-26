@@ -112,7 +112,7 @@ const AdvancedUseCases = (): JSX.Element => {
 
   const tabDescription = [
     'If you want to change the theme or even to create a dark theme, Scaleway UI allows you to do it easily',
-    'Lorem ipsum...',
+    'If you want to change the theme or even to create a dark theme, Scaleway UI allows you to do it easily',
   ]
 
   return (
