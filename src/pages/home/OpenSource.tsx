@@ -17,7 +17,7 @@ const OpenSource = (): JSX.Element => (
           Open Source
         </Typography>
         <Typography textAlign="justify">
-          Many others open source projects are available and might interest you
+          Discover our other open source projects:
         </Typography>
       </Col>
     </Row>

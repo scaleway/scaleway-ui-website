@@ -31,8 +31,8 @@ const GettingStarted = (): JSX.Element => (
           Getting Started
         </Typography>
         <Typography textAlign="justify" mb={5}>
-          Inside your React project, start using Scaleway UI by running either
-          of the following:
+          Run one of the following commands in your React project to start using
+          Scaleway UI:
         </Typography>
         <RelativeDiv>
           <CopyBox>
@@ -53,8 +53,7 @@ const GettingStarted = (): JSX.Element => (
           </CopyBox>
         </RelativeDiv>
         <Typography textAlign="justify" mt={5} mb={5}>
-          You can then simply integrate theme into your project and start using
-          components:
+          Integrate the theme into your project to use our components.
         </Typography>
         <CopyBox>
           <CopyBox.Command title="Provide theme" command={command} />

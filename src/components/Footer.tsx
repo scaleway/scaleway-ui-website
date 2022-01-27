@@ -29,14 +29,13 @@ const Footer = (): JSX.Element => (
       <Row>
         <Col>
           <Typography variant="bodyA">
-            Hosted in french green datacenters
+            Hosted in green datacenters in France
           </Typography>
           <Typography variant="bodyB">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.
+            Our datacenters are designed and built to deliver excellent energy
+            efficiency. They offer a low carbon footprint with our guaranteed
+            clean energy source. We embrace both disruptive and state-of-the-art
+            technologies that reduce our environmental impact.
           </Typography>
         </Col>
       </Row>

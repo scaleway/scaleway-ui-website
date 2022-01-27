@@ -85,21 +85,21 @@ const Introduction = (): JSX.Element => (
       <Col xsmall={12} large={4}>
         <Card
           title="Accessibility"
-          description="We tend to follow WAI-ARIA standards for each components."
+          description="We follow WAI-ARIA standards for each component."
           icon={swA11y}
         />
       </Col>
       <Col xsmall={12} large={4}>
         <Card
           title="Customizable"
-          description="Easily define dark and light theme along with many different colors."
+          description="Easily define dark and light themes and customize them with various colors."
           icon={swCustom}
         />
       </Col>
       <Col xsmall={12} large={4}>
         <Card
           title="Developer XP"
-          description="Open source and continually maintained, Scaleway UI is our main library in Scaleway environment."
+          description="Scaleway UI is the main library in the Scaleway frontend environment. It is open source and continually maintained by our developers."
           icon={swDx}
         />
       </Col>
