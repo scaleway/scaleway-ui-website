@@ -489,12 +489,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/bundle-analyzer@npm:12.0.8":
-  version: 12.0.8
-  resolution: "@next/bundle-analyzer@npm:12.0.8"
+"@next/bundle-analyzer@npm:12.0.9":
+  version: 12.0.9
+  resolution: "@next/bundle-analyzer@npm:12.0.9"
   dependencies:
     webpack-bundle-analyzer: 4.3.0
-  checksum: be9680836d67f755d50c7397ca3555f003ac6b0a7dadaad817525ae518b7659c7e13ad46441151b8b9d777051d2e132a79c4ea2be0cc0e88782a1180f1a7124d
+  checksum: 1f8ec7b0b454eabf696d8d2fc69cbbd9bf8becd06192ab10bfaa23d5e1ebdce5b91f2213dfd4da8a3feb434e08b4ee038f9b0fc7f240ca0a00ed19c6acf8bffd
   languageName: node
   linkType: hard
 
@@ -505,12 +505,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:12.0.8":
-  version: 12.0.8
-  resolution: "@next/eslint-plugin-next@npm:12.0.8"
+"@next/eslint-plugin-next@npm:12.0.9":
+  version: 12.0.9
+  resolution: "@next/eslint-plugin-next@npm:12.0.9"
   dependencies:
     glob: 7.1.7
-  checksum: b6e5bb303ce430f10660dc173462094535797df4c2f1763161f02504954b97d19a47519a977932d6ff7f0399c963939a4735e0e13daee38ae7b17d22318254f1
+  checksum: b28f86f7f74dad8abe7f3905a1ce6465a04d41dac088c8ff61c21801b39a86319f732482083ea5903fd66800c87143bb5737e1086abf308cce52c5564ea1df4c
   languageName: node
   linkType: hard
 
@@ -2865,11 +2865,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:12.0.8":
-  version: 12.0.8
-  resolution: "eslint-config-next@npm:12.0.8"
+"eslint-config-next@npm:12.0.9":
+  version: 12.0.9
+  resolution: "eslint-config-next@npm:12.0.9"
   dependencies:
-    "@next/eslint-plugin-next": 12.0.8
+    "@next/eslint-plugin-next": 12.0.9
     "@rushstack/eslint-patch": ^1.0.8
     "@typescript-eslint/parser": ^5.0.0
     eslint-import-resolver-node: ^0.3.4
@@ -2885,7 +2885,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 8a038367e56c8b3ad496ee42b2d7ee2f2b5d58ccd7ce0f97f0f874ad9e18f0ba752f560afadd1e5d51ee2ba3048073c4ae9e8a7e8bffcd384eaf934316100208
+  checksum: 66ee668056dc4ea458bb5a8c5d34a901b55e4e9c843b3815b147586a5449613d8d60990fb84c25abc95ae02e63918dc2d908708f9d1e34b56fd1895028307b54
   languageName: node
   linkType: hard
 
@@ -5943,7 +5943,7 @@ resolve@^2.0.0-next.3:
     "@emotion/eslint-plugin": 11.7.0
     "@emotion/react": 11.7.1
     "@emotion/styled": 11.6.0
-    "@next/bundle-analyzer": 12.0.8
+    "@next/bundle-analyzer": 12.0.9
     "@scaleway/eslint-config-react": 3.3.4
     "@scaleway/ui": 0.134.8
     "@sentry/nextjs": 6.17.3
@@ -5952,7 +5952,7 @@ resolve@^2.0.0-next.3:
     "@types/react-syntax-highlighter": 13.5.2
     cz-conventional-changelog: 3.3.0
     eslint: 8.7.0
-    eslint-config-next: 12.0.8
+    eslint-config-next: 12.0.9
     husky: 7.0.4
     lint-staged: 12.1.7
     next: 12.0.8
