@@ -13,7 +13,7 @@ const GithubAndDocumentationButtons = (): JSX.Element => (
       p={0}
     />
     <Button
-      to="https://react.ui.scaleway.com/"
+      to="https://main.ui.scaleway.com/"
       target="_blank"
       mx={2}
       size="medium"
