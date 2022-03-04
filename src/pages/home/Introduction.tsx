@@ -40,7 +40,7 @@ const StyledIllustrationCol = styled(Col)`
   justify-content: center;
 `
 
-const StyledImageBox = styled(Box)`
+const StyledImageBox = styled.div`
   ${up('xsmall', `width: 65vw; max-width: 350px`)};
   ${up(
     'large',
