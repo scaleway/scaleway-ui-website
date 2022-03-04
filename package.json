@@ -21,7 +21,7 @@
   "dependencies": {
     "@emotion/react": "11.8.1",
     "@emotion/styled": "11.8.1",
-    "@scaleway/eslint-config-react": "3.4.2",
+    "@scaleway/eslint-config-react": "3.4.3",
     "@scaleway/ui": "0.138.2",
     "@sentry/nextjs": "6.18.1",
     "next": "12.1.0",
