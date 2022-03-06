@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { Box, Breakpoint, Col, Grid, Row, Typography, up } from '@scaleway/ui'
+import { Breakpoint, Col, Grid, Row, Typography, up } from '@scaleway/ui'
 import React from 'react'
 import Image from 'components/Image'
 import swA11y from '../../assets/icons/icon-scaleway-a11y.svg'
@@ -40,7 +40,7 @@ const StyledIllustrationCol = styled(Col)`
   justify-content: center;
 `
 
-const StyledImageBox = styled(Box)`
+const StyledImageBox = styled.div`
   ${up('xsmall', `width: 65vw; max-width: 350px`)};
   ${up(
     'large',
