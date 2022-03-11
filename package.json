@@ -11,7 +11,7 @@
     "prepare": "husky install",
     "commit": "npx git-cz -a",
     "svg": "svgo --pretty --multipass",
-    "svg:all": "yarn run svg -r -f src"
+    "svg:all": "pnpm run svg -- -r -f src"
   },
   "dependenciesMeta": {
     "@react-spring/core": {
@@ -57,7 +57,7 @@
       "eslint --fix --ext ts,tsx"
     ],
     "*.svg": [
-      "yarn run svg"
+      "pnpm run svg"
     ]
   },
   "config": {
@@ -97,5 +97,5 @@
       "url": "https://github.com/DorianMaliszewski"
     }
   ],
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "pnpm@6.16.0"
 }
