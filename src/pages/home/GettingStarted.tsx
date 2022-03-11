@@ -4,8 +4,8 @@ import React from 'react'
 import CopyBox from '../../components/CopyBoxCommand'
 import GithubAndDocumentationButtons from '../../components/GithubAndDocumentationButtons'
 
-const install = `yarn add @scaleway/ui @emotion/react @emotion/styled`
-const installNpm = `npm i @scaleway/ui @emotion/react @emotion/styled`
+const install = `pnpm add @scaleway/ui @emotion/react @emotion/styled`
+const installYarn = `yarn add @scaleway/ui @emotion/react @emotion/styled`
 
 const command = `import { theme, Button } from "@scaleway/ui"
 import { ThemeProvider } from "@emotion/react"
@@ -37,7 +37,7 @@ const GettingStarted = (): JSX.Element => (
         <RelativeDiv>
           <CopyBox>
             <CopyBox.Command
-              title="Yarn install"
+              title="PNPM install"
               command={install}
               showLineNumbers={false}
             />
@@ -46,8 +46,8 @@ const GettingStarted = (): JSX.Element => (
         <RelativeDiv>
           <CopyBox>
             <CopyBox.Command
-              title="Npm install"
-              command={installNpm}
+              title="Yarn install"
+              command={installYarn}
               showLineNumbers={false}
             />
           </CopyBox>
