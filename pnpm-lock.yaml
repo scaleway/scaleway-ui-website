@@ -25,7 +25,7 @@ specifiers:
   react: 17.0.2
   react-dom: 17.0.2
   react-schemaorg: 2.0.0
-  react-syntax-highlighter: 15.4.5
+  react-syntax-highlighter: 15.5.0
   react-use-clipboard: 1.0.7
   schema-dts: 1.1.0
   svgo: 2.8.0
@@ -42,7 +42,7 @@ dependencies:
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-schemaorg: 2.0.0_7b0f19ca035425572aa17a7814b2429a
-  react-syntax-highlighter: 15.4.5_react@17.0.2
+  react-syntax-highlighter: 15.5.0_react@17.0.2
   react-use-clipboard: 1.0.7_react-dom@17.0.2+react@17.0.2
   schema-dts: 1.1.0_typescript@4.6.2
 
@@ -4255,8 +4255,8 @@ packages:
       - '@types/react'
     dev: false
 
-  /react-syntax-highlighter/15.4.5_react@17.0.2:
-    resolution: {integrity: sha512-RC90KQTxZ/b7+9iE6s9nmiFLFjWswUcfULi4GwVzdFVKVMQySkJWBuOmJFfjwjMVCo0IUUuJrWebNKyviKpwLQ==}
+  /react-syntax-highlighter/15.5.0_react@17.0.2:
+    resolution: {integrity: sha512-+zq2myprEnQmH5yw6Gqc8lD55QHnpKaU8TOcFeC/Lg/MQSs8UknEA0JC4nTZGFAXC2J2Hyj/ijJ7NlabyPi2gg==}
     peerDependencies:
       react: '>= 0.14.0'
     dependencies:
