@@ -39,7 +39,7 @@
     "@emotion/eslint-plugin": "11.7.0",
     "@next/bundle-analyzer": "12.1.0",
     "@types/node": "16.11.26",
-    "@types/react": "17.0.41",
+    "@types/react": "17.0.42",
     "@types/react-syntax-highlighter": "13.5.2",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.11.0",
