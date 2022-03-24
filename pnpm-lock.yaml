@@ -8,7 +8,7 @@ specifiers:
   '@emotion/styled': 11.8.1
   '@next/bundle-analyzer': 12.1.0
   '@scaleway/eslint-config-react': 3.4.4
-  '@scaleway/ui': 0.140.5
+  '@scaleway/ui': 0.141.2
   '@sentry/nextjs': 6.19.2
   '@types/node': 16.11.26
   '@types/react': 17.0.42
@@ -35,7 +35,7 @@ dependencies:
   '@emotion/react': 11.8.2_e172d252c66b8263a0fc6c22242511b8
   '@emotion/styled': 11.8.1_a08c0cdde42e73513cd4c3382592b31e
   '@scaleway/eslint-config-react': 3.4.4_eslint@8.11.0+typescript@4.6.2
-  '@scaleway/ui': 0.140.5_0177f6fdb6acb6d74036e1259a0d9727
+  '@scaleway/ui': 0.141.2_0177f6fdb6acb6d74036e1259a0d9727
   '@sentry/nextjs': 6.19.2_next@12.1.0+react@17.0.2
   next: 12.1.0_react-dom@17.0.2+react@17.0.2
   polished: 4.1.4
@@ -897,8 +897,8 @@ packages:
     resolution: {integrity: sha512-ml6Cd+OJxUb4NjGMsBLaEUDSYLXIb8c9jBEK7vjLvtgwwaDVT+LdKEwWxiwMcI5vaedfkgTIGhooiTgBxwqijA==}
     dev: false
 
-  /@scaleway/ui/0.140.5_0177f6fdb6acb6d74036e1259a0d9727:
-    resolution: {integrity: sha512-0ODVIY5VKymS1TG2tJni/NsJt8PwEGxdksG45xPrFXfNC91Ln1g3wfN5NkQDc8u4N2ATUqRC/o7gwbtApJf1fQ==}
+  /@scaleway/ui/0.141.2_0177f6fdb6acb6d74036e1259a0d9727:
+    resolution: {integrity: sha512-M5XrrwMBKYrRt4oi+ATsQzEsJgdPyLrzusvf2PaRtPo8N18ZR+EVpwXWYbFRUJbAmApaiBcP5XdcPrxbaMZcfQ==}
     engines: {node: '>=14.x', pnpm: '>=6'}
     os: [darwin, linux]
     peerDependencies:
@@ -930,7 +930,7 @@ packages:
       react-flatten-children: 1.1.2
       react-markdown: 5.0.3_e172d252c66b8263a0fc6c22242511b8
       react-select: 5.2.2_b236a318752056aac88306873bc2bcc1
-      react-toastify: 7.0.4_react-dom@17.0.2+react@17.0.2
+      react-toastify: 8.2.0_react-dom@17.0.2+react@17.0.2
       react-use-clipboard: 1.0.7_react-dom@17.0.2+react@17.0.2
       reakit: 1.3.11_react-dom@17.0.2+react@17.0.2
       use-media: 1.4.0_react@17.0.2
@@ -4277,8 +4277,8 @@ packages:
       refractor: 3.6.0
     dev: false
 
-  /react-toastify/7.0.4_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-Rol7+Cn39hZp5hQ/k6CbMNE2CKYV9E5OQdC/hBLtIQU2xz7DdAm7xil4NITQTHR6zEbE5RVFbpgSwTD7xRGLeQ==}
+  /react-toastify/8.2.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-Pg2Ju7NngAamarFvLwqrFomJ57u/Ay6i6zfLurt/qPynWkAkOthu6vxfqYpJCyNhHRhR4hu7+bySSeWWJu6PAg==}
     peerDependencies:
       react: '>=16'
       react-dom: '>=16'
