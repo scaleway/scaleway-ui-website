@@ -22,7 +22,7 @@
     "@emotion/react": "11.8.2",
     "@emotion/styled": "11.8.1",
     "@scaleway/eslint-config-react": "3.4.4",
-    "@scaleway/ui": "0.140.5",
+    "@scaleway/ui": "0.141.2",
     "@sentry/nextjs": "6.19.2",
     "next": "12.1.0",
     "polished": "4.1.4",
