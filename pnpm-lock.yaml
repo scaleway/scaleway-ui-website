@@ -20,7 +20,7 @@ specifiers:
   lint-staged: 12.3.7
   next: 12.1.0
   next-transpile-modules: 9.0.0
-  polished: 4.1.4
+  polished: 4.2.0
   prettier: 2.6.1
   react: 17.0.2
   react-dom: 17.0.2
@@ -38,7 +38,7 @@ dependencies:
   '@scaleway/ui': 0.141.4_9595c0fe4bca5fc99bf42a66077e39bf
   '@sentry/nextjs': 6.19.3_next@12.1.0+react@17.0.2
   next: 12.1.0_react-dom@17.0.2+react@17.0.2
-  polished: 4.1.4
+  polished: 4.2.0
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-schemaorg: 2.0.0_1470658ef16cf9c3f7f74c81fe9ad03a
@@ -4060,7 +4060,14 @@ packages:
     resolution: {integrity: sha512-Nq5Mbza+Auo7N3sQb1QMFaQiDO+4UexWuSGR7Cjb4Sw11SZIJcrrFtiZ+L0jT9MBsUsxDboHVASbCLbE1rnECg==}
     engines: {node: '>=10'}
     dependencies:
-      '@babel/runtime': 7.17.2
+      '@babel/runtime': 7.17.8
+    dev: false
+
+  /polished/4.2.0:
+    resolution: {integrity: sha512-S4zwADf1bYEa5McmZ3zMLt7m/1AItr3tZwAYqpbtY+rzNrvCTP4TrCYJ7bS5+qUh8VmfIiMfHztVWTX+B2lMjg==}
+    engines: {node: '>=10'}
+    dependencies:
+      '@babel/runtime': 7.17.8
     dev: false
 
   /postcss/8.4.5:
