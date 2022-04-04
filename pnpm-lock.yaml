@@ -8,7 +8,7 @@ specifiers:
   '@emotion/styled': 11.8.1
   '@next/bundle-analyzer': 12.1.0
   '@scaleway/eslint-config-react': 3.4.4
-  '@scaleway/ui': 0.141.4
+  '@scaleway/ui': 0.141.6
   '@sentry/nextjs': 6.19.3
   '@types/node': 16.11.26
   '@types/react': 17.0.43
@@ -35,7 +35,7 @@ dependencies:
   '@emotion/react': 11.8.2_03a98942b76c57740a9573edba2d1cc1
   '@emotion/styled': 11.8.1_ab60dc3cf3b46d6599c9cb98d57741dd
   '@scaleway/eslint-config-react': 3.4.4_eslint@8.12.0+typescript@4.6.3
-  '@scaleway/ui': 0.141.4_9595c0fe4bca5fc99bf42a66077e39bf
+  '@scaleway/ui': 0.141.6_9595c0fe4bca5fc99bf42a66077e39bf
   '@sentry/nextjs': 6.19.3_next@12.1.0+react@17.0.2
   next: 12.1.0_react-dom@17.0.2+react@17.0.2
   polished: 4.2.1
@@ -897,8 +897,8 @@ packages:
     resolution: {integrity: sha512-ml6Cd+OJxUb4NjGMsBLaEUDSYLXIb8c9jBEK7vjLvtgwwaDVT+LdKEwWxiwMcI5vaedfkgTIGhooiTgBxwqijA==}
     dev: false
 
-  /@scaleway/ui/0.141.4_9595c0fe4bca5fc99bf42a66077e39bf:
-    resolution: {integrity: sha512-J2Y+g74OOWRGijbRStkSppTBq6bkZmUQ4gh4P+Zwnl9r9+c+AuFa89L50NDYtm/qPhqAEHKau4TswdsCwc6HpQ==}
+  /@scaleway/ui/0.141.6_9595c0fe4bca5fc99bf42a66077e39bf:
+    resolution: {integrity: sha512-TM4gQ7/s2cpwGDlMoggHi2ETAcYh0bVBprDSsem+GZhqa7fuORcdlUFRLKup2bJrgfBnY0wAXfVgh+k0ravDCQ==}
     engines: {node: '>=14.x', pnpm: '>=6'}
     os: [darwin, linux]
     peerDependencies:
@@ -921,10 +921,10 @@ packages:
       '@xstyled/emotion': 2.5.0_e50f5a09913de50d44ea40d74496bf6e
       deepmerge: 4.2.2
       intl-tel-input: 17.0.16
-      polished: 4.1.4
+      polished: 4.2.0
       prop-types: 15.8.1
       react: 17.0.2
-      react-countup: 6.1.1_react@17.0.2
+      react-countup: 6.2.0_react@17.0.2
       react-datepicker: 4.7.0_react-dom@17.0.2+react@17.0.2
       react-dom: 17.0.2_react@17.0.2
       react-flatten-children: 1.1.2
@@ -4056,8 +4056,8 @@ packages:
     hasBin: true
     dev: true
 
-  /polished/4.1.4:
-    resolution: {integrity: sha512-Nq5Mbza+Auo7N3sQb1QMFaQiDO+4UexWuSGR7Cjb4Sw11SZIJcrrFtiZ+L0jT9MBsUsxDboHVASbCLbE1rnECg==}
+  /polished/4.2.0:
+    resolution: {integrity: sha512-S4zwADf1bYEa5McmZ3zMLt7m/1AItr3tZwAYqpbtY+rzNrvCTP4TrCYJ7bS5+qUh8VmfIiMfHztVWTX+B2lMjg==}
     engines: {node: '>=10'}
     dependencies:
       '@babel/runtime': 7.17.8
@@ -4143,8 +4143,8 @@ packages:
     resolution: {integrity: sha512-9QnLuG/kPVgWvMQ4aODhsBUFKOUmnbUnsSXACv+NCQZcHbeb+v8Lodp8OVxtRULN1/xOyYLLaL6npE6dMq5QTA==}
     dev: false
 
-  /react-countup/6.1.1_react@17.0.2:
-    resolution: {integrity: sha512-9mYlnk/yCFg3g2/65pCTex6mr9h0eYdDMIL4T5nfLj/RzoiqY03wlPxZglzbJ6OzXvU37OmYApwQ4WMZNFr8Aw==}
+  /react-countup/6.2.0_react@17.0.2:
+    resolution: {integrity: sha512-3WOKAQpWgjyFoH231SHEpIpHhDGb5g5EkTppM6T7vLa3X+8WMdw6750vVcY0wxysKiY00gTFhDwSB5qLU+xPZA==}
     peerDependencies:
       react: '>= 16.3.0'
     dependencies:
