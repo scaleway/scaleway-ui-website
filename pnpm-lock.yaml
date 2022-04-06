@@ -26,7 +26,7 @@ specifiers:
   react-dom: 17.0.2
   react-schemaorg: 2.0.0
   react-syntax-highlighter: 15.5.0
-  react-use-clipboard: 1.0.7
+  react-use-clipboard: 1.0.8
   schema-dts: 1.1.0
   svgo: 2.8.0
   typescript: 4.6.3
@@ -43,7 +43,7 @@ dependencies:
   react-dom: 17.0.2_react@17.0.2
   react-schemaorg: 2.0.0_1470658ef16cf9c3f7f74c81fe9ad03a
   react-syntax-highlighter: 15.5.0_react@17.0.2
-  react-use-clipboard: 1.0.7_react-dom@17.0.2+react@17.0.2
+  react-use-clipboard: 1.0.8_react-dom@17.0.2+react@17.0.2
   schema-dts: 1.1.0_typescript@4.6.3
 
 devDependencies:
@@ -4317,6 +4317,17 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17
       react-dom: ^16.8.0 || ^17
+    dependencies:
+      copy-to-clipboard: 3.3.1
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
+
+  /react-use-clipboard/1.0.8_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-QbN2kFl9uWEsELU4ONpAM98WASllAUWPSGBocbEVzRlcl1PbSa9EIdgADm6XlrcjYw9g1YQBfnCUb/5HGTOY+w==}
+    peerDependencies:
+      react: ^16.8.0 || ^17 || ^18
+      react-dom: ^16.8.0 || ^17 || ^18
     dependencies:
       copy-to-clipboard: 3.3.1
       react: 17.0.2
