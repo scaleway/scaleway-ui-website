@@ -8,7 +8,7 @@ specifiers:
   '@emotion/styled': 11.8.1
   '@next/bundle-analyzer': 12.1.0
   '@scaleway/eslint-config-react': 3.4.4
-  '@scaleway/ui': 0.144.0
+  '@scaleway/ui': 0.144.1
   '@sentry/nextjs': 6.19.6
   '@types/node': 16.11.26
   '@types/react': 17.0.44
@@ -35,7 +35,7 @@ dependencies:
   '@emotion/react': 11.9.0_c8e45b4eb687790dba17b4e1c4b4273f
   '@emotion/styled': 11.8.1_d4665d83ebbc6647a0f96304ff31b411
   '@scaleway/eslint-config-react': 3.4.4_eslint@8.12.0+typescript@4.6.3
-  '@scaleway/ui': 0.144.0_1a397cabda4e9f6398e9deafd8c60d27
+  '@scaleway/ui': 0.144.1_1a397cabda4e9f6398e9deafd8c60d27
   '@sentry/nextjs': 6.19.6_next@12.1.0+react@17.0.2
   next: 12.1.0_react-dom@17.0.2+react@17.0.2
   polished: 4.2.2
@@ -914,8 +914,8 @@ packages:
     resolution: {integrity: sha512-vEL2RegTjZx/3ZEgVgWvNfxsXUZZ0ieiheNva+mXbHCrWc6f0CvntMezf8dONVajLC4Wi6V7Fo2Y9lhnJbvNow==}
     dev: false
 
-  /@scaleway/ui/0.144.0_1a397cabda4e9f6398e9deafd8c60d27:
-    resolution: {integrity: sha512-2PmJYqgfC7Ew90BCeARySn1qgt3S9MuU6mECJkCdRK5gUFa3ZqyDCL0N8v9eX0ms2DUzN0aoY457o0OklLIHGw==}
+  /@scaleway/ui/0.144.1_1a397cabda4e9f6398e9deafd8c60d27:
+    resolution: {integrity: sha512-Vl6QgJWEgPpNGrAKQDAH1gvflGvpXEF6NQsUlW3YlTh+55Rkl+DK70TVd1aa4NL5L2KZWRL41kAIh+xLfj8H5w==}
     engines: {node: '>=14.x', pnpm: '>=6'}
     os: [darwin, linux]
     peerDependencies:
