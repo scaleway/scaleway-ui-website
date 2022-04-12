@@ -6,7 +6,7 @@ import Image from 'components/Image'
 type CardProps = {
   title: string
   description: string | JSX.Element
-  icon: StaticImageData
+  icon: string
 }
 
 const StyledBorderedBox = styled(BorderedBox)`
