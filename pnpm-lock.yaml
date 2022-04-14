@@ -8,7 +8,7 @@ specifiers:
   '@emotion/styled': 11.8.1
   '@next/bundle-analyzer': 12.1.0
   '@scaleway/eslint-config-react': 3.4.4
-  '@scaleway/ui': 0.144.1
+  '@scaleway/ui': 0.144.3
   '@sentry/nextjs': 6.19.6
   '@types/node': 16.11.26
   '@types/react': 17.0.44
@@ -35,7 +35,7 @@ dependencies:
   '@emotion/react': 11.9.0_c8e45b4eb687790dba17b4e1c4b4273f
   '@emotion/styled': 11.8.1_d4665d83ebbc6647a0f96304ff31b411
   '@scaleway/eslint-config-react': 3.4.4_eslint@8.13.0+typescript@4.6.3
-  '@scaleway/ui': 0.144.1_1a397cabda4e9f6398e9deafd8c60d27
+  '@scaleway/ui': 0.144.3_1a397cabda4e9f6398e9deafd8c60d27
   '@sentry/nextjs': 6.19.6_next@12.1.0+react@17.0.2
   next: 12.1.0_react-dom@17.0.2+react@17.0.2
   polished: 4.2.2
@@ -914,8 +914,8 @@ packages:
     resolution: {integrity: sha512-vEL2RegTjZx/3ZEgVgWvNfxsXUZZ0ieiheNva+mXbHCrWc6f0CvntMezf8dONVajLC4Wi6V7Fo2Y9lhnJbvNow==}
     dev: false
 
-  /@scaleway/ui/0.144.1_1a397cabda4e9f6398e9deafd8c60d27:
-    resolution: {integrity: sha512-Vl6QgJWEgPpNGrAKQDAH1gvflGvpXEF6NQsUlW3YlTh+55Rkl+DK70TVd1aa4NL5L2KZWRL41kAIh+xLfj8H5w==}
+  /@scaleway/ui/0.144.3_1a397cabda4e9f6398e9deafd8c60d27:
+    resolution: {integrity: sha512-LIla6x/pbG18PQ7Y+gzKXjyB2gJGVhJDyQ6BmsK93MpNC8Nz1DMV1dgIFi2UUsvdX+NxUfBPQb0jKtD1trsmMw==}
     engines: {node: '>=14.x', pnpm: '>=6'}
     os: [darwin, linux]
     peerDependencies:
@@ -932,6 +932,7 @@ packages:
       '@nivo/core': 0.79.0_75cb922c19ee1b7939faae9b4d1f4cf7
       '@nivo/line': 0.79.1_d6b911f291990e4ea501d615c4dd6f55
       '@nivo/pie': 0.79.1_d6b911f291990e4ea501d615c4dd6f55
+      '@nivo/scales': 0.79.0
       '@scaleway/random-name': 3.0.2
       '@types/intl-tel-input': 17.0.4
       '@types/react-datepicker': 4.3.4_react@17.0.2
