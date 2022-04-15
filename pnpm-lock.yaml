@@ -17,7 +17,7 @@ specifiers:
   eslint: 8.13.0
   eslint-config-next: 12.1.0
   husky: 7.0.4
-  lint-staged: 12.3.7
+  lint-staged: 12.3.8
   next: 12.1.0
   next-transpile-modules: 9.0.0
   polished: 4.2.2
@@ -58,7 +58,7 @@ devDependencies:
   eslint: 8.13.0
   eslint-config-next: 12.1.0_b05aa2d8e72f4a36c4930818436d3c4c
   husky: 7.0.4
-  lint-staged: 12.3.7
+  lint-staged: 12.3.8
   next-transpile-modules: 9.0.0
   prettier: 2.6.2
   svgo: 2.8.0
@@ -3466,8 +3466,8 @@ packages:
   /lines-and-columns/1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
-  /lint-staged/12.3.7:
-    resolution: {integrity: sha512-/S4D726e2GIsDVWIk1XGvheCaDm1SJRQp8efamZFWJxQMVEbOwSysp7xb49Oo73KYCdy97mIWinhlxcoNqIfIQ==}
+  /lint-staged/12.3.8:
+    resolution: {integrity: sha512-0+UpNaqIwKRSGAFOCcpuYNIv/j5QGVC+xUVvmSdxHO+IfIGoHbFLo3XcPmV/LLnsVj5EAncNHVtlITSoY5qWGQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
