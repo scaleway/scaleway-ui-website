@@ -1,15 +1,7 @@
 import styled from '@emotion/styled'
-import {
-  Button,
-  Col,
-  Row,
-  Separator,
-  Typography,
-  down,
-  up,
-} from '@scaleway/ui'
+import { Button, Col, Row, Separator, Typography, down, up } from '@scaleway/ui'
+import Image from 'next/image'
 import React from 'react'
-import Image from 'components/Image'
 import slackLogo from '../../assets/icons/icon-slack.svg'
 import AdvancedUseCases from './AdvancedUseCases'
 import GettingStarted from './GettingStarted'
@@ -22,8 +14,7 @@ const StyledSeparator = styled(Separator)`
 `
 
 const StyledGroup = styled.g`
-  fill: ${({ theme }): string =>
-    theme.colors.danger.backgroundStrong};
+  fill: ${({ theme }): string => theme.colors.danger.backgroundStrong};
 
   svg {
     width: 100%;
@@ -35,8 +26,7 @@ const StyledCommunityContainer = styled.div`
   justify-content: space-evenly;
   margin: 56px 0 72px;
   padding: 24px;
-  background-color: ${({ theme }): string =>
-    theme.colors.secondary.background};
+  background-color: ${({ theme }): string => theme.colors.secondary.background};
 `
 
 const StyledTypographyContainer = styled.div`

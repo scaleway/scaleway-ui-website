@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { Breakpoint, Col, Grid, Row, Typography, up } from '@scaleway/ui'
+import Image from 'next/image'
 import React from 'react'
-import Image from 'components/Image'
 import swA11y from '../../assets/icons/icon-scaleway-a11y.svg'
 import swCustom from '../../assets/icons/icon-scaleway-custom.svg'
 import swDx from '../../assets/icons/icon-scaleway-dx.svg'
