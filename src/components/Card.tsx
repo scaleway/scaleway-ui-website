@@ -1,12 +1,12 @@
 import styled from '@emotion/styled'
 import { BorderedBox, Col, Row, Typography, down, up } from '@scaleway/ui'
-import React from 'react'
-import Image from 'components/Image'
+import Image from 'next/image'
+import React, { ReactNode } from 'react'
 
 type CardProps = {
   title: string
-  description: string | JSX.Element
-  icon: StaticImageData
+  description: string | ReactNode
+  icon: string
 }
 
 const StyledBorderedBox = styled(BorderedBox)`
@@ -24,7 +24,11 @@ const Card = ({ title, description, icon }: CardProps): JSX.Element => (
         <Typography variant="lead" mb={1} color="primary">
           {title}
         </Typography>
-        <Typography variant="bodyD">{description}</Typography>
+        {typeof description === 'string' ? (
+          <Typography variant="bodyD">{description}</Typography>
+        ) : (
+          description
+        )}
       </Col>
     </Row>
   </StyledBorderedBox>

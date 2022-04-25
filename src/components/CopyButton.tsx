@@ -19,7 +19,6 @@ const CopyButton = ({ text, className }: CopyButtonProps): JSX.Element => {
         variant="secondary"
         onClick={setCopied}
         size="xsmall"
-        tooltip={isCopied ? 'Copied!' : 'Copy'}
         display="flex"
       />
     </FlexBox>
