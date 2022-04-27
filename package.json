@@ -42,7 +42,7 @@
     "@types/react": "18.0.6",
     "@types/react-syntax-highlighter": "13.5.2",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "8.13.0",
+    "eslint": "8.14.0",
     "eslint-config-next": "12.1.5",
     "husky": "7.0.4",
     "lint-staged": "12.4.0",
