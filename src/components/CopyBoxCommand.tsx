@@ -87,7 +87,7 @@ const Command = ({
   <>
     <SyntaxHighlighter
       language="jsx"
-      style={darcula as unknown}
+      style={darcula}
       customStyle={{ background: 'none', fontSize: '14px', padding: 0 }}
       showLineNumbers={showLineNumbers}
     >
