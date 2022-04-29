@@ -12,7 +12,7 @@ specifiers:
   '@sentry/nextjs': 6.19.7
   '@types/node': 17.0.25
   '@types/react': 18.0.8
-  '@types/react-syntax-highlighter': 13.5.2
+  '@types/react-syntax-highlighter': 15.5.1
   cz-conventional-changelog: 3.3.0
   eslint: 8.14.0
   eslint-config-next: 12.1.5
@@ -53,7 +53,7 @@ devDependencies:
   '@next/bundle-analyzer': 12.1.5
   '@types/node': 17.0.25
   '@types/react': 18.0.8
-  '@types/react-syntax-highlighter': 13.5.2
+  '@types/react-syntax-highlighter': 15.5.1
   cz-conventional-changelog: 3.3.0
   eslint: 8.14.0
   eslint-config-next: 12.1.5_f9aca591fe836eec9a0024e01b547f29
@@ -217,31 +217,10 @@ packages:
       '@commitlint/types': 16.2.1
     dev: true
 
-  /@commitlint/load/16.2.3:
-    resolution: {integrity: sha512-Hb4OUlMnBUK6UxJEZ/VJ5k0LocIS7PtEMbRXEAA7eSpOgORIFexC4K/RaRpVd5UTtu3M0ST3ddPPijF9rdW6nw==}
-    engines: {node: '>=v12'}
-    requiresBuild: true
-    dependencies:
-      '@commitlint/config-validator': 16.2.1
-      '@commitlint/execute-rule': 16.2.1
-      '@commitlint/resolve-extends': 16.2.1
-      '@commitlint/types': 16.2.1
-      '@types/node': 17.0.25
-      chalk: 4.1.2
-      cosmiconfig: 7.0.1
-      cosmiconfig-typescript-loader: 1.0.6_de7c86b0cde507c63a0402da5b982bd3
-      lodash: 4.17.21
-      resolve-from: 5.0.0
-      typescript: 4.6.3
-    transitivePeerDependencies:
-      - '@swc/core'
-      - '@swc/wasm'
-    dev: true
-    optional: true
-
   /@commitlint/load/16.2.4:
     resolution: {integrity: sha512-HjANm3/29ROV+zt4yfaY/K6gpr9Dbzgtlp0kSwZGW0poDXlD/yqVYgPQ6JolJzZii5FUz5R4yVLC15hVL/w60w==}
     engines: {node: '>=v12'}
+    requiresBuild: true
     dependencies:
       '@commitlint/config-validator': 16.2.1
       '@commitlint/execute-rule': 16.2.1
@@ -1230,8 +1209,8 @@ packages:
       - react
     dev: false
 
-  /@types/react-syntax-highlighter/13.5.2:
-    resolution: {integrity: sha512-sRZoKZBGKaE7CzMvTTgz+0x/aVR58ZYUTfB7HN76vC+yQnvo1FWtzNARBt0fGqcLGEVakEzMu/CtPzssmanu8Q==}
+  /@types/react-syntax-highlighter/15.5.1:
+    resolution: {integrity: sha512-+yD6D8y21JqLf89cRFEyRfptVMqo2ROHyAlysRvFwT28gT5gDo3KOiXHwGilHcq9y/OKTjlWK0f/hZUicrBFPQ==}
     dependencies:
       '@types/react': 18.0.8
     dev: true
@@ -2085,7 +2064,7 @@ packages:
       longest: 2.0.1
       word-wrap: 1.2.3
     optionalDependencies:
-      '@commitlint/load': 16.2.3
+      '@commitlint/load': 16.2.4
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
