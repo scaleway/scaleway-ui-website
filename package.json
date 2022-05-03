@@ -11,7 +11,7 @@
     "prepare": "husky install",
     "commit": "npx git-cz -a",
     "svg": "svgo --pretty --multipass",
-    "svg:all": "pnpm run svg -- -r -f src"
+    "svg:all": "pnpm run svg -r -f src"
   },
   "dependenciesMeta": {
     "@react-spring/core": {
