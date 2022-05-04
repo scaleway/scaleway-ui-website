@@ -74,6 +74,14 @@
       "@commitlint/config-conventional"
     ]
   },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "react": "18",
+        "react-dom": "18"
+      }
+    }
+  },
   "contributors": [
     {
       "name": "Alexandre Philibeaux",
