@@ -11,7 +11,7 @@ specifiers:
   '@nivo/core': 0.79.0
   '@nivo/tooltip': 0.79.0
   '@scaleway/eslint-config-react': 3.4.21
-  '@scaleway/ui': 0.146.2
+  '@scaleway/ui': 0.146.3
   '@sentry/nextjs': 6.19.7
   '@types/node': 17.0.25
   '@types/react': 18.0.9
@@ -38,7 +38,7 @@ specifiers:
 dependencies:
   '@emotion/react': 11.9.0_3eedoh5iyosf3m26fkjrimrxcy
   '@emotion/styled': 11.8.1_bgr3v6fsuohrsolud5p6my4gvi
-  '@scaleway/ui': 0.146.2_lpxynswggehujxhamnsc5fnhau
+  '@scaleway/ui': 0.146.3_lpxynswggehujxhamnsc5fnhau
   '@sentry/nextjs': 6.19.7_next@12.1.6+react@18.1.0
   next: 12.1.6_talmm3uuvp6ssixt2qevhfgvue
   polished: 4.2.2
@@ -1122,8 +1122,8 @@ packages:
     resolution: {integrity: sha512-vEL2RegTjZx/3ZEgVgWvNfxsXUZZ0ieiheNva+mXbHCrWc6f0CvntMezf8dONVajLC4Wi6V7Fo2Y9lhnJbvNow==}
     dev: false
 
-  /@scaleway/ui/0.146.2_lpxynswggehujxhamnsc5fnhau:
-    resolution: {integrity: sha512-t+gEuW34YksX+GXM18UqPZIdXkvBwmUyIXxs2QM6h9+630ayeTQWDiqnkN9mqsHoFbAOU2eLpZy7p9N40Jj8BQ==}
+  /@scaleway/ui/0.146.3_lpxynswggehujxhamnsc5fnhau:
+    resolution: {integrity: sha512-f7knp9jS39AK2k2TEuBkcVVFddcxtbYdFTWxVKUaec+elhBZ/9DrDmh3VZ9A1qEWYWLDhkbQwdE8KNbCo9n2UA==}
     engines: {node: '>=14.x', pnpm: '>=6'}
     os: [darwin, linux]
     peerDependencies:
