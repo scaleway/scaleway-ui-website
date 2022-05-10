@@ -58,7 +58,7 @@ const Introduction = (): JSX.Element => (
         <StyledTitle color="primary">
           Scaleway <b>UI</b>
         </StyledTitle>
-        <StyledSubTitle color="lightViolet" lineHeight={1.2}>
+        <StyledSubTitle color="secondary" lineHeight={1.2}>
           Open Source <br />
           Component Library
         </StyledSubTitle>
