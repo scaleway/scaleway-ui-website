@@ -1,6 +1,6 @@
 import { Global, Theme, css } from '@emotion/react'
 import { normalize } from 'polished'
-import React, { FunctionComponent } from 'react'
+import React from 'react'
 
 const baseStyles = (theme: Theme) => css`
   ${normalize()}
@@ -105,7 +105,7 @@ const customTransitionAnimation = css`
   }
 `
 
-const GlobalStyle: FunctionComponent = () => (
+const GlobalStyle = () => (
   <Global styles={[baseStyles, customTransitionAnimation]} />
 )
 
