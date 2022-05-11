@@ -10,7 +10,7 @@ specifiers:
   '@next/bundle-analyzer': 12.1.6
   '@nivo/core': 0.79.0
   '@nivo/tooltip': 0.79.0
-  '@scaleway/eslint-config-react': 3.4.23
+  '@scaleway/eslint-config-react': 3.4.24
   '@scaleway/ui': 0.148.0
   '@sentry/nextjs': 6.19.7
   '@types/node': 17.0.25
@@ -57,7 +57,7 @@ devDependencies:
   '@next/bundle-analyzer': 12.1.6
   '@nivo/core': 0.79.0_gfmhlxusftk3bredpymlaawum4
   '@nivo/tooltip': 0.79.0_baumnaov4w4krnl3zl5fbkyhdq
-  '@scaleway/eslint-config-react': 3.4.23_t725usgvqspm5woeqpaxbfp2qu
+  '@scaleway/eslint-config-react': 3.4.24_t725usgvqspm5woeqpaxbfp2qu
   '@types/node': 17.0.25
   '@types/react': 18.0.9
   '@types/react-syntax-highlighter': 15.5.1
@@ -1114,8 +1114,8 @@ packages:
     resolution: {integrity: sha512-WiBSI6JBIhC6LRIsB2Kwh8DsGTlbBU+mLRxJmAe3LjHTdkDpwIbEOZgoXBbZilk/vlfjK8i6nKRAvIRn1XaIMw==}
     dev: true
 
-  /@scaleway/eslint-config-react/3.4.23_t725usgvqspm5woeqpaxbfp2qu:
-    resolution: {integrity: sha512-JTh4J17Zh+flLMRLQFwVUcHsE99g8n/VwvMMCvhYyd9u+Z//9okI3b9/SJ0piVW6mXwLpeOIrrftkzgmpY71wg==}
+  /@scaleway/eslint-config-react/3.4.24_t725usgvqspm5woeqpaxbfp2qu:
+    resolution: {integrity: sha512-enO4Nl+9d/G+SCU6np/TT7lz8ax3ki2Sg9kukZIy6NVZ3C+lpKq1QWNpmtgwlHgIbamH/taodIWrBOqqiq/j5A==}
     peerDependencies:
       eslint: '>= 8.5'
     dependencies:
