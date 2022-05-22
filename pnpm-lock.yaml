@@ -11,7 +11,7 @@ specifiers:
   '@nivo/core': 0.79.0
   '@nivo/tooltip': 0.79.0
   '@scaleway/eslint-config-react': 3.4.26
-  '@scaleway/ui': 0.149.1
+  '@scaleway/ui': 0.152.0
   '@sentry/nextjs': 6.19.7
   '@types/node': 17.0.25
   '@types/react': 18.0.9
@@ -38,7 +38,7 @@ specifiers:
 dependencies:
   '@emotion/react': 11.9.0_a6wmty2wzb4cbtbfuwxel6efw4
   '@emotion/styled': 11.8.1_gugxekeluewmy6drcmw3dlruiq
-  '@scaleway/ui': 0.149.1_z4xuo56lc6pae7se2izepxshta
+  '@scaleway/ui': 0.152.0_z4xuo56lc6pae7se2izepxshta
   '@sentry/nextjs': 6.19.7_next@12.1.6+react@18.1.0
   next: 12.1.6_meqots7chixgorgypqt53y4jsy
   polished: 4.2.2
@@ -1115,8 +1115,8 @@ packages:
     resolution: {integrity: sha512-vEL2RegTjZx/3ZEgVgWvNfxsXUZZ0ieiheNva+mXbHCrWc6f0CvntMezf8dONVajLC4Wi6V7Fo2Y9lhnJbvNow==}
     dev: false
 
-  /@scaleway/ui/0.149.1_z4xuo56lc6pae7se2izepxshta:
-    resolution: {integrity: sha512-MpqnRA4X/WAAUbLtU4Z0d1I87uhkdik/RR/qtL2juu93dSr1/PUtrEB98SyXMIC5znboqdF5WmPuCpv2LKqg6Q==}
+  /@scaleway/ui/0.152.0_z4xuo56lc6pae7se2izepxshta:
+    resolution: {integrity: sha512-Qkp3JqUVdJzq4OlaSGLHfK8xKUMaYxRYEAqhKNHQmapK3agH1BUZuxfnBUXtqS1Ij8EzUh9iP1O7wNBPdUU4rw==}
     engines: {node: '>=16.x', pnpm: '>=7.0.0'}
     os: [darwin, linux]
     peerDependencies:
@@ -1125,7 +1125,6 @@ packages:
       react: 17.0.2 || 18
       react-dom: 17.0.2 || 18
     dependencies:
-      '@babel/runtime': 7.17.9
       '@emotion/react': 11.9.0_a6wmty2wzb4cbtbfuwxel6efw4
       '@emotion/serialize': 1.0.3
       '@emotion/styled': 11.8.1_gugxekeluewmy6drcmw3dlruiq
@@ -1145,7 +1144,7 @@ packages:
       prop-types: 15.8.1
       react: 18.1.0
       react-countup: 6.2.0_react@18.1.0
-      react-datepicker: 4.7.0_ef5jwxihqo6n7gxfmzogljlgcm
+      react-datepicker: 4.8.0_ef5jwxihqo6n7gxfmzogljlgcm
       react-dom: 18.1.0_react@18.1.0
       react-flatten-children: 1.1.2
       react-markdown: 5.0.3_7cpxmzzodpxnolj5zcc5cr63ji
@@ -4665,11 +4664,11 @@ packages:
       react: 18.1.0
     dev: false
 
-  /react-datepicker/4.7.0_ef5jwxihqo6n7gxfmzogljlgcm:
-    resolution: {integrity: sha512-FS8KgbwqpxmJBv/bUdA42MYqYZa+fEYcpc746DZiHvVE2nhjrW/dg7c5B5fIUuI8gZET6FOzuDgezNcj568Czw==}
+  /react-datepicker/4.8.0_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha512-u69zXGHMpxAa4LeYR83vucQoUCJQ6m/WBsSxmUMu/M8ahTSVMMyiyQzauHgZA2NUr9y0FUgOAix71hGYUb6tvg==}
     peerDependencies:
-      react: ^16.9.0 || ^17 || 18
-      react-dom: ^16.9.0 || ^17 || 18
+      react: ^16.9.0 || ^17 || ^18 || 18
+      react-dom: ^16.9.0 || ^17 || ^18 || 18
     dependencies:
       '@popperjs/core': 2.11.5
       classnames: 2.3.1
