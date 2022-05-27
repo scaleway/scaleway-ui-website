@@ -33,7 +33,7 @@
     "schema-dts": "1.1.0"
   },
   "devDependencies": {
-    "@babel/core": "7.18.0",
+    "@babel/core": "7.18.2",
     "@commitlint/cli": "17.0.0",
     "@commitlint/config-conventional": "17.0.0",
     "@emotion/eslint-plugin": "11.7.0",
