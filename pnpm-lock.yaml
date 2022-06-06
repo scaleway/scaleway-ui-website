@@ -11,7 +11,7 @@ specifiers:
   '@nivo/core': 0.79.0
   '@nivo/tooltip': 0.79.0
   '@scaleway/eslint-config-react': 3.4.31
-  '@scaleway/ui': 0.153.6
+  '@scaleway/ui': 0.153.7
   '@sentry/nextjs': 6.19.7
   '@types/node': 17.0.25
   '@types/react': 18.0.12
@@ -38,7 +38,7 @@ specifiers:
 dependencies:
   '@emotion/react': 11.9.0_mojt4vfvzjgczlgs4u436xt75u
   '@emotion/styled': 11.8.1_ev7eaohrznmneepri7xttmcb7i
-  '@scaleway/ui': 0.153.6_gwljsujejiz2jzl7pafjmqv4fe
+  '@scaleway/ui': 0.153.7_gwljsujejiz2jzl7pafjmqv4fe
   '@sentry/nextjs': 6.19.7_next@12.1.6+react@18.1.0
   next: 12.1.6_6j5eyi3us3liopewjenwniphpy
   polished: 4.2.2
@@ -1120,8 +1120,8 @@ packages:
     resolution: {integrity: sha512-vEL2RegTjZx/3ZEgVgWvNfxsXUZZ0ieiheNva+mXbHCrWc6f0CvntMezf8dONVajLC4Wi6V7Fo2Y9lhnJbvNow==}
     dev: false
 
-  /@scaleway/ui/0.153.6_gwljsujejiz2jzl7pafjmqv4fe:
-    resolution: {integrity: sha512-gZp+dzkpiyenJURV0YJvCw7+ZGMYl+PCrLrWkjz0GG3h0OsvNQS+tQNUKA0n49wrbfn04B4GTOAa1intiUkdjQ==}
+  /@scaleway/ui/0.153.7_gwljsujejiz2jzl7pafjmqv4fe:
+    resolution: {integrity: sha512-oIQQk2O10wFVE9MHkNsNOjDYNistgp10HwEDtlnztlSIigxnhwDr2gy0aK5VvHGoapIiIrOIQxjdiQatWQbx/w==}
     engines: {node: '>=16.x', pnpm: '>=7.0.0'}
     os: [darwin, linux]
     peerDependencies:
@@ -1141,7 +1141,7 @@ packages:
       '@nivo/scales': 0.79.0
       '@scaleway/random-name': 3.0.2
       '@types/intl-tel-input': 17.0.4
-      '@types/react-datepicker': 4.4.1_react@18.1.0
+      '@types/react-datepicker': 4.4.2_react@18.1.0
       '@xstyled/emotion': 2.5.0_6qqrydr3dzzl3dpqgzeo3kawy4
       deepmerge: 4.2.2
       intl-tel-input: 17.0.16
@@ -1414,8 +1414,8 @@ packages:
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
 
-  /@types/react-datepicker/4.4.1_react@18.1.0:
-    resolution: {integrity: sha512-M8+hzwj+bpuwxC82z35NxkD3sqMl/vVXTs6xjPAsYqjucVXFpY1DK6ETKgICZE7YpuPYpf2OYF2OVZ5E7R42rA==}
+  /@types/react-datepicker/4.4.2_react@18.1.0:
+    resolution: {integrity: sha512-g8DhWvYmaIMLzVrIEVLXncylyImyBaoPsEUr3yR13JDaaHoebhDorqnVv4tLkNGa8SjBB8SAOQvxD5jaPNBX8A==}
     dependencies:
       '@popperjs/core': 2.11.5
       '@types/react': 18.0.12
