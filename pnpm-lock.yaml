@@ -11,7 +11,7 @@ specifiers:
   '@nivo/core': 0.79.0
   '@nivo/tooltip': 0.79.0
   '@scaleway/eslint-config-react': 3.4.31
-  '@scaleway/ui': 0.153.7
+  '@scaleway/ui': 0.153.9
   '@sentry/nextjs': 6.19.7
   '@types/node': 17.0.25
   '@types/react': 18.0.12
@@ -38,7 +38,7 @@ specifiers:
 dependencies:
   '@emotion/react': 11.9.0_mojt4vfvzjgczlgs4u436xt75u
   '@emotion/styled': 11.8.1_ev7eaohrznmneepri7xttmcb7i
-  '@scaleway/ui': 0.153.7_gwljsujejiz2jzl7pafjmqv4fe
+  '@scaleway/ui': 0.153.9_gwljsujejiz2jzl7pafjmqv4fe
   '@sentry/nextjs': 6.19.7_next@12.1.6+react@18.1.0
   next: 12.1.6_6j5eyi3us3liopewjenwniphpy
   polished: 4.2.2
@@ -650,8 +650,8 @@ packages:
       '@sinclair/typebox': 0.23.5
     dev: false
 
-  /@jest/types/28.1.0:
-    resolution: {integrity: sha512-xmEggMPr317MIOjjDoZ4ejCSr9Lpbt/u34+dvc99t7DS8YirW5rwZEhzKPC2BMUFkUhI48qs6qLUSGw5FuL0GA==}
+  /@jest/types/28.1.1:
+    resolution: {integrity: sha512-vRXVqSg1VhDnB8bWcmvLzmg0Bt9CRKVgHPXqYwvWMX3TvAjeO+nRuK6+VdTKCtWOvYlmkF/HqNAL/z+N3B53Kw==}
     engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
     dependencies:
       '@jest/schemas': 28.0.2
@@ -1120,8 +1120,8 @@ packages:
     resolution: {integrity: sha512-vEL2RegTjZx/3ZEgVgWvNfxsXUZZ0ieiheNva+mXbHCrWc6f0CvntMezf8dONVajLC4Wi6V7Fo2Y9lhnJbvNow==}
     dev: false
 
-  /@scaleway/ui/0.153.7_gwljsujejiz2jzl7pafjmqv4fe:
-    resolution: {integrity: sha512-oIQQk2O10wFVE9MHkNsNOjDYNistgp10HwEDtlnztlSIigxnhwDr2gy0aK5VvHGoapIiIrOIQxjdiQatWQbx/w==}
+  /@scaleway/ui/0.153.9_gwljsujejiz2jzl7pafjmqv4fe:
+    resolution: {integrity: sha512-fKN7kmKIWICLYQyf8L5UFkF2QufSWuqyXwpjobvQe0DBN1vqw+EYYnE2fC++n/1SCUsyNNT7whvfetZ2XlYCYA==}
     engines: {node: '>=16.x', pnpm: '>=7.0.0'}
     os: [darwin, linux]
     peerDependencies:
@@ -1133,7 +1133,7 @@ packages:
       '@emotion/react': 11.9.0_mojt4vfvzjgczlgs4u436xt75u
       '@emotion/serialize': 1.0.3
       '@emotion/styled': 11.8.1_ev7eaohrznmneepri7xttmcb7i
-      '@jest/types': 28.1.0
+      '@jest/types': 28.1.1
       '@nivo/bar': 0.79.1_jqpsxe7tnl3vctjrz5f3wi6tfe
       '@nivo/core': 0.79.0_gfmhlxusftk3bredpymlaawum4
       '@nivo/line': 0.79.1_jqpsxe7tnl3vctjrz5f3wi6tfe
