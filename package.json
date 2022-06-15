@@ -22,7 +22,7 @@
     "@emotion/react": "11.9.0",
     "@emotion/styled": "11.8.1",
     "@scaleway/ui": "0.156.2",
-    "@sentry/nextjs": "6.19.7",
+    "@sentry/nextjs": "7.1.1",
     "next": "12.1.6",
     "polished": "4.2.2",
     "react": "18.2.0",
