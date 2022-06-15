@@ -19,8 +19,8 @@
     }
   },
   "dependencies": {
-    "@emotion/react": "11.9.0",
-    "@emotion/styled": "11.8.1",
+    "@emotion/react": "11.9.3",
+    "@emotion/styled": "11.9.3",
     "@scaleway/ui": "0.156.2",
     "@sentry/nextjs": "6.19.7",
     "next": "12.1.6",
