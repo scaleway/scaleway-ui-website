@@ -17,7 +17,7 @@ const StyledDiv = styled.div`
 `
 
 const StyledCopyButton = styled(CopyButton, {
-  shouldForwardProp: prop => !['showCopyButton'].includes(prop as string),
+  shouldForwardProp: prop => !['showCopyButton'].includes(prop.toString()),
 })<{ showCopyButton: boolean }>`
   position: absolute;
   right: 16px;
