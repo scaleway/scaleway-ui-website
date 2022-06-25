@@ -34,8 +34,8 @@
   },
   "devDependencies": {
     "@babel/core": "7.18.5",
-    "@commitlint/cli": "17.0.2",
-    "@commitlint/config-conventional": "17.0.2",
+    "@commitlint/cli": "17.0.3",
+    "@commitlint/config-conventional": "17.0.3",
     "@emotion/eslint-plugin": "11.7.0",
     "@next/bundle-analyzer": "12.1.6",
     "@nivo/core": "0.79.0",
