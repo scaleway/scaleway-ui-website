@@ -26,7 +26,7 @@ const StyledCommunityContainer = styled.div`
   justify-content: space-evenly;
   margin: 56px 0 72px;
   padding: 24px;
-  background-color: ${({ theme }): string => theme.colors.secondary.background};
+  background-color: ${({ theme }): string => theme.colors.neutral.background};
 `
 
 const StyledTypographyContainer = styled.div`
