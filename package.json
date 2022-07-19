@@ -40,7 +40,7 @@
     "@next/bundle-analyzer": "12.2.2",
     "@nivo/core": "0.79.0",
     "@nivo/tooltip": "0.79.0",
-    "@scaleway/eslint-config-react": "3.4.43",
+    "@scaleway/eslint-config-react": "3.4.44",
     "@types/node": "17.0.25",
     "@types/react": "18.0.15",
     "@types/react-syntax-highlighter": "15.5.3",
