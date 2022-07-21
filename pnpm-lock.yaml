@@ -10,7 +10,7 @@ specifiers:
   '@next/bundle-analyzer': 12.2.2
   '@nivo/core': 0.79.0
   '@nivo/tooltip': 0.79.0
-  '@scaleway/eslint-config-react': 3.4.44
+  '@scaleway/eslint-config-react': 3.4.46
   '@scaleway/ui': 0.163.3
   '@sentry/nextjs': 6.19.7
   '@types/node': 17.0.25
@@ -57,7 +57,7 @@ devDependencies:
   '@next/bundle-analyzer': 12.2.2
   '@nivo/core': 0.79.0_vcdwbqqj4lpdy45youhd2o3pxm
   '@nivo/tooltip': 0.79.0_zhuuyauhwzzhfusgrzbzttapgm
-  '@scaleway/eslint-config-react': 3.4.44_he2ccbldppg44uulnyq4rwocfa
+  '@scaleway/eslint-config-react': 3.4.46_he2ccbldppg44uulnyq4rwocfa
   '@types/node': 17.0.25
   '@types/react': 18.0.15
   '@types/react-syntax-highlighter': 15.5.3
@@ -245,6 +245,12 @@ packages:
 
   /@babel/runtime/7.18.6:
     resolution: {integrity: sha512-t9wi7/AW6XtKahAe20Yw0/mMljKq0B1r2fPdvaAdV/KPDZewFXdaaa6K7lxmZBZ8FBNpCiAT6iHPmd6QO9bKfQ==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.13.9
+
+  /@babel/runtime/7.18.9:
+    resolution: {integrity: sha512-lkqXDcvlFT5rvEjiu6+QYO+1GXrEHRo2LOtS7E4GtX5ESIZOgepqsZBVIj6Pv+a6zqsya9VCgiK1KAK4BvJDAw==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.9
@@ -1086,20 +1092,20 @@ packages:
     resolution: {integrity: sha512-LwzQKA4vzIct1zNZzBmRKI9QuNpLgTQMEjsQLf3BXuGYb3QPTP4Yjf6mkdX+X1mYttZ808QpOwAzZjv28kq7DA==}
     dev: true
 
-  /@scaleway/eslint-config-react/3.4.44_he2ccbldppg44uulnyq4rwocfa:
-    resolution: {integrity: sha512-wPfacGAlLaQ2LzvOrZ5DipXR3plhi1idvdIs9gkn6otu/fwYVNQO5PcMg8ZMBvZdfL1yeY5frx466ntt3ZiB2w==}
+  /@scaleway/eslint-config-react/3.4.46_he2ccbldppg44uulnyq4rwocfa:
+    resolution: {integrity: sha512-h5LdJxdpEEem9dBrMZCsWFajNEKVs7YAkuP6Z45DsGRtdqC4hSmlpwPamvRuaMDGTbXWy6MMHBpnKnBmJHKSMA==}
     peerDependencies:
       eslint: '>= 8.5'
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.30.7_6wltbjakwuqm7awqswigmiuhd4
       '@typescript-eslint/parser': 5.30.7_he2ccbldppg44uulnyq4rwocfa
       eslint: 8.20.0
-      eslint-config-airbnb: 19.0.4_tgbv5s3xwpbknoi6v46ipgy4ay
+      eslint-config-airbnb: 19.0.4_ot4ntprzzmtrg3dwojd2mbktke
       eslint-config-airbnb-typescript: 17.0.0_vf7ei2olxpdpzajzoufngqspeu
       eslint-config-prettier: 8.5.0_eslint@8.20.0
       eslint-plugin-eslint-comments: 3.2.0_eslint@8.20.0
       eslint-plugin-import: 2.26.0_xconv27bia2733zao6ipggqv2i
-      eslint-plugin-jsx-a11y: 6.6.0_eslint@8.20.0
+      eslint-plugin-jsx-a11y: 6.6.1_eslint@8.20.0
       eslint-plugin-react: 7.30.1_eslint@8.20.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.20.0
     transitivePeerDependencies:
@@ -1830,7 +1836,7 @@ packages:
     resolution: {integrity: sha512-o/HelwhuKpTj/frsOsbNLNgnNGVIFsVP/SW2BSF14gVl7kAfMOJ6/8wUAUvG1R1NHKrfG+2sHZTu0yauT1qBrA==}
     engines: {node: '>=6.0'}
     dependencies:
-      '@babel/runtime': 7.18.6
+      '@babel/runtime': 7.18.9
       '@babel/runtime-corejs3': 7.18.6
     dev: true
 
@@ -1893,6 +1899,11 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
+  /axe-core/4.4.3:
+    resolution: {integrity: sha512-32+ub6kkdhhWick/UjvEwRchgoetXqTK14INLqbGm5U2TzBkBNF3nQtLYm8ovxSkQWArjEQvftCKryjZaATu3w==}
+    engines: {node: '>=4'}
+    dev: true
+
   /axobject-query/2.2.0:
     resolution: {integrity: sha512-Td525n+iPOOyUQIeBfcASuG6uJsDOITl7Mds5gFyerkWiX7qhUTdYUBlSgNMyVqtSJqwpt1kXGLdUt6SykLMRA==}
     dev: true
@@ -1900,7 +1911,7 @@ packages:
   /babel-plugin-macros/2.8.0:
     resolution: {integrity: sha512-SEP5kJpfGYqYKpBrj5XU3ahw5p5GOHJ0U5ssOSQ/WBVdwkD2Dzlce95exQTs3jOVWPPKLBN2rlEWkCK7dSmLvg==}
     dependencies:
-      '@babel/runtime': 7.18.6
+      '@babel/runtime': 7.18.9
       cosmiconfig: 6.0.0
       resolve: 1.22.1
     dev: false
@@ -2521,7 +2532,7 @@ packages:
   /dom-helpers/5.2.1:
     resolution: {integrity: sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==}
     dependencies:
-      '@babel/runtime': 7.18.6
+      '@babel/runtime': 7.18.9
       csstype: 3.1.0
     dev: false
 
@@ -2708,7 +2719,7 @@ packages:
       eslint-plugin-import: 2.26.0_xconv27bia2733zao6ipggqv2i
     dev: true
 
-  /eslint-config-airbnb/19.0.4_tgbv5s3xwpbknoi6v46ipgy4ay:
+  /eslint-config-airbnb/19.0.4_ot4ntprzzmtrg3dwojd2mbktke:
     resolution: {integrity: sha512-T75QYQVQX57jiNgpF9r1KegMICE94VYwoFQyMGhrvc+lB8YF2E/M/PYDaQe1AJcWaEgqLE+ErXV1Og/+6Vyzew==}
     engines: {node: ^10.12.0 || ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -2721,7 +2732,7 @@ packages:
       eslint: 8.20.0
       eslint-config-airbnb-base: 15.0.0_afl3vkhn63baibzal45igheroq
       eslint-plugin-import: 2.26.0_xconv27bia2733zao6ipggqv2i
-      eslint-plugin-jsx-a11y: 6.6.0_eslint@8.20.0
+      eslint-plugin-jsx-a11y: 6.6.1_eslint@8.20.0
       eslint-plugin-react: 7.30.1_eslint@8.20.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.20.0
       object.assign: 4.1.2
@@ -2926,6 +2937,28 @@ packages:
       array-includes: 3.1.5
       ast-types-flow: 0.0.7
       axe-core: 4.4.2
+      axobject-query: 2.2.0
+      damerau-levenshtein: 1.0.8
+      emoji-regex: 9.2.2
+      eslint: 8.20.0
+      has: 1.0.3
+      jsx-ast-utils: 3.3.2
+      language-tags: 1.0.5
+      minimatch: 3.1.2
+      semver: 6.3.0
+    dev: true
+
+  /eslint-plugin-jsx-a11y/6.6.1_eslint@8.20.0:
+    resolution: {integrity: sha512-sXgFVNHiWffBq23uiS/JaP6eVR622DqwB4yTzKvGZGcPq6/yZ3WmOZfuBks/vHWo9GaFOqC2ZK4i6+C35knx7Q==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
+    dependencies:
+      '@babel/runtime': 7.18.9
+      aria-query: 4.2.2
+      array-includes: 3.1.5
+      ast-types-flow: 0.0.7
+      axe-core: 4.4.3
       axobject-query: 2.2.0
       damerau-levenshtein: 1.0.8
       emoji-regex: 9.2.2
@@ -4824,7 +4857,7 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || 18
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || 18
     dependencies:
-      '@babel/runtime': 7.18.6
+      '@babel/runtime': 7.18.9
       '@emotion/cache': 11.9.3
       '@emotion/react': 11.9.3_szkdlbnthht4v3jvm76fn7u6na
       '@types/react-transition-group': 4.4.5
@@ -4868,7 +4901,7 @@ packages:
       react: '>=16.6.0 || 18'
       react-dom: '>=16.6.0 || 18'
     dependencies:
-      '@babel/runtime': 7.18.6
+      '@babel/runtime': 7.18.9
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
